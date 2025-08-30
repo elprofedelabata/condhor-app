@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_basedatos.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div id="barra-superior"></div>
+
+  <!-- Contenedor principal: sidebar + contenido -->
+  <div id="layout">
+
+    <!-- Área de contenido -->
+    <div id="contenido">
+
+      <!-- 1) Toolbar: buscador + acciones -->
+      <div class="toolbar">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchUnidad"
+            placeholder="Buscar unidad..."
+            autocomplete="off"
+          />
+          <button type="button" id="clearSearch" class="clear-btn" aria-label="Borrar búsqueda">
+            ×
+          </button>
+        </div>
+
+
+        <div class="actions">
+          <a href="#" id="btnAgregar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75 0-42.37-17.63Q40-195.25 40-220Z"/></svg> Añadir</a>
+          <a href="#" id="btnImportar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M180-120q-24 0-42-18t-18-42v-152q0-13 8.5-21.5T150-362q13 0 21.5 8.5T180-332v152h600v-543H180v151q0 13-8.5 21.5T150-542q-13 0-21.5-8.5T120-572v-208q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm331-302H150q-13 0-21.5-8.5T120-452q0-13 8.5-21.5T150-482h361l-72-73q-8-9-8.5-21t8.5-21q9-9 21-9t21 9l124 124q9 9 9 21.5t-9 21.5L481-306q-9 9-21 8.5t-21-9.5q-9-9-8.5-20.5T439-348l72-74Z"/></svg> Importar</a>
+        </div>
+      </div>
+
+      <!-- 2) Texto de conteo -->
+      <div class="count-text">
+        Mostrando <span id="mostrados">0</span> de <span id="total">0</span> unidades
+      </div>
+
+      <div id="units-container" class="data-table-container"></div>
+
+
+      
+    </div>
+
+</div>
+
+
+<!-- Overlay Añadir unidad -->
+<div id="add-unit-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo Añadir unidad -->
+<div id="add-unit-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
+           width="24px" fill="currentColor" style="vertical-align: middle">
+        <path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82
+                 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38
+                 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100
+                 q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63
+                 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67
+                 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370
+                 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42
+                 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33
+                 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15
+                 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75
+                 0-42.37-17.63Q40-195.25 40-220Z"/>
+      </svg>
+      <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+        Añadir unidad
+      </span>
+    </div>
+    <button id="closeAddUnit" class="close-btn">&times;</button>
+  </div>
+  <form id="addUnitForm" class="modal-form" style="height: 300px">
+    <div class="form-group">
+      <label for="addUnitId">ID</label>
+      <input type="text" id="addUnitId" disabled style="border:none;background:none;">
+    </div>
+    <div class="form-group">
+      <label for="addUnitReferencia">Referencia <span style="color:red">*</span></label>
+      <input type="text" id="addUnitReferencia" required>
+    </div>
+    <div class="form-group">
+      <label for="addUnitNombre">Nombre <span style="color:red">*</span></label>
+      <input type="text" id="addUnitNombre" required>
+    </div>
+    <div class="form-group">
+      <label for="addUnitLevel">Nivel educativo <span style="color:red">*</span></label>
+      <select id="addUnitLevel" required>
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="addUnitTutor">Tutor/a</label>
+      <select id="addUnitTutor">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+    <div class="modal-actions" style="justify-content:flex-end">
+      <button type="button" id="cancelAddUnit">Cancelar</button>
+      <button type="submit" id="submitAddUnit">Añadir</button>
+      <button type="submit" id="submitAddContinueUnit">Añadir y seguir</button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Overlay Editar unidad -->
+<div id="edit-unit-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo Editar unidad -->
+<div id="edit-unit-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align:middle">
+        <path d="M560-120v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-340L683-120H560Zm-400-40v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q37 0 73 4.5t72 14.5L480-276v116H160Zm663-184 37-39-37-37-38 38 38 38ZM480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"/>
+      </svg>
+      <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+        Editar unidad
+      </span>
+    </div>
+    <button id="closeEditUnit" class="close-btn">&times;</button>
+  </div>
+  <form id="editUnitForm" class="modal-form" style="height: 300px">
+    <div class="form-group">
+      <label for="editUnitId">ID</label>
+      <input type="text" id="editUnitId" disabled style="border:none;background:none;">
+    </div>
+    <div class="form-group">
+      <label for="editUnitReferencia">Referencia <span style="color:red">*</span></label>
+      <input type="text" id="editUnitReferencia" required>
+    </div>
+    <div class="form-group">
+      <label for="editUnitNombre">Nombre <span style="color:red">*</span></label>
+      <input type="text" id="editUnitNombre" required>
+    </div>
+    <div class="form-group">
+      <label for="editUnitLevel">Nivel educativo <span style="color:red">*</span></label>
+      <select id="editUnitLevel" required>
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="editUnitTutor">Tutor/a</label>
+      <select id="editUnitTutor">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+    <div class="modal-actions" style="justify-content:flex-end">
+      <button type="button" id="cancelEditUnit">Cancelar</button>
+      <button type="submit" id="submitEditUnit">Guardar</button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Overlay Eliminar unidad -->
+<div id="delete-unit-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo Eliminar unidad -->
+<div id="delete-unit-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+           viewBox="0 -960 960 960" width="24px" fill="currentColor"
+           style="vertical-align: middle">
+        <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5
+                 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160
+                 0h80v-360h-80v360Z"/>
+      </svg>
+      <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+        Eliminar unidad
+      </span>
+    </div>
+    <button id="closeDeleteUnit" class="close-btn">&times;</button>
+  </div>
+
+  <div class="modal-form" style="padding:1rem; height: 180px">
+    <p>¿Estás seguro de que deseas eliminar esta unidad?</p>
+    <div id="delete-unit-info" class="delete-info" style="margin:1rem; display:flex; align-items:center; gap:1rem; background-color: #f0f0f0; padding:0.5rem; border-left:solid 5px #999">
+      <!-- Aquí inyectaremos ID + Referencia y Nombre + nivel -->
+    </div>
+
+    <div class="modal-actions" style="justify-content:flex-end">
+      <button type="button" id="cancelDeleteUnit">Cancelar</button>
+      <button type="button" id="confirmDeleteUnit">Eliminar</button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<script src="../javascript/basedatos_general.js" defer></script>
+<script src="../javascript/basedatos_unidades.js" defer></script>
+
+</body>
+</html>

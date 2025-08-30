@@ -1,0 +1,23 @@
+{
+  "name": "condhor",
+  "version": "1.0.0",
+  "main": "webs/index.html",
+  "window": {
+    "title": "ConDHor - Software de confección de horarios",
+    "width": 800,
+    "height": 600,
+    "min_width": 400,
+    "min_height": 300,
+    "position": "center",
+    "resizable": true
+  },
+  "scripts": {
+    "start": "nw .",
+    "package-win32": "npx nwbuild . --mode build --platform win --arch ia32 --outDir build/win32",
+    "package-win64": "npx nwbuild . --mode build --platform win --arch x64 --outDir build/win64",
+    "package-win": "npm run package-win32 && npm run package-win64"
+  },
+  "devDependencies": {
+    "nw-builder": "^4.9.0"
+  }
+}

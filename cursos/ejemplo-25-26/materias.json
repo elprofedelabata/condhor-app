@@ -1,0 +1,1384 @@
+[
+    {
+        "id":1,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (1º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":2,
+        "referencia":"CYR",
+        "nombre":"Computación y Robótica (1º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":3,
+        "referencia":"TDA",
+        "nombre":"Taller de Dibujo Artístico (1º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":4,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (1º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":5,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (1º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":6,
+        "referencia":"ING",
+        "nombre":"Inglés (1º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":7,
+        "referencia":"FR2",
+        "nombre":"Francés (1º ESO Grupo 1)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1,
+            2
+        ]
+    },
+    {
+        "id":8,
+        "referencia":"FR2",
+        "nombre":"Francés (1º ESO Grupo 2)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1,
+            2
+        ]
+    },
+    {
+        "id":9,
+        "referencia":"ALCT",
+        "nombre":"Área Lingüística de Carácter Transversal (1º ESO)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1,
+            2
+        ]
+    },
+    {
+        "id":10,
+        "referencia":"EF",
+        "nombre":"Educación Física (1º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":11,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (1º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":12,
+        "referencia":"EPV",
+        "nombre":"Educación Plástica y Visual (1º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":13,
+        "referencia":"MUS",
+        "nombre":"Música (1º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":14,
+        "referencia":"REL",
+        "nombre":"Religión Católica (1º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":15,
+        "referencia":"AEDU",
+        "nombre":"Atención Educativa (1º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":16,
+        "referencia":"TUT1",
+        "nombre":"Tutoría (1º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            1
+        ]
+    },
+    {
+        "id":17,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (1º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":18,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (1º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":19,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (1º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":20,
+        "referencia":"ING",
+        "nombre":"Inglés (1º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":21,
+        "referencia":"REL",
+        "nombre":"Religión Católica (1º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":22,
+        "referencia":"AEDU",
+        "nombre":"Atención Educativa (1º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":23,
+        "referencia":"EPV",
+        "nombre":"Educación Plástica y Visual (1º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":24,
+        "referencia":"EF",
+        "nombre":"Educación Física (1º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":25,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (1º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":26,
+        "referencia":"CYR",
+        "nombre":"Computación y Robótica (1º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":27,
+        "referencia":"TDA",
+        "nombre":"Taller de Dibujo Artístico (1º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":28,
+        "referencia":"MUS",
+        "nombre":"Música (1º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":29,
+        "referencia":"TUT1",
+        "nombre":"Tutoría (1º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            2
+        ]
+    },
+    {
+        "id":30,
+        "referencia":"FR2",
+        "nombre":"Francés (2º ESO)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            3,
+            4
+        ]
+    },
+    {
+        "id":31,
+        "referencia":"CYR",
+        "nombre":"Computación y Robótica (2º ESO)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            3,
+            4
+        ]
+    },
+    {
+        "id":32,
+        "referencia":"PEPV",
+        "nombre":"Proyecto de Educación Plástica y Visual (2º ESO)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            3,
+            4
+        ]
+    },
+    {
+        "id":33,
+        "referencia":"EF",
+        "nombre":"Educación Física (2º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":34,
+        "referencia":"MUS",
+        "nombre":"Música (2º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":35,
+        "referencia":"ING",
+        "nombre":"Inglés (2º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":36,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (2º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":37,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (2º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":38,
+        "referencia":"TyD",
+        "nombre":"Tecnología y Digitalización (2º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":39,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (2º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":40,
+        "referencia":"FyQ",
+        "nombre":"Física y Química (2º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":41,
+        "referencia":"EVCE",
+        "nombre":"Educación en Valores Cívicos y Éticos (2º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":42,
+        "referencia":"TUT2",
+        "nombre":"Tutoría (2º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":43,
+        "referencia":"REL",
+        "nombre":"Religión Católica (2º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":44,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (2º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            3
+        ]
+    },
+    {
+        "id":45,
+        "referencia":"MUS",
+        "nombre":"Música (2º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":46,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (2º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":47,
+        "referencia":"TUT2",
+        "nombre":"Tutoría (2º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":48,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (2º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":49,
+        "referencia":"ING",
+        "nombre":"Inglés (2º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":50,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (2º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":51,
+        "referencia":"FyQ",
+        "nombre":"Física y Química (2º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":52,
+        "referencia":"EF",
+        "nombre":"Educación Física (2º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":53,
+        "referencia":"TyD",
+        "nombre":"Tecnología y Digitalización (2º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":54,
+        "referencia":"REL",
+        "nombre":"Religión Católica (2º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":55,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (2º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":56,
+        "referencia":"EVCE",
+        "nombre":"Educación en Valores Cívicos y Éticos (2º ESO B)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            4
+        ]
+    },
+    {
+        "id":57,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (3º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":58,
+        "referencia":"ING",
+        "nombre":"Inglés (3º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":59,
+        "referencia":"EF",
+        "nombre":"Educación Física (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":60,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (3º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":61,
+        "referencia":"FyQ",
+        "nombre":"Física y Química (3º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":62,
+        "referencia":"EPVA",
+        "nombre":"Educación Plástica Visual y Artística (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":63,
+        "referencia":"REL",
+        "nombre":"Religión Católica (3º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":64,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (3º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":65,
+        "referencia":"TyD",
+        "nombre":"Tecnología y Digitalización (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":66,
+        "referencia":"FR2",
+        "nombre":"Francés (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":67,
+        "referencia":"CYR",
+        "nombre":"Computación y Robótica (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":68,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (3º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":69,
+        "referencia":"TUT3",
+        "nombre":"Tutoría (3º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            5
+        ]
+    },
+    {
+        "id":70,
+        "referencia":"TYD",
+        "nombre":"Tecnología y Digitalización (3º ESO B + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":71,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (3º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":72,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (3º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":73,
+        "referencia":"CYR",
+        "nombre":"Computación y Robótica (3º ESO B + 3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "id":74,
+        "referencia":"FR2",
+        "nombre":"Francés (3º ESO B + 3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "id":75,
+        "referencia":"PCIEN",
+        "nombre":"Proyecto Científico (3º ESO B + 3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "id":76,
+        "referencia":"ING",
+        "nombre":"Inglés (3º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":77,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (3º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":78,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (3º ESO B)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":79,
+        "referencia":"EPVA",
+        "nombre":"Educación Plástica Visual y Artística (3º ESO B + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":80,
+        "referencia":"EF",
+        "nombre":"Educación Física (3º ESO B + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":81,
+        "referencia":"FYQ",
+        "nombre":"Física y Química (3º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            6
+        ]
+    },
+    {
+        "id":82,
+        "referencia":"REL",
+        "nombre":"Religión Católica (3º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":83,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (3º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":84,
+        "referencia":"TUT3",
+        "nombre":"Tutoría (3º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            6,
+            7
+        ]
+    },
+    {
+        "id":85,
+        "referencia":"AMBLS",
+        "nombre":"Ámbito Socio-Lingüístico (3º ESO DIVER)",
+        "tramos_por_semana":10,
+        "ids_unidades": [
+            7,
+            9
+        ]
+    },
+    {
+        "id":86,
+        "referencia":"AMBCM",
+        "nombre":"Ámbito Científico-Matemático (3º ESO DIVER)",
+        "tramos_por_semana":9,
+        "ids_unidades": [
+            7,
+            9
+        ]
+    },
+    {
+        "id":87,
+        "referencia":"TUTP",
+        "nombre":"Tutoría Diversificación (3º ESO DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            7,
+            9
+        ]
+    },
+    {
+        "id":88,
+        "referencia":"EPVA",
+        "nombre":"Educación Plástica Visual y Artística (3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":89,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (3º ESO C)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":90,
+        "referencia":"MAT",
+        "nombre":"Matemáticas (3º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":91,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (3º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":92,
+        "referencia":"ING",
+        "nombre":"Inglés (3º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":93,
+        "referencia":"FyQ",
+        "nombre":"Física y Química (3º ESO C)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":94,
+        "referencia":"EF",
+        "nombre":"Educación Física (3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":95,
+        "referencia":"TUT3",
+        "nombre":"Tutoría (3º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":96,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (3º ESO C)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            8
+        ]
+    },
+    {
+        "id":97,
+        "referencia":"REL",
+        "nombre":"Religión Católica (3º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":98,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (3º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":99,
+        "referencia":"TyD",
+        "nombre":"Tecnología y Digitalización (3º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            8,
+            9
+        ]
+    },
+    {
+        "id":100,
+        "referencia":"EF",
+        "nombre":"Educación Física (4º ESO A)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":101,
+        "referencia":"FR2",
+        "nombre":"Francés (4º ESO Grupo 1)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            13
+        ]
+    },
+    {
+        "id":102,
+        "referencia":"FR2",
+        "nombre":"Francés (4º ESO Grupo 2)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            13
+        ]
+    },
+    {
+        "id":103,
+        "referencia":"TEC",
+        "nombre":"Tecnología (4º ESO Grupo 1)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            13
+        ]
+    },
+    {
+        "id":104,
+        "referencia":"TEC",
+        "nombre":"Tecnología (4º ESO Grupo 2)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            13
+        ]
+    },
+    {
+        "id":105,
+        "referencia":"FyQ",
+        "nombre":"Física y Química (4º ESO + DIVER)",
+        "tramos_por_semana":6,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":106,
+        "referencia":"LAT",
+        "nombre":"Latín (4º ESO + DIVER)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":107,
+        "referencia":"BYG",
+        "nombre":"Biología y Geología (4º ESO + DIVER)",
+        "tramos_por_semana":6,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":108,
+        "referencia":"EA",
+        "nombre":"Expresión Artística (4º ESO + DIVER)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":109,
+        "referencia":"FOPP",
+        "nombre":"Formación y Orientación Personal y Profesional (4º ESO + DIVER)",
+        "tramos_por_semana":6,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":110,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (4º ESO A)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":111,
+        "referencia":"MAB",
+        "nombre":"Matemáticas B (4º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":112,
+        "referencia":"REL",
+        "nombre":"Religión Católica (4º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":113,
+        "referencia":"ECO",
+        "nombre":"Economía (4º ESO + DIVER)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":114,
+        "referencia":"DIG",
+        "nombre":"Digitalización (4º ESO + DIVER)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":115,
+        "referencia":"ASE",
+        "nombre":"Aprendizaje Social y Emocional (4º ESO + DIVER Grupo 1)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":116,
+        "referencia":"ASE",
+        "nombre":"Aprendizaje Social y Emocional (4º ESO + DIVER Grupo 2)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":117,
+        "referencia":"CC",
+        "nombre":"Cultura Científica (4º ESO + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":118,
+        "referencia":"DT",
+        "nombre":"Dibujo Técnico (4º ESO + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":119,
+        "referencia":"FIL",
+        "nombre":"Filosofía (4º ESO + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":120,
+        "referencia":"PCIEN",
+        "nombre":"Proyecto Científico (4º ESO + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    {
+        "id":121,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (4º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":122,
+        "referencia":"ING",
+        "nombre":"Inglés (4º ESO A)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":123,
+        "referencia":"TUT4",
+        "nombre":"Tutoría (4º ESO A)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            10
+        ]
+    },
+    {
+        "id":124,
+        "referencia":"MAA",
+        "nombre":"Matemáticas A (4º ESO B + 4º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            11,
+            13
+        ]
+    },
+    {
+        "id":125,
+        "referencia":"MAB",
+        "nombre":"Matemáticas B (4º ESO B + 4º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            11,
+            13
+        ]
+    },
+    {
+        "id":126,
+        "referencia":"EF",
+        "nombre":"Educación Física (4º ESO B + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            11,
+            12
+        ]
+    },
+    {
+        "id":127,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (4º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            11
+        ]
+    },
+    {
+        "id":128,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (4º ESO B)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            11
+        ]
+    },
+    {
+        "id":129,
+        "referencia":"ING",
+        "nombre":"Inglés (4º ESO B)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            11
+        ]
+    },
+    {
+        "id":130,
+        "referencia":"REL",
+        "nombre":"Religión Católica (4º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            11,
+            12
+        ]
+    },
+    {
+        "id":131,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (4º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            11,
+            12
+        ]
+    },
+    {
+        "id":132,
+        "referencia":"TUT4",
+        "nombre":"Tutoría (4º ESO B + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            11,
+            12
+        ]
+    },
+    {
+        "id":133,
+        "referencia":"TUTP",
+        "nombre":"Tutoría Diversificación (4º ESO DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            12,
+            14
+        ]
+    },
+    {
+        "id":134,
+        "referencia":"ACT",
+        "nombre":"Ámbito Científico-Matemático (4º ESO DIVER)",
+        "tramos_por_semana":8,
+        "ids_unidades": [
+            12,
+            14
+        ]
+    },
+    {
+        "id":135,
+        "referencia":"ALS",
+        "nombre":"Ámbito Socio-Lingüístico (4º ESO DIVER)",
+        "tramos_por_semana":9,
+        "ids_unidades": [
+            12,
+            14
+        ]
+    },
+    {
+        "id":136,
+        "referencia":"REL",
+        "nombre":"Religión Católica (4º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            13,
+            14
+        ]
+    },
+    {
+        "id":137,
+        "referencia":"ATEDU",
+        "nombre":"Atención Educativa (4º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            13,
+            14
+        ]
+    },
+    {
+        "id":138,
+        "referencia":"GeH",
+        "nombre":"Geografía e Historia (4º ESO C)",
+        "tramos_por_semana":3,
+        "ids_unidades": [
+            13
+        ]
+    },
+    {
+        "id":139,
+        "referencia":"LCL",
+        "nombre":"Lengua Castellana y Literatura (4º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            13
+        ]
+    },
+    {
+        "id":140,
+        "referencia":"ING",
+        "nombre":"Inglés (4º ESO C)",
+        "tramos_por_semana":4,
+        "ids_unidades": [
+            13
+        ]
+    },
+    {
+        "id":141,
+        "referencia":"EF",
+        "nombre":"Educación Física (4º ESO C + DIVER)",
+        "tramos_por_semana":2,
+        "ids_unidades": [
+            13,
+            14
+        ]
+    },
+    {
+        "id":142,
+        "referencia":"TUT4",
+        "nombre":"Tutoría (4º ESO C + DIVER)",
+        "tramos_por_semana":1,
+        "ids_unidades": [
+            13,
+            14
+        ]
+    }
+
+]

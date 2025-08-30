@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_index.css">
+</head>
+<body>
+
+  <div id="contenido">
+    <!-- 1) Mensaje de bienvenida -->
+    <svg class="welcome-logo" version="1.0" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 1819 2223"><path d="M17.2 21.8c-.7 12-1.7 28.9-2.3 37.7-2.2 30.9.5 61.1 8.6 99 9 42.1 17.2 68.4 33.1 106.3 7.5 17.7 12.4 27.9 16.4 33.7 2.1 3 2.7 4.8 2.3 7-.6 2.9-.6 3 1.4 1.2s2.1-1.7 2.8 2c1 5.6 5 12.9 19.2 35.6 25.3 40.2 41.7 61.4 81.3 105.2 17.7 19.7 57.7 59.7 71 71 15 12.9 61.4 54.7 61.8 55.7.7 1.6-17.3-5.4-31.3-12.1-28.4-13.7-53.3-28.5-111.1-66.1-70.1-45.5-89.2-59.2-147.2-105.1l-22.7-18-.3 15.3c-.4 20.7 1.5 59.7 3.8 77.6 3.4 25.9 9.8 54.2 18 79.7 8.9 27.4 25.9 66.6 37.8 87 5.5 9.6 23.3 35.7 39.9 58.5l11.9 16.5 55.3 48.7 55.3 48.8 23.7 14.8c29.5 18.6 38.8 23.8 78.6 44.7 17.6 9.2 32.5 17.2 33 17.7.6.6-1.1.7-4.5.3-37.5-4.6-122.5-39.3-237.5-96.9-24.2-12.2-44.4-22.3-44.9-22.5-1.2-.5 0 13.4 1.9 22.4 4.3 20 14.9 50.7 26.8 77.5 22.7 51.2 52.9 101.5 63.6 106 2.2.9 3.7 2.7 5.5 6.5 1.3 2.9 4.3 8 6.7 11.2 10.1 13.7 68.7 70.5 86.5 83.9 16.4 12.3 75.3 51.5 95 63.2 55.3 32.8 148.6 72.1 223.8 94.3 14.9 4.4 32.7 9.8 39.6 12 13 4.1 87.9 23.2 115 29.2 8.5 1.9 19.8 4 25 4.7s9.7 1.4 9.8 1.6c.5.3-50.8 99.8-55.6 107.9-7.4 12.5-33.5 50.2-50.6 73-10 13.4-27.4 34.1-33.1 39.5-6.2 5.8-17 19.2-20.5 25.3-2 3.6-3.8 5.7-5 5.7-3.1 0-13 8.3-23.9 20-10.8 11.6-57.7 55.1-76.6 71.1-50.6 42.7-139.3 107.4-179.6 130.9-18.2 10.6-27 16.5-31.3 20.9l-3.8 3.9 7.1 4.2c26.9 16 83.9 34.5 123 40 60.8 8.5 126 2.6 186.7-17.1 25.6-8.2 65.4-25.5 88.5-38.5 32.4-18 76.8-48.6 83.9-57.7 1.8-2.3 12.5-8.7 14.5-8.7.3 0 .5 1.7.5 3.8 0 3.5.2 3.8 2.8 3.7h2.7l.7 12c.7 13.5 1 15.3 7.8 53.5 7.4 41.3 13.6 91.2 19.4 155.5 7.5 83.2 7 72.9 6.8 127.7-.1 28 .1 50.8.5 50.8 2.4-.1 23-5.6 44.3-11.9 40.3-11.9 74.8-19.8 105-24 31.1-4.3 35.9-4.6 73.5-4.6 32.7.1 39 .4 54 2.4 50.3 6.7 112.2 24.3 153.3 43.7 42 19.8 88.2 54.2 107.3 80.1 6 8 11.4 18.9 13 25.7.6 3.1 1.6 5.6 2 5.6 2.3 0 10-13.8 13.7-24.6 6.3-18.4 8-42.5 4.2-57.9-2.7-10.6-10.5-26.4-17.9-36.2-7.8-10.4-30.6-32.3-45.7-44.1-29.6-23-58.6-40.6-129.7-78.6-104.3-55.7-130.5-73.3-177.1-118.7-61.4-59.8-99.3-119.1-125.7-196.8-11.6-34.1-18.7-62.6-23.3-93.6-4-26.5-4.9-41.8-4.3-72.2.7-32.1 3.2-53.3 11.2-92.3 2.5-12.4 5.2-27.4 6-33.4.8-6.1 1.9-11.2 2.4-11.6 1.4-.8 4.2-7.7 12.3-29.9 17.1-47.3 33.7-78.7 63.8-120.7 16.6-23.1 30-39.3 43.1-52 4.6-4.5 10.9-11 13.9-14.5 6.7-7.6 44.3-39.2 60-50.3 93.6-66.3 227-95.8 348-76.7 34.2 5.4 75.1 16.9 109.3 30.7 38 15.4 69.8 34.4 115.7 69.3 28.5 21.6 53.6 45.8 80.5 77.6 24.7 29.1 48.6 66.9 57.5 90.6 2.1 5.8 4.3 9.8 6.5 11.9l3.4 3.3-4.3-16.9c-15.1-58.9-27.4-89.5-70.7-175.4-28.5-56.8-53.3-103.1-101.5-190.1-30.2-54.5-40.1-75.4-47.2-99.5-9-30.1-8.6-55.6 1-73.7 10.8-20.1 38.2-36.5 73.8-43.8 10-2.1 14.2-2.4 32-2.4 15.6 0 22.6.5 29.4 1.8 30.8 6.2 52.5 19 67 39.5 5.8 8.4 11.1 13.9 11.9 12.5.8-1.3 9.4-34.2 10.5-40.4 4.8-26 .2-53-14.3-83.4-24.6-51.5-72.2-85.2-131.5-93.1-5.8-.7-13.6-1.4-17.4-1.4h-6.8l-12.7-12.2c-38.2-36.7-78.4-59.1-122.7-68.3-44.5-9.2-88.5-3.8-128.9 16-64.4 31.6-111.9 96.3-133.4 182.1-5 19.8-7.8 36.3-12.1 70.9-5.9 47.4-7.8 58.1-18.6 104-7.9 33.3-7 30.6-10.2 29.9-19.3-4.4-74.2-28.8-146.7-65.4-26.6-13.4-35.5-17.5-37-16.9-3.4 1.3-4.3 1-5-1.9-.5-2.4-1.5-3.1-5.9-4.5-3.1-1-53.9-30.5-123.7-72C787.6 635.9 765.7 622.5 729 598c-77.6-51.7-81-54.2-171.9-123.4-57.3-43.6-79.1-61-135.3-107.7-36.8-30.7-74-62.3-82.6-70.2S311.6 271.8 297 259c-33.1-29.1-42.1-37.3-64-58.1-9.6-9.2-21.3-19.9-26-23.9s-39.3-37.3-77-73.9C92.3 66.4 59.5 34.7 57 32.5c-2.5-2.1-10.1-9.4-17-16.1C27.9 4.7 25.9 3 20.8 1.1L18.4.2zm1505 544.6c18.6 1.2 34.1 2.6 34.5 3 .5.4.8 4.7.7 9.4-.2 18.8-11.3 33.7-29.1 39.2-14.8 4.6-29.1 1.1-40.6-9.9-9.2-8.8-13.3-19.3-12.4-32 .2-4.2.9-8.8 1.5-10.2 1-2.4 1.4-2.6 6.4-2.2 2.9.2 20.5 1.5 39 2.7"/><path d="M1351.5 1072.7c-2.9.7-3.4 2-2.4 6.2.5 2 .9 19 .9 37.8v34.3h36v-79l-16.2.1c-9 .1-17.2.4-18.3.6M1168 1126c-2.5 1-7.6 3.6-11.5 5.8-3.8 2.1-8.7 4.5-10.8 5.3-3.6 1.3-3.8 1.6-3.3 4.4 1.4 7 26 51 34.1 60.9l2 2.4 9-5.4c5-3 11.6-6.4 14.8-7.6 5.6-2 5.8-2.2 5.2-5.2-1-4.7-5.9-14.7-11.1-22.8-10.2-15.8-17.5-28.5-19.6-34-1.1-3.2-2.6-5.8-3.2-5.7s-3.1.9-5.6 1.9m394.5 1.1c-.9 1.6-6.4 11-12.2 20.7-5.9 9.7-12.6 21.7-14.9 26.7l-4.3 9 3.7 3.8c7 7.3 25.5 16.3 27.4 13.5 3.6-5.4 34.8-57.9 34.8-58.7 0-2.1-28.2-18.1-32-18.1-.5 0-1.7 1.4-2.5 3.1M1342 1311.9v123l-7.2 3.8c-10.9 5.6-24.9 20-30.5 31.3-6.1 12.4-8.6 22.3-8.6 35 0 13.9 2.3 23.7 8.4 35.7l4.9 9.6-64.7 102.6c-35.5 56.4-64.6 103.3-64.7 104.1s9.8 7.7 24.3 16.8c20.1 12.7 24.5 15.2 25.6 14.1.7-.8 30.2-47.5 65.6-103.8l64.4-102.3 6.3.6c8 .8 21.3-.8 30.8-3.8 11.1-3.6 20.7-9.7 30.6-19.6 7.4-7.5 9.3-10.2 13.7-19.1 8.2-17.1 10.2-34.3 6.1-51.9-5.2-21.7-21.4-42.3-40.2-51.1l-4.8-2.2V1189h-60zm-341.7-26.7c-2.9 5.7-6.8 13.1-8.8 16.5l-3.6 6.2 4.3 2.5c15.6 8.9 63.5 35.8 64.2 35.9.4.1 1.6-2.1 2.6-4.8.9-2.8 3.4-8.4 5.5-12.5s4.6-9.9 5.6-12.8l1.8-5.3-5.5-2.4c-5.7-2.5-28.7-16-38.5-22.6-6.5-4.4-16.3-9.5-19.9-10.4-2.3-.5-2.8.1-7.7 9.7m714.2-8.5c-2.2.9-6.9 3.4-10.5 5.6-30.2 18.6-38.3 23.4-43.7 25.9l-6.2 2.9 1.9 5.2c1 2.9 4 9.7 6.6 15.2 2.7 5.5 5.4 11.2 5.9 12.6l1 2.7 32.2-18.3c17.7-10 33.2-18.8 34.4-19.6 2.1-1.4 2-1.5-2-8.1-2.2-3.7-6.2-11-8.8-16.3-2.6-5.2-5.2-9.5-5.8-9.4-.5 0-2.8.7-5 1.6M945 1505.5v19.5h73v-39h-73zm777-2.6c0 18.8.3 19.8 6.9 22 3.7 1.2 37.6 1.4 54.4.2 13.9-.9 13.7-.5 13.7-22.2V1486h-75zm-672.7 167c-9.2 3.6-21.1 10.1-41.6 22.9-14.9 9.2-16.7 10.6-16.1 12.5 1.7 6 15.8 30.7 17.4 30.7.6 0 61.5-34.4 62.8-35.5.4-.3-3.7-11.7-4.7-12.9-.5-.6-3.1-5.5-5.8-10.8l-4.9-9.6zm627.2 3.3c-1.2 2.9-4.5 10.2-7.3 16.3l-5 11 29.9 17.8c16.4 9.9 30.2 17.7 30.6 17.4.5-.3 4-6.6 7.8-14 5.5-10.9 6.7-13.9 5.9-15.6-.5-1.1-3.6-4.1-6.9-6.6-5.7-4.2-50.6-31.5-52-31.5-.3 0-1.7 2.4-3 5.2m-131.9 133.1c-8.3 4.6-15.1 8.8-15.3 9.4-.4 1.1 14.3 28.4 22.3 41.4 8.2 13.3 14.1 20.9 16.3 20.9 4.1 0 29.1-13 29.1-15.1 0-2-8.5-17.7-17.9-33.2-5.5-8.9-11.6-19.7-13.7-24-2.1-4.2-4.3-7.7-4.9-7.7-.5 0-7.7 3.8-15.9 8.3m-371.4-3c-18.7 31.1-31.2 54.6-31.2 58.8 0 1 1.1 2 2.4 2.3 1.4.3 5.5 2.7 9.3 5.3 8.4 5.7 13.9 8.2 17.9 8.3 2.9 0 3.4-.6 7.2-8.3 2.2-4.5 8.7-15.2 14.3-23.7 10.7-16.3 13.3-21.1 14.3-27.2.6-3.5.5-3.7-2.8-4.8-1.9-.6-6-2.9-9.2-5.2q-9.75-6.75-17.1-8.1c-2.8-.6-3.4-.2-5.1 2.6m198.5 41.9c-1.3 1.1-1.5 2-.7 5.3.5 2.2 1 19.2 1 37.7v33.8h36v-78h-17.3c-12.3 0-17.8.4-19 1.2"/></svg>
+
+    <h1 class="welcome">ConDHor</h1>
+
+    <!-- 2) Acciones principales -->
+    <div class="start-actions">
+
+      <button id="btnCrear">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" version="1.0" viewBox="0 0 408.39 408.39"><defs><style>.fil0{fill:currentColor;fill-rule:nonzero}</style></defs><g id="Capa_x0020_1"><path id="curso.svg" d="M77.63 232.9v-38.82H271.7v38.82H77.63zm0 77.63v-38.82h135.85v38.82H77.63zm-38.82 77.62c-10.67 0-19.81-3.8-27.41-11.39-7.6-7.6-11.41-16.74-11.4-27.42V77.64c0-10.68 3.8-19.82 11.4-27.42 7.6-7.6 16.74-11.4 27.41-11.4h19.41V0l38.82.01v38.82l155.25-.01V0l38.82.01v38.82l19.41-.01c10.67 0 19.81 3.8 27.41 11.4 7.6 7.6 11.41 16.74 11.4 27.42V262c-13.94 0-27.12 3.27-38.81 9.08V155.27l-271.71-.01v194.08H262c0 13.95 3.27 27.12 9.09 38.81H38.81z" class="fil0"/><path d="M329.92 408.39h38.83v-39.64h39.64v-38.83h-39.64v-39.64h-38.83v39.64h-39.64v38.83h39.64v39.64zm0-19.82" class="fil0"/></g></svg></br>
+        Crear nuevo curso...
+      </button>
+
+      <button id="btnImportar">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" version="1.0" viewBox="0 0 401.34 390.34"><defs><style>.fil0{fill:currentColor;fill-rule:nonzero}</style></defs><g id="Capa_x0020_1"><path id="curso.svg" d="M76.96 230.91v-38.49h192.42v38.49H76.96zm0 76.96v-38.49h134.7v38.49H76.96zm-38.48 76.96c-10.58 0-19.64-3.76-27.18-11.3C3.77 366-.01 356.94 0 346.35V76.97c0-10.58 3.77-19.64 11.3-27.18 7.54-7.54 16.6-11.3 27.18-11.3h19.24V0l38.49.01v38.48h153.92V0l38.49.01v38.48h19.24c10.58 0 19.64 3.76 27.18 11.3 7.53 7.54 11.31 16.6 11.3 27.18v182.79c-13.82 0-26.89 3.24-38.48 9.01V153.94l-269.38-.01v192.42h221.28c0 13.83 3.24 26.89 9.01 38.48H38.48z" class="fil0"/><path id="folder_zip_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" d="M302.34 390.34c-3.02 0-5.61-1.07-7.76-3.23-2.16-2.15-3.23-4.74-3.23-7.77v-65.99c0-3.03 1.07-5.62 3.23-7.77 2.15-2.16 4.74-3.23 7.76-3.23h33l11 11h44c3.02 0 5.61 1.07 7.77 3.23 2.15 2.15 3.23 4.74 3.23 7.77v54.99c0 3.03-1.08 5.62-3.23 7.77-2.16 2.16-4.75 3.23-7.77 3.23h-88zm55-11h11v-11h11v-11l-11 .01v-11h11v-11h-11v-11h-11v11h11v11h-11v11h11v11l-11-.01v11z" class="fil0"/></g></svg></br>
+        Importar desde zip...
+      </button>
+
+      <button id="btnCopiar">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" version="1.0" viewBox="0 0 389.34 397.86"><defs><style>.fil0{fill:currentColor;fill-rule:nonzero}</style></defs><g id="Capa_x0020_1"><path id="curso.svg" d="M75.8 227.42v-37.91h189.51v37.91H75.8zm0 75.8v-37.9h132.66v37.9H75.8zm-37.9 75.8c-10.42 0-19.35-3.71-26.77-11.13C3.71 360.47-.01 351.55 0 341.12V75.81c0-10.42 3.71-19.35 11.13-26.77C18.55 41.62 27.48 37.9 37.9 37.9h18.95V0l37.9.01v37.9l151.61-.01V0l37.9.01v37.9l18.95-.01c10.42 0 19.35 3.72 26.77 11.14 7.42 7.42 11.14 16.35 11.13 26.77v180.03c-13.61 0-26.48 3.19-37.9 8.87V151.62l-265.31-.01v189.51h217.93c0 13.62 3.2 26.48 8.88 37.9H37.9z" class="fil0"/><path id="content_copy_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" d="M326.92 375.16c-3.12 0-5.79-1.11-8.01-3.33-2.22-2.23-3.34-4.9-3.34-8.02v-68.09c0-3.12 1.12-5.8 3.34-8.02 2.22-2.22 4.89-3.33 8.01-3.33h51.07c3.12 0 5.8 1.11 8.02 3.33 2.22 2.22 3.33 4.9 3.33 8.02v68.09c0 3.12-1.11 5.79-3.33 8.02-2.22 2.22-4.9 3.33-8.02 3.33h-51.07zm-22.69 22.7c-3.13 0-5.8-1.11-8.02-3.33-2.22-2.23-3.33-4.9-3.33-8.02v-79.44h11.35v79.44h62.41v11.35h-62.41z" class="fil0"/></g></svg></br>
+        Copiar desde otro...
+      </button>
+
+    </div>
+
+    <!-- 3) Grid de cursos anteriores -->
+    <h1 class="cursos-anteriores">Cursos guardados</h1>
+
+    <div id="previous-courses">
+
+      <table class="courses-table">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
+              2024-2025
+            </td>
+            <td style="width:210px">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M360-390q-21 0-35.5-14.5T310-440q0-21 14.5-35.5T360-490q21 0 35.5 14.5T410-440q0 21-14.5 35.5T360-390Zm240 0q-21 0-35.5-14.5T550-440q0-21 14.5-35.5T600-490q21 0 35.5 14.5T650-440q0 21-14.5 35.5T600-390ZM480-160q134 0 227-93t93-227q0-24-3-46.5T786-570q-21 5-42 7.5t-44 2.5q-91 0-172-39T390-708q-32 78-91.5 135.5T160-486v6q0 134 93 227t227 93Zm0 80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>
+              110 profesores
+            </td>
+            <td style="width:210px">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></svg>
+              45 unidades
+            </td>
+            <td style="width:210px">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+              Horarios generados
+            </td>
+            <td style="width:120px;text-align:right">
+              <button class="actions-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+              </button>
+              <button class="actions-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
+              </button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
+<!-- Modal overlay -->
+<div id="add-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo -->
+<div id="addCurso-modal" class="modal-dialog" style="width: 720px">
+  <div class="modal-header" style="width: 720px">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" style="vertical-align: middle; shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" version="1.0" viewBox="0 0 408.39 408.39"><defs><style>.fil0{fill:currentColor;fill-rule:nonzero}</style></defs><g id="Capa_x0020_1"><path id="curso.svg" d="M77.63 232.9v-38.82H271.7v38.82H77.63zm0 77.63v-38.82h135.85v38.82H77.63zm-38.82 77.62c-10.67 0-19.81-3.8-27.41-11.39-7.6-7.6-11.41-16.74-11.4-27.42V77.64c0-10.68 3.8-19.82 11.4-27.42 7.6-7.6 16.74-11.4 27.41-11.4h19.41V0l38.82.01v38.82l155.25-.01V0l38.82.01v38.82l19.41-.01c10.67 0 19.81 3.8 27.41 11.4 7.6 7.6 11.41 16.74 11.4 27.42V262c-13.94 0-27.12 3.27-38.81 9.08V155.27l-271.71-.01v194.08H262c0 13.95 3.27 27.12 9.09 38.81H38.81z" class="fil0"/><path d="M329.92 408.39h38.83v-39.64h39.64v-38.83h-39.64v-39.64h-38.83v39.64h-39.64v38.83h39.64v39.64zm0-19.82" class="fil0"/></g></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Nuevo curso</span>
+    </div>
+    <button id="closeAddCursoModal" class="close-btn">&times;</button>
+  </div>
+  <form id="addCursoForm" class="modal-form" style="height: 250px; width: 720px">
+
+    <div class="form-group" style="margin-left: -100px">
+      <label for="addCursoDenominacion">Denominación <span style="color:#ff0000">*</span></label>
+      <input type="text" id="addCursoDenominacion" required style="width: 250px">
+    </div>
+
+    <div class="form-group" style="margin-left: -100px">
+      <label for="addCursoCarpeta">Nombre de carpeta <span style="color:#ff0000">*</span></label>
+      <input type="text" id="addCursoCarpeta" required style="width: 250px; margin-right: 0">
+
+      <span class="folder-status validation-status" style="right: 220px">
+        <span class="icon-text"></span>
+        <div class="tooltip-text"></div>
+      </span>
+
+    </div>
+
+    <div class="form-group" style="margin-left: -100px">
+      <label for="addCursoCentro">Centro educativo</label>
+      <input type="text" id="addCursoCentro" style="width: 400px">
+    </div>
+
+    <div class="form-group" style="margin-left: 8.25rem">
+      <label for="addCursoCentro">Inicio <span style="color:#ff0000">*</span></label>
+      <input type="date" id="addCursoInicio" required>
+
+      <label for="addCursoCentro">Fin <span style="color:#ff0000">*</span></label>
+      <input type="date" id="addCursoFin" required>
+
+      <span class="date-status validation-status">
+        <span class="icon-text"></span>
+        <div class="tooltip-text"></div>
+      </span>
+
+    </div>
+
+    
+    <div class="modal-actions">
+      <button type="button" id="cancelAddCurso">Cancelar</button>
+      <button type="submit" id="submitAddCurso">Crear</button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Modal overlay -->
+<div id="delete-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo -->
+<div id="deleteCurso-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" style="vertical-align: middle; shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" version="1.0" viewBox="0 0 3446.31 3497.98"><path d="M674.04 2022.23v-337.04h1685.11v337.04H674.04zm0 674.04v-337.05h1179.6v337.05H674.04zM336.98 3370.3c-92.66 0-172.02-32.99-238-98.97C32.99 3205.35-.06 3125.99 0 3033.31V674.1c0-92.67 32.99-172.03 98.98-238.01 65.98-66.04 145.34-99.04 238-99.04h168.53V0l337.05.07v337.05l1348.07-.07V0l337.04.07v337.05l168.53-.07c92.67 0 172.03 33 238.01 99.04 65.99 65.98 99.04 145.34 98.97 238.01v1600.83c-121.05 0-235.46 28.42-336.98 78.87V1348.2l-2359.22-.06V3033.31H2274.9c.01 121.07 28.44 235.47 78.91 336.99H336.98z" style="fill:currentColor;fill-rule:nonzero"/><path d="M2775.01 3497.98c-28.4 0-52.72-10.11-72.94-30.33-20.24-20.22-30.35-44.54-30.35-72.93v-671.31h-51.64v-103.29h258.21v-51.64l309.83.02v51.64l258.19-.02v103.29h-51.64v671.31c0 28.39-10.11 52.71-30.35 72.93-20.21 20.22-44.53 30.35-72.93 30.33h-516.38zm103.28-206.55h103.27v-464.76l-103.27.02v464.76-.02zm206.55 0h103.28v-464.76l-103.28.02v464.76-.02z" style="fill:currentColor;fill-rule:nonzero"/></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Eliminar curso</span>
+    </div>
+    <button id="closeDeleteCursoModal" class="close-btn">&times;</button>
+  </div>
+  <form id="deleteCursoForm" class="modal-form" style="height: 100px">
+
+    ¿Estás seguro de que deseas eliminar este curso? Esta acción no se puede deshacer.
+
+    <div class="modal-actions">
+      <button type="button" id="cancelDeleteCurso">Cancelar</button>
+      <button type="submit" id="submitDeleteCurso">Eliminar</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../javascript/index.js" defer></script>
+
+
+</body>
+</html>

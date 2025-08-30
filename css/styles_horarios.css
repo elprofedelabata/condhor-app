@@ -1,0 +1,714 @@
+/*** BODY ***/
+body{
+    background-color: var(--morado-electrico);
+}
+
+/*** BARRA SUPERIOR ***/
+#barra-superior-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1rem;
+  height: 80px;
+  background-color: var(--morado-electrico);
+  color: #fff;
+  user-select: none;
+  width: 90%;
+}
+
+.barrasuperior-logo {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  color: #ffffff99;
+}
+
+.app-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff99;
+}
+
+.bs-left {
+  display: flex;
+  flex-direction: column;  /* obligamos a que los hijos vayan en columna */
+  align-items: center;     /* centrado horizontal */
+  justify-content: center; /* centrado vertical si hace falta */
+  width: 180px;
+  height: 100%;
+}
+
+.bs-left-title {
+  display: flex;           /* logo + texto en línea */
+  align-items: center;     /* alineados en vertical */
+  margin: 0.25rem 0;
+}
+
+/* --- Estilos para el Dropdown de Pantallas --- */
+
+/* Contenedor principal del dropdown. Necesario para posicionar el menú */
+.pantalla-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del botón principal que abre el menú */
+.pantalla-label-button {
+    background-color: var(--morado-electrico);
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'NationalPark', sans-serif;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y la flecha */
+    transition: background-color 0.2s;
+}
+
+.pantalla-label-button:hover {
+    background-color: var(--morado-electrico-claro);
+}
+
+/* Contenedor del menú desplegable. Oculto por defecto. */
+.dropdown-content {
+    display: none; /* Oculto hasta que se añade la clase .show */
+    position: absolute;
+    background-color: var(--morado-electrico-claro);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    list-style: none;
+    padding: 0;
+    margin-top: 8px; /* Espacio entre el botón y el menú */
+}
+
+/* Estilo para cada opción del menú */
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* Efecto hover sobre las opciones */
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.dropdown-content a:first-child:hover {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.dropdown-content a:last-child:hover {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+/* Estilo para los iconos dentro del menú */
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Clase que se añade con JS para mostrar el menú */
+.show {
+    display: block;
+}
+
+.bs-center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 1rem;
+  width: 1100px;
+
+}
+
+.bs-center > .info {
+  margin: 1rem 0.5rem
+}
+
+.bs-center nav {
+  /* empuja el menú al fondo */
+  margin-top: auto;
+}
+
+.bs-right {
+  height: 100%;
+  width: 200px;
+}
+
+/* Menú de la barra superior */
+.bs-menu-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  display: flex;
+  background-color: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.bs-menu-category {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.bs-menu-category-button {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.35rem 0.5rem;
+  background-color: var(--morado-electrico-oscuro);
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+.bs-menu-category-button:hover {
+  background: #fff;
+  color: var(--morado-electrico);
+}
+
+.bs-menu-category-button[aria-pressed="true"] {
+  background: #fff;
+  color: var(--morado-electrico);
+}
+
+.bs-menu-category-button[aria-pressed="true"] span {
+  color: var(--morado-electrico);
+}
+
+
+.bs-menu-category-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.bs-menu-category-button span {
+  display: block;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+.bs-menu-category:hover .bs-menu-category-button {
+  background: #fff;
+  color: var(--morado-electrico);
+}
+
+.bs-menu-category:hover .bs-menu-category-button span{
+  color: var(--morado-electrico);
+}
+
+.bs-menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Mostrar al hacer hover o con .open */
+.bs-menu-category:hover .bs-menu-dropdown,
+.bs-menu-category:open .bs-menu-dropdown {
+  display: block;
+}
+
+/* Cada opción */
+.bs-menu-dropdown li {
+  white-space: nowrap;
+  padding: 0.25rem;
+}
+
+.bs-menu-dropdown li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.bs-menu-dropdown li:hover {
+  background-color: var(--morado-electrico);
+}
+
+.bs-menu-dropdown li:hover a {
+  color: #fff;
+}
+
+/* Separador */
+.bs-menu-dropdown .divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.bs-menu-dropdown .divider:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+/* ============================================= */
+/* ===== PALETA DE COLORES PARA HORARIOS ===== */
+/* ============================================= */
+:root {
+  --morado-electrico-muy-claro: #E4DFF2;
+  --morado-electrico-claro: #8F79D3;
+  --morado-electrico: #6247AA;
+  --morado-electrico-oscuro: #4F3A8C;
+
+
+}
+
+/* ======================================== */
+/* ===== Contenedor y Layout General ===== */
+/* ======================================== */
+.horarios-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.paneles-horario-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.panel-horario {
+  flex: 3; /* Ocupa 3 partes del espacio */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 60vh; /* Altura mínima de ejemplo */
+}
+
+.panel-leyenda {
+  flex: 1; /* Ocupa 1 parte del espacio */
+  background-color: var(--morado-electrico);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 60vh;
+}
+
+
+/* =================================== */
+/* ===== Selector de Profesor     ===== */
+/* =================================== */
+
+/* El contenedor ahora usa Flexbox para alinear flechas y selector */
+.selector-profesor-wrapper {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: inherit;
+  display: flex; /* <-- AÑADIDO */
+  align-items: center; /* <-- AÑADIDO */
+  gap: 0.5rem; /* <-- AÑADIDO (espacio entre flechas y selector) */
+}
+
+/* El selector ahora crece para ocupar el espacio disponible */
+.selector-profesor {
+  flex-grow: 1; /* <-- AÑADIDO */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* <-- CAMBIADO (para centrar el contenido) */
+  background-color: var(--morado-base);
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.selector-profesor:hover {
+  background-color: var(--morado-electrico-muy-claro);
+}
+
+.selector-arrow {
+  background-color: #fff;
+  border: none;
+  color: var(--morado-electrico);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  height: 60px;
+}
+.selector-arrow:hover {
+  background-color: var(--morado-electrico-muy-claro);
+  color: #333;
+}
+
+.selector-info {
+  text-align: center;
+  color: #333;
+}
+
+.info-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.profesor-codigo {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.profesor-departamento {
+  font-size: 0.75rem;
+  background-color: var(--morado-electrico-oscuro);
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.profesor-nombre {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+/* =================================== */
+/* ===== Dropdown del Selector    ===== */
+/* =================================== */
+
+.selector-dropdown {
+  position: absolute;
+  top: calc(100% + 8px); /* Debajo del selector con un pequeño espacio */
+  left: 54px; /* Ancho aproximado de la flecha + gap */
+  right: 54px; /* Ancho aproximado de la flecha + gap */
+  width: auto; /* Dejamos que left y right lo controlen */
+  background-color: #fff;
+  border: 1px solid var(--morado-electrico-muy-claro);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  
+  /* Lógica de visibilidad para la transición */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.2s ease-out;
+}
+/* Clase que añadiremos con JS para mostrarlo */
+.selector-dropdown.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--morado-electrico-claro);
+  color: #333;
+}
+
+.dropdown-search-bar input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 0.8rem;
+}
+.dropdown-search-bar input::placeholder {
+  color: #999;
+  opacity: 0.7;
+}
+
+.dropdown-search-bar #clearSearchBtn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-profesor-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.profesor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #333;
+}
+.profesor-item:hover {
+  background-color: var(--morado-electrico-claro);
+  color: #fff;
+}
+
+.profesor-item:hover .profesor-item-codigo {
+  color: #eee;
+}
+
+
+.profesor-item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profesor-item-codigo {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.profesor-item-nombre {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.profesor-item-departamento {
+  font-size: 0.7rem;
+  background-color: var(--morado-electrico-claro);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Estilo para la barra de scroll */
+.dropdown-profesor-list::-webkit-scrollbar {
+  width: 8px;
+}
+.dropdown-profesor-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dropdown-profesor-list::-webkit-scrollbar-thumb {
+  background-color: var(--morado-electrico-claro);
+  border-radius: 10px;
+}
+
+/* Estilos para el nuevo selector de versión */
+.horario-version-selector select {
+  background-color: var(--morado-base);
+  color: var(--texto-principal);
+  border: 2px solid var(--borde-color);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-appearance: none; /* Quita la apariencia por defecto en Chrome/Safari */
+  appearance: none; /* Quita la apariencia por defecto */
+}
+
+.horario-version-selector select:hover {
+  background-color: var(--morado-claro);
+}
+
+
+/* ============================================= */
+/* ===== ESTILOS PARA EL HORARIO VISUAL      ===== */
+/* ============================================= */
+
+/* Contenedor principal del componente de horario */
+.schedule {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 490px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Cabecera con los días de la semana (L, M, X...) */
+.schedule-header {
+  display: grid;
+  /* CLAVE: 8 columnas. 1 para la esquina, 7 para los días */
+  grid-template-columns: 60px repeat(7, 1fr); 
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Cuerpo del horario que contendrá la rejilla y los eventos */
+.schedule-body {
+  flex-grow: 1; /* Para que ocupe el resto del espacio vertical */
+  position: relative; /* Esencial para posicionar los eventos encima */
+  overflow-y: auto; /* Scroll si el contenido es más alto */
+  display: grid;
+  /* CLAVE: 8 columnas. 1 para las horas, 7 para las celdas de los días */
+  grid-template-columns: 60px repeat(7, 1fr);
+  /* Las filas se generan automáticamente con una altura fija */
+  grid-auto-rows: 60px;
+  padding-top: 0.8em; 
+}
+
+/* Estilos para las celdas de la rejilla de fondo */
+.schedule-body .cell {
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+/* Estilos para las etiquetas de hora (07:00, 08:00...) */
+.schedule-body .time-label {
+  text-align: right;
+  padding-right: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  /* truco para alinear la hora con su línea */
+  position: relative;
+  top: -0.6em; 
+}
+
+/* Estilos para los eventos (las clases/actividades) */
+.schedule-event {
+  position: absolute; /* Se posicionan encima de la rejilla */
+  z-index: 10;
+  border-radius: 6px;
+  color: white;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+/* Fila superior (Materia + Aula) */
+.event-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.25rem 0.25rem 0 0.25rem;
+}
+
+.event-materia {
+  font-size: 1rem; /* Más grande */
+  font-weight: bold;
+}
+
+.event-aula {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* Contenedor de los grupos en la parte inferior */
+.event-grupos-container {
+  padding: 0.25rem;
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap;     /* 1. Evita que el texto salte de línea */
+  overflow: hidden;        /* 2. Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* 3. Añade los "..." al final */
+  min-height: 15px;
+}
+
+/* Estilo para los bloques de tramos (el fondo del horario) */
+.schedule-tramo {
+  position: absolute;
+  box-sizing: border-box; /* Para que el borde no añada tamaño */
+  border: 2px solid #fff;
+  border-radius: 4px;
+  z-index: 1; /* Detrás de los eventos */
+  opacity: 0.15;
+}
+
+/* Color para los tramos lectivos (donde pueden ir clases) */
+.schedule-tramo.lectivo {
+  background: repeating-linear-gradient(
+    -45deg,
+    #eee,
+    #eee 2px,
+    var(--verde-turquesa) 2px,
+    var(--verde-turquesa) 12px
+  );
+}
+
+/* Color para los tramos no lectivos (recreos, etc.) */
+.schedule-tramo.no-lectivo {
+  background: repeating-linear-gradient(
+    -45deg,
+    #eee,
+    #eee 2px,
+    var(--rojo-melocoton) 2px,
+    var(--rojo-melocoton) 12px
+  );
+}
+
+/* ============================================= */
+/* ===== ESTILOS PARA LA LEYENDA      ===== */
+/* ============================================= */
+
+.panel-leyenda h3 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.75rem;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.leyenda-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.leyenda-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.leyenda-materia {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.leyenda-aula-grupos {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}

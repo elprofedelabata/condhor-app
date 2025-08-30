@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_basedatos.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div id="barra-superior"></div>
+
+  <!-- Contenedor principal: sidebar + contenido -->
+  <div id="layout">
+    <!-- Área de contenido -->
+    <div id="contenido">
+      <!-- 1) Toolbar: buscador + acciones -->
+      <div class="toolbar">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchProf"
+            placeholder="Buscar profesor..."
+            autocomplete="off"
+          />
+          <button type="button" id="clearSearch" class="clear-btn" aria-label="Borrar búsqueda">
+            ×
+          </button>
+        </div>
+
+
+        <div class="actions">
+          <a href="#" id="btnAgregar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75 0-42.37-17.63Q40-195.25 40-220Z"/></svg> Añadir</a>
+          <a href="#" id="btnImportar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M180-120q-24 0-42-18t-18-42v-152q0-13 8.5-21.5T150-362q13 0 21.5 8.5T180-332v152h600v-543H180v151q0 13-8.5 21.5T150-542q-13 0-21.5-8.5T120-572v-208q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm331-302H150q-13 0-21.5-8.5T120-452q0-13 8.5-21.5T150-482h361l-72-73q-8-9-8.5-21t8.5-21q9-9 21-9t21 9l124 124q9 9 9 21.5t-9 21.5L481-306q-9 9-21 8.5t-21-9.5q-9-9-8.5-20.5T439-348l72-74Z"/></svg> Importar</a>
+        </div>
+      </div>
+
+      <!-- 2) Texto de conteo -->
+      <div class="count-text">
+        Mostrando <span id="mostrados">0</span> de <span id="total">0</span> profesores
+      </div>
+
+      <div class="data-table-container">
+      <table class="data-table">
+        <colgroup>
+          <col style="width: 60px;">    <!-- ID -->
+          <col style="width: 600px;">    <!-- Apellidos, Nombre -->
+          <col style="width: 120px;">   <!-- Estado -->
+          <col style="width: 200px;">    <!-- Ahora mismo está... -->
+          <col>                         <!-- Acciones -->
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th><button class="thead-button" data-col="id">ID <span class="arrow"></span></button></th>
+            <th><button class="thead-button" data-col="nombre">Apellidos, Nombre <span class="arrow">▲</span></button></th>
+            <th><button class="thead-button" data-col="altabaja">Estado <span class="arrow"></span></button></th>
+            <th>Ahora mismo está...</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center">
+              <span style="font-size:0.8rem; color:#666;">0001</span>
+            </td>
+            <td>
+              <svg style="vertical-align: middle" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M360-390q-21 0-35.5-14.5T310-440q0-21 14.5-35.5T360-490q21 0 35.5 14.5T410-440q0 21-14.5 35.5T360-390Zm240 0q-21 0-35.5-14.5T550-440q0-21 14.5-35.5T600-490q21 0 35.5 14.5T650-440q0 21-14.5 35.5T600-390ZM480-160q134 0 227-93t93-227q0-24-3-46.5T786-570q-21 5-42 7.5t-44 2.5q-91 0-172-39T390-708q-32 78-91.5 135.5T160-486v6q0 134 93 227t227 93Zm0 80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>
+              <span style="color:#333">García González, <b>Francisco Daniel</b></span>
+            </td>
+            <td style="text-align:center"><div class="prof-departamento-badge" >Física y Química</div></td>
+            <td style="text-align:center; color:#28a745"><div style="display:inline-block; width: 0.75rem; height: 0.75rem; border-radius: 50%; background-color: #28a745"></div> <b>Alta</b></td>
+            <td style="text-align:center">...en el aula 204</td>
+            <td>
+              <button class="btn-acciones">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+              </button>
+              <button class="btn-acciones" style="color:#900 !important">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+              </button>
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<!-- Modal overlay -->
+<div id="addProf-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo -->
+<div id="addProf-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75 0-42.37-17.63Q40-195.25 40-220Z"/></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Añadir profesor</span>
+    </div>
+    <button id="closeAddProfModal" class="close-btn">&times;</button>
+  </div>
+  <form id="addProfForm" class="modal-form">
+    <div class="form-group">
+      <label for="addprofId">ID</label>
+      <input type="text" id="addprofId" disabled value="" style="border:none; background: none; padding:0;">
+    </div>
+    <div class="form-group">
+      <label for="addprofNombre">Nombre <span style="color:#ff0000">*</span></label>
+      <input type="text" id="addprofNombre" required>
+    </div>
+    <div class="form-group">
+      <label for="addprofAp1">Primer apellido <span style="color:#ff0000">*</span></label>
+      <input type="text" id="addprofAp1" required>
+    </div>
+    <div class="form-group">
+      <label for="addprofAp2">Segundo apellido <span style="color:#ff0000">*</span></label>
+      <input type="text" id="addprofAp2" required>
+    </div>
+    <div class="form-group">
+      <label for="addprofEmail">Correo electrónico</label>
+      <input type="email" id="addprofEmail">
+    </div>
+    <div class="form-group">
+      <label for="addprofDept">Departamento <span style="color:#ff0000">*</span></label>
+      <select id="addprofDept" required>
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <fieldset class="form-estado">
+      <span style="font-weight: bold; margin-left:118px">Estado <span style="color:#ff0000">*</span></span>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="alta" checked> Alta</label>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="baja"> Baja</label>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="sustituto/a"> Sustituto/a</label>
+    </fieldset>
+
+    <div class="form-group conditional" id="addgroupSustitutoA">
+      <label for="addsustitutoA">Sustituto/a</label>
+      <select id="addsustitutoA" style="width:300px">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <div class="form-group conditional" id="addgroupSustituyendoA">
+      <label for="addsustituyendoA">Sustituyendo a</label>
+      <select id="addsustituyendoA" style="width:300px">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <div class="modal-actions">
+      <button type="button" id="cancelAddProf">Cancelar</button>
+      <button type="submit" id="submitAdd">Añadir</button>
+      <button type="submit" id="submitAddContinue">Añadir y seguir</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- Overlay Importar -->
+<div id="import-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo Importar -->
+<div id="import-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M180-120q-24 0-42-18t-18-42v-152q0-13 8.5-21.5T150-362q13 0 21.5 8.5T180-332v152h600v-543H180v151q0 13-8.5 21.5T150-542q-13 0-21.5-8.5T120-572v-208q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm331-302H150q-13 0-21.5-8.5T120-452q0-13 8.5-21.5T150-482h361l-72-73q-8-9-8.5-21t8.5-21q9-9 21-9t21 9l124 124q9 9 9 21.5t-9 21.5L481-306q-9 9-21 8.5t-21-9.5q-9-9-8.5-20.5T439-348l72-74Z"/></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Importar profesores</span>
+    </div>
+    <button id="closeImportModal" class="close-btn">&times;</button>
+  </div>
+
+  <form id="importForm" class="modal-form">
+    <!-- Aquí irán los controles de importación (por ejemplo un <input type="file">) -->
+    <div class="form-group">
+      <p style="text-align:center; color:#666;">
+        Aquí podrás seleccionar un fichero CSV/JSON para importar.
+      </p>
+    </div>
+
+    <div class="modal-actions">
+      <button type="button" id="cancelImport">Cancelar</button>
+      <button type="submit" id="submitImport">Importar</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- Modal overlay -->
+<div id="edit-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo -->
+<div id="edit-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M560-120v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-340L683-120H560Zm-400-40v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q37 0 73 4.5t72 14.5L480-276v116H160Zm663-184 37-39-37-37-38 38 38 38ZM480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"/></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Editar profesor</span>
+    </div>
+    <button id="closeEditModal" class="close-btn">&times;</button>
+  </div>
+  <form id="editProfForm" class="modal-form">
+    <div class="form-group">
+      <label for="editprofId">ID</label>
+      <input type="text" id="editprofId" disabled value="" style="border:none; background: none;">
+    </div>
+    <div class="form-group">
+      <label for="editprofNombre">Nombre <span style="color:#ff0000">*</span></label>
+      <input type="text" id="editprofNombre" required>
+    </div>
+    <div class="form-group">
+      <label for="editprofAp1">Primer apellido <span style="color:#ff0000">*</span></label>
+      <input type="text" id="editprofAp1" required>
+    </div>
+    <div class="form-group">
+      <label for="editprofAp2">Segundo apellido <span style="color:#ff0000">*</span></label>
+      <input type="text" id="editprofAp2" required>
+    </div>
+    <div class="form-group">
+      <label for="editprofEmail">Correo electrónico</label>
+      <input type="email" id="editprofEmail">
+    </div>
+    <div class="form-group">
+      <label for="editprofDept">Departamento <span style="color:#ff0000">*</span></label>
+      <select id="editprofDept" required>
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <fieldset class="form-estado">
+      <span style="font-weight: bold; margin-left:118px">Estado <span style="color:#ff0000">*</span></span>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="Alta" checked> Alta</label>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="Baja"> Baja</label>
+      <label style="font-weight:normal"><input type="radio" name="estado" value="Sustituto/a"> Sustituto/a</label>
+    </fieldset>
+
+    <div class="conditional" id="editgroupSustitutoA">
+      <label for="editsustitutoA">Sustituto/a</label>
+      <select id="editsustitutoA" style="width:300px">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <div class="conditional" id="editgroupSustituyendoA">
+      <label for="editsustituyendoA">Sustituyendo a</label>
+      <select id="editsustituyendoA" style="width:300px">
+        <option value="">-- elige uno --</option>
+      </select>
+    </div>
+
+    <div class="modal-actions">
+      <button type="button" id="cancelEdit">Cancelar</button>
+      <button type="submit" id="submitEdit">Guardar cambios</button>
+    </div>
+  </form>
+</div>
+
+<!-- Overlay Borrar -->
+<div id="delete-overlay" class="modal-overlay"></div>
+
+<!-- Modal diálogo Borrar -->
+<div id="delete-modal" class="modal-dialog">
+  <div class="modal-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="m696-440-56-56 83-84-83-83 56-57 84 84 83-84 57 57-84 83 84 84-57 56-83-83-84 83Zm-336-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Z"/></svg>
+      <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Eliminar profesor</span>
+    </div>
+    <button id="closeDeleteModal" class="close-btn">&times;</button>
+  </div>
+  <div class="modal-form" style="padding:1rem; height: 180px">
+    <p>¿Estás seguro de que deseas eliminar a este/a profesor/a?</p>
+    <div class="delete-info" style="margin:1rem; display:flex; align-items:center; gap:1rem; background-color: #f0f0f0; padding:0.5rem; border-left:solid 5px #999">
+      <span id="delProfId" class="prof-id" style="color:#666;"></span>
+      <span id="delProfName" style="color:#333; font-weight:500"></span>
+      <div id="delProfDeptBadge" class="prof-departamento-badge"></div>
+    </div>
+    <div class="modal-actions" style="justify-content:flex-end">
+      <button type="button" id="cancelDelete">Cancelar</button>
+      <button type="button" id="confirmDelete">
+        Eliminar
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="../javascript/basedatos_general.js" defer></script>
+<script src="../javascript/basedatos_profesores.js" defer></script>
+
+</body>
+</html>

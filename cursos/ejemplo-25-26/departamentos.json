@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "nombre": "Administrativo",
+    "color": "#d86f89"
+  },
+  {
+    "id": 2,
+    "nombre": "Biología y Geología",
+    "color": "#3CB44B"
+  },
+  {
+    "id": 3,
+    "nombre": "Ciencias Sociales",
+    "color": "#FFE119"
+  },
+  {
+    "id": 4,
+    "nombre": "Dibujo",
+    "color": "#4363D8"
+  },
+  {
+    "id": 5,
+    "nombre": "Educación Física",
+    "color": "#F58231"
+  },
+  {
+    "id": 6,
+    "nombre": "Electricidad",
+    "color": "#911EB4"
+  },
+  {
+    "id": 7,
+    "nombre": "Filosofía",
+    "color": "#46F0F0"
+  },
+  {
+    "id": 8,
+    "nombre": "Física y Química",
+    "color": "#F032E6"
+  },
+  {
+    "id": 9,
+    "nombre": "Formación y Orientación Laboral",
+    "color": "#BCF60C"
+  },
+  {
+    "id": 10,
+    "nombre": "Francés",
+    "color": "#FABEBE"
+  },
+  {
+    "id": 11,
+    "nombre": "Inglés",
+    "color": "#008080"
+  },
+  {
+    "id": 12,
+    "nombre": "Lengua Castellana",
+    "color": "#E6BEFF"
+  },
+  {
+    "id": 13,
+    "nombre": "Matemáticas",
+    "color": "#9A6324"
+  },
+  {
+    "id": 14,
+    "nombre": "Orientación",
+    "color": "#800000"
+  },
+  {
+    "id": 15,
+    "nombre": "Prevención",
+    "color": "#AAFFC3"
+  },
+  {
+    "id": 16,
+    "nombre": "Proyectos y Obra Civil",
+    "color": "#808000"
+  },
+  {
+    "id": 17,
+    "nombre": "Religión",
+    "color": "#FF5500"
+  },
+  {
+    "id": 18,
+    "nombre": "Sanitaria",
+    "color": "#c83c8e"
+  },
+  {
+    "id": 19,
+    "nombre": "Tecnología",
+    "color": "#7120a7"
+  }
+]

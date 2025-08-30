@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_basedatos.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div id="barra-superior"></div>
+
+  <!-- Contenedor principal -->
+  <div id="layout">
+    <!-- Área de contenido -->
+    <div id="contenido" class="curso-dashboard">
+
+        <div class="card">
+            <h2>Datos Generales</h2>
+            <div class="form-inline-container">
+                <div class="form-group" style="margin-left: 1rem;">
+                    <label for="cursoDenominacion">Denominación</label>
+                    <input type="text" id="cursoDenominacion" value="Curso Académico 2024/2025">
+                </div>
+                <div class="form-group">
+                    <label for="cursoCarpeta">Carpeta</label>
+                    <input type="text" id="cursoCarpeta" value="2024-2025" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="cursoCentro">Centro Educativo</label>
+                    <input type="text" id="cursoCentro" value="IES Bahía de Algeciras">
+                </div>
+                <div class="form-group" style="max-width: 150px;">
+                    <label for="cursoInicio">Inicio del curso</label>
+                    <input type="date" id="cursoInicio" value="2024-09-10">
+                </div>
+                <div class="form-group" style="max-width: 150px;">
+                    <label for="cursoFin">Fin del curso</label>
+                    <input type="date" id="cursoFin" value="2025-06-23">
+                </div>
+            </div>
+        </div>
+
+      <div class="curso-main-content">
+        <div class="curso-columna-izquierda">
+            <div class="card">
+                <h2>Calendario Escolar</h2>
+                <div class="sub-sections-container">
+                    <div class="sub-section">
+                        <div class="sub-section-header">
+                            <h3 class="card-subtitle">Periodos Vacacionales</h3>
+                            <button id="btnAddVacacion">Añadir Periodo</button>
+                        </div>
+                        
+                        <div class="table-container">
+                          <table class="data-table minimal">
+                              <colgroup>
+                                  <col style="width: 180px;">
+                                  <col style="width: 1px;">
+                                  <col style="width: 1px;">
+                                  <col style="width: 1px;">
+                                  <col>
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th>Descripción</th>
+                                      <th>Color</th>
+                                      <th>Inicio</th>
+                                      <th>Fin</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  </tbody>
+                          </table>
+                        </div>
+                    </div>
+
+                    <div class="sub-section">
+                        <div class="sub-section-header">
+                            <h3 class="card-subtitle">Días festivos</h3>
+                            <button id="btnAddFestivo">Añadir Festivo</button>
+                        </div>
+                        
+                        <div class="table-container">
+                          <table class="data-table minimal">
+                              <colgroup>
+                                  <col style="width: 180px;">
+                                  <col style="width: 1px;">
+                                  <col style="width: 1px;">
+                                  <col>
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th>Descripción</th>
+                                      <th>Color</th>
+                                      <th>Fecha</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="curso-columna-derecha">
+            
+            <div class="calendar-wrapper">
+              <div id="calendar-grid"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+<script src="../javascript/basedatos_general.js" defer></script>
+<script src="../javascript/basedatos_curso.js" defer></script>
+
+</body>
+</html>

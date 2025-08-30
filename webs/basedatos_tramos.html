@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_basedatos.css">
+</head>
+<body>
+
+  <!-- Barra superior y lateral inyectadas vía JS -->
+  <div id="barra-superior"></div>
+  <div id="layout">
+
+    <!-- Contenido principal -->
+    <div id="contenido">
+
+      <div class="perfil-container">
+        <!-- Barra de selección de perfil de tramos -->
+        <div class="perfil-bar">
+          <button type="button"
+                  class="perfil-add-btn">
+            Añadir perfil
+          </button>
+        </div>
+
+        <!-- Información del perfil seleccionado -->
+        <div class="perfil-info">
+          <div class="form-group">
+            <label for="perfilNombre">Nombre del perfil</label>
+            <input type="text" id="perfilNombre" value="" style="border: 1px solid #ccc; border-radius: 6px; margin-left: 0.25rem">
+            <label for="perfilArchivo" style="margin-left: 2rem">Archivo</label>
+            <input type="text" id="perfilArchivo" value="tramos.json" style="border:none; background: none;">
+            <button type="button" id="btnDeletePerfil"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75 0-42.37-17.63Q40-195.25 40-220Z"/></svg> Eliminar perfil</button>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+          <div class="tramo-toolbar">
+            <label>
+              Hora de inicio  
+              <input type="time" id="horaInicio" style="border: 1px solid #ddd; border-radius: 6px; font-family: 'NationalPark', sans-serif;">
+            </label>
+
+            <label style="margin-left: 1.5rem">
+              <input type="checkbox" id="chkDifferentStart">
+              Inicio diferente para cada día
+            </label>
+
+            <label style="margin-left: 1.5rem">
+              <input type="checkbox" id="chkSynchro">
+              Sincronizar días en el mismo tramo
+            </label>
+
+            <div class="add-tramo-wrapper">
+              
+              <a href="#" id="btnAddTramo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Zm-370 49q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-220v-34q0-35 17.5-63.5T108-360q75-33 133.34-46.5t118.5-13.5Q420-420 478-406.5T611-360q33 15 51 43t18 63v34q0 24.75-17.62 42.37Q644.75-160 620-160H100q-24.75 0-42.37-17.63Q40-195.25 40-220Z"/></svg> Añadir tramo</a>
+              <ul id="addTramoMenu" class="add-tramo-menu">
+                <li data-tipo="lectivo">Tramo lectivo</li>
+                <li data-tipo="descanso">Descanso</li>
+              </ul>
+            </div>
+          </div>
+
+      <div class="main-panels">
+
+        <div class="panel-left">
+          
+          <div class="tramos-table-wrapper">
+            <table class="tramos-table">
+              <colgroup>
+                <col style="width: 30px">   <!-- Nº -->
+                <col style="width: 60px">   <!-- L -->
+                <col style="width: 60px">   <!-- M -->
+                <col style="width: 60px">   <!-- X -->
+                <col style="width: 60px">   <!-- J -->
+                <col style="width: 60px">   <!-- V -->
+                <col style="width: 60px">   <!-- S -->
+                <col style="width: 60px">   <!-- D -->
+                <col style="width: 50px">   <!-- Inicio -->
+                <col style="width: 50px">   <!-- Fin -->
+                <col style="width: 60px">   <!-- Espacio -->
+                <col style="width: 80px">   <!-- Turno -->
+                <col>   <!-- Acciones -->
+              </colgroup>
+              <thead>
+                <tr style="border:none">
+                  <th></th>
+                  <th>L</th>
+                  <th>M</th>
+                  <th>X</th>
+                  <th>J</th>
+                  <th>V</th>
+                  <th>S</th>
+                  <th>D</th>
+                  <th>Inicio</th>
+                  <th>Fin</th>
+                  <th>Espacio</th>
+                  <th>Turno</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="differentStartRow" style="display: none; background: #fafafa">
+                  <td></td>
+                  <!-- Inputs numéricos para L–D -->
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <td><input type="number" class="input-start-day" min="0" step="1" value="0" style="width:40px;text-align:center"></td>
+                  <!-- Columnas vacías para Inicio, Fin, Espacio, Turno, Acciones -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+
+                <tr>
+                  <td>
+                    <span style="text-align: right; padding: 0">1</span>
+                  </td>
+
+                  <!-- L, M, X, J, V, S, D: numérico -->
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+
+                  <!-- Inicio y Fin: hora -->
+                  <td>
+                    <input
+                      type="time"
+                      class="input-time"
+                    >
+                  </td>
+                  <td>
+                    <input
+                      type="time"
+                      class="input-time"
+                    >
+                  </td>
+
+                  <!-- Espacio: numérico -->
+                  <td><input type="number" class="input-day" min="0" step="1" value="60" style="width: 40px; text-align: center"></td>
+
+                  <!-- Turno: texto -->
+                  <td><input type="text" style="width: 70px; text-align: center"></td>
+                  
+                  <!-- Acciones -->
+                  <td>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          
+        </div>
+
+        <div class="panel-right">
+
+          <div class="schedule">
+
+            <!-- 1) Cabecera de días -->
+            <div class="schedule-header">
+              <div class="time-label"></div>
+              <div class="day-col"><div class="day-name">L</div></div>
+              <div class="day-col"><div class="day-name">M</div></div>
+              <div class="day-col"><div class="day-name">X</div></div>
+              <div class="day-col"><div class="day-name">J</div></div>
+              <div class="day-col"><div class="day-name">V</div></div>
+              <div class="day-col"><div class="day-name">S</div></div>
+              <div class="day-col"><div class="day-name">D</div></div>
+            </div>
+
+            <!-- 2) Cuerpo: franjas horarias -->
+            <div class="schedule-body"></div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+  <!-- Overlay Borrar -->
+  <div id="delete-overlay" class="modal-overlay"></div>
+
+  <!-- Modal diálogo Borrar -->
+  <div id="delete-modal" class="modal-dialog">
+    <div class="modal-header">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" style="vertical-align: middle"><path d="m696-440-56-56 83-84-83-83 56-57 84 84 83-84 57 57-84 83 84 84-57 56-83-83-84 83Zm-336-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Z"/></svg>
+        <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Eliminar perfil</span>
+      </div>
+      <button id="closeDeleteModal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-form" style="padding:1rem; height: 120px">
+      <p>¿Estás seguro de que deseas eliminar este perfil?</p>
+      <div class="modal-actions" style="justify-content:flex-end">
+        <button type="button" id="cancelDelete">Cancelar</button>
+        <button type="button" id="confirmDelete" style="background-color:#dc3545; color:#fff">
+          Eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script src="../javascript/basedatos_general.js" defer></script>
+  <script src="../javascript/basedatos_tramos.js" defer></script>
+</body>
+</html>

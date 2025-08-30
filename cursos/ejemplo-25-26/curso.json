@@ -1,0 +1,38 @@
+{
+  "datos": {
+    "archivado": false,
+    "denominacion": "Ejemplo",
+    "carpeta": "ejemplo-25-26",
+    "centro_educativo": "IES Ejemplo"
+  },
+  "fechas": {
+    "curso_inicio": "01/09/2025",
+    "curso_fin": "30/06/2026",
+    "periodos_vacacionales": [
+      {
+        "nombre": "Navidad",
+        "fecha_inicio": "22/12/2025",
+        "fecha_fin": "07/01/2026",
+        "color": "#3db34b"
+      },
+      {
+        "nombre": "Semana Santa",
+        "fecha_inicio": "30/03/2026",
+        "fecha_fin": "05/04/2026",
+        "color": "#ffae00"
+      }
+    ],
+    "dias_festivos": [
+      {
+        "nombre": "Día no lectivo provincial",
+        "fecha": "10/10/2025",
+        "color": "#2e5cb8"
+      },
+      {
+        "nombre": "Día de la Hispanidad",
+        "fecha": "13/10/2025",
+        "color": "#2e5cb8"
+      }
+    ]
+  }
+}

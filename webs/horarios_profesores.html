@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_horarios.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div id="barra-superior"></div>
+
+  <!-- Contenedor principal: sidebar + contenido -->
+  <div id="layout">
+    <!-- Área de contenido -->
+    <div id="contenido">
+
+      <div class="horarios-container">
+
+        <div class="selector-profesor-wrapper">
+
+          <div class="horario-version-selector">
+            VERSIÓN
+            <select id="horarioVersionSelect"></select>
+          </div>
+
+          <button class="selector-arrow" id="prevProfesorBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+          </button>
+
+          <div class="selector-profesor" id="selectorProfesorBtn">
+            <div class="selector-info">
+              <div class="info-top">
+                <span class="profesor-codigo">0001</span>
+                <span class="profesor-departamento">Física y Química</span>
+              </div>
+              <h2 class="profesor-nombre">Albert Einstein Garcia</h2>
+            </div>
+          </div>
+
+          <button class="selector-arrow" id="nextProfesorBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+          </button>
+          
+          <div class="selector-dropdown" id="selectorDropdown">
+            <div class="dropdown-search-bar">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+              <input type="text" placeholder="Buscar profesor por nombre o código..." id="profesorSearchInput">
+              <button id="clearSearchBtn" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+              </button>
+            </div>
+            <div class="dropdown-profesor-list" id="profesorList">
+              <div class="profesor-item" data-id="0001">
+                <div class="profesor-item-info">
+                  <span class="profesor-item-codigo">0001</span>
+                  <span class="profesor-item-nombre">Albert Einstein Garcia</span>
+                </div>
+                <span class="profesor-item-departamento">Fís</span>
+              </div>
+              <div class="profesor-item" data-id="0002">
+                <div class="profesor-item-info">
+                  <span class="profesor-item-codigo">0002</span>
+                  <span class="profesor-item-nombre">Isaac Newton</span>
+                </div>
+                <span class="profesor-item-departamento">Mat</span>
+              </div>
+              <div class="profesor-item" data-id="0003">
+                <div class="profesor-item-info">
+                  <span class="profesor-item-codigo">0003</span>
+                  <span class="profesor-item-nombre">Marie Curie</span>
+                </div>
+                <span class="profesor-item-departamento">Quím</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="paneles-horario-container">
+          
+          <div class="panel-horario">
+
+            <div class="schedule-grid" id="scheduleGrid"> <div class="grid-cell header-corner"></div>
+              <div class="grid-cell day-header">L</div>
+              <div class="grid-cell day-header">M</div>
+              <div class="grid-cell day-header">X</div>
+              <div class="grid-cell day-header">J</div>
+              <div class="grid-cell day-header">V</div>
+              <div class="grid-cell day-header">S</div>
+              <div class="grid-cell day-header">D</div>
+
+              <div class="schedule-event" style="grid-column: 4; grid-row: 5 / 7; background-color: #9A6324;">
+                <strong class="event-title">Mates</strong>
+                <span class="event-details">1º ESO A - Aula 101</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="panel-leyenda">
+            <h3>Leyenda</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+</div>
+
+
+<script src="../javascript/horarios_general.js" defer></script>
+<script src="../javascript/horarios_profesores.js" defer></script>
+
+</body>
+</html>

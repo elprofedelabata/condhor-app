@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "referencia": "GM",
+    "nombre": "Guardia de Mañana",
+    "categoria": "Guardias"
+  },
+  {
+    "id": 2,
+    "referencia": "GT",
+    "nombre": "Guardia de Tarde",
+    "categoria": "Guardias"
+  },
+  {
+    "id": 3,
+    "referencia": "RDep",
+    "nombre": "Reunión de Departamento",
+    "categoria": ""
+  }
+]

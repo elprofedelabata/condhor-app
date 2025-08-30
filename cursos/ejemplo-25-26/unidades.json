@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "referencia": "1ESA",
+    "nombre": "1º E.S.O. A",
+    "id_nivel_educativo": 13,
+    "id_tutor": 0
+  },
+  {
+    "id": 2,
+    "referencia": "1ESB",
+    "nombre": "1º E.S.O. B",
+    "id_nivel_educativo": 13,
+    "id_tutor": 0
+  },
+  {
+    "id": 3,
+    "referencia": "2ESA",
+    "nombre": "2º E.S.O. A",
+    "id_nivel_educativo": 14,
+    "id_tutor": 0
+  },
+  {
+    "id": 4,
+    "referencia": "2ESB",
+    "nombre": "2º E.S.O. B",
+    "id_nivel_educativo": 14,
+    "id_tutor": 0
+  },
+  {
+    "id": 5,
+    "referencia": "3ESA",
+    "nombre": "3º E.S.O. A",
+    "id_nivel_educativo": 15,
+    "id_tutor": 0
+  },
+  {
+    "id": 6,
+    "referencia": "3ESB",
+    "nombre": "3º E.S.O. B",
+    "id_nivel_educativo": 15,
+    "id_tutor": 0
+  },
+  {
+    "id": 7,
+    "referencia": "3ESBd",
+    "nombre": "3º E.S.O. B (DIVERSIFICACIÓN)",
+    "id_nivel_educativo": 15,
+    "id_tutor": 0
+  },
+  {
+    "id": 8,
+    "referencia": "3ESC",
+    "nombre": "3º E.S.O. C",
+    "id_nivel_educativo": 15,
+    "id_tutor": 0
+  },
+  {
+    "id": 9,
+    "referencia": "3ESCd",
+    "nombre": "3º E.S.O. C (DIVERSIFICACIÓN)",
+    "id_nivel_educativo": 15,
+    "id_tutor": 0
+  },
+  {
+    "id": 10,
+    "referencia": "4ESA",
+    "nombre": "4º E.S.O. A",
+    "id_nivel_educativo": 16,
+    "id_tutor": 0
+  },
+  {
+    "id": 11,
+    "referencia": "4ESB",
+    "nombre": "4º E.S.O. B",
+    "id_nivel_educativo": 16,
+    "id_tutor": 0
+  },
+  {
+    "id": 12,
+    "referencia": "4ESBd",
+    "nombre": "4º E.S.O. B (DIVERSIFICACIÓN)",
+    "id_nivel_educativo": 16,
+    "id_tutor": 0
+  },
+  {
+    "id": 13,
+    "referencia": "4ESC",
+    "nombre": "4º E.S.O. C",
+    "id_nivel_educativo": 16,
+    "id_tutor": 0
+  },
+  {
+    "id": 14,
+    "referencia": "4ESCd",
+    "nombre": "4º E.S.O. C (DIVERSIFICACIÓN)",
+    "id_nivel_educativo": 16,
+    "id_tutor": 0
+  }
+]

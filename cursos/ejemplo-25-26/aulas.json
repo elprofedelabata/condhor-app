@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "referencia": "102",
+    "nombre": "Aula 102",
+    "ubicacion": ""
+  },
+  {
+    "id": 2,
+    "referencia": "107",
+    "nombre": "Aula 107",
+    "ubicacion": ""
+  },
+  {
+    "id": 3,
+    "referencia": "108",
+    "nombre": "Aula 108",
+    "ubicacion": ""
+  },
+  {
+    "id": 4,
+    "referencia": "109",
+    "nombre": "Aula 109",
+    "ubicacion": ""
+  },
+  {
+    "id": 5,
+    "referencia": "111",
+    "nombre": "Aula 111",
+    "ubicacion": ""
+  },
+  {
+    "id": 6,
+    "referencia": "112",
+    "nombre": "Aula 112",
+    "ubicacion": ""
+  },
+  {
+    "id": 7,
+    "referencia": "201",
+    "nombre": "Aula 201",
+    "ubicacion": ""
+  },
+  {
+    "id": 8,
+    "referencia": "202",
+    "nombre": "Aula 202",
+    "ubicacion": ""
+  },
+  {
+    "id": 9,
+    "referencia": "203",
+    "nombre": "Aula 203",
+    "ubicacion": ""
+  },
+  {
+    "id": 10,
+    "referencia": "204",
+    "nombre": "Aula 204",
+    "ubicacion": ""
+  },
+  {
+    "id": 11,
+    "referencia": "205",
+    "nombre": "Aula 205",
+    "ubicacion": ""
+  },
+  {
+    "id": 12,
+    "referencia": "206",
+    "nombre": "Aula 206",
+    "ubicacion": ""
+  },
+  {
+    "id": 13,
+    "referencia": "207",
+    "nombre": "Aula 207",
+    "ubicacion": ""
+  },
+  {
+    "id": 14,
+    "referencia": "208",
+    "nombre": "Aula 208",
+    "ubicacion": ""
+  },
+  {
+    "id": 15,
+    "referencia": "209",
+    "nombre": "Aula 209",
+    "ubicacion": ""
+  },
+  {
+    "id": 16,
+    "referencia": "302",
+    "nombre": "Aula 302",
+    "ubicacion": ""
+  },
+  {
+    "id": 17,
+    "referencia": "314",
+    "nombre": "Aula 314 - Laboratorio ByG",
+    "ubicacion": ""
+  },
+  {
+    "id": 18,
+    "referencia": "315",
+    "nombre": "Aula 315 - Laboratorio FyQ",
+    "ubicacion": ""
+  },
+  {
+    "id": 19,
+    "referencia": "GIM",
+    "nombre": "Gimnasio",
+    "ubicacion": ""
+  }
+]

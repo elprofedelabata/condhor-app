@@ -1,0 +1,124 @@
+{
+  "perfil": {
+    "nombre": "Perfil 1",
+    "hora_inicio": "08:00",
+    "inicios_diferentes": false,
+    "sincronizar_dias": true,
+    "inicios_diferentes_retrasos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "tramos": [
+    {
+      "id": 1,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    },
+    {
+      "id": 2,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    },
+    {
+      "id": 3,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    },
+    {
+      "id": 4,
+      "duraciones": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": false,
+      "turno": "Mañana"
+    },
+    {
+      "id": 5,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    },
+    {
+      "id": 6,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    },
+    {
+      "id": 7,
+      "duraciones": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        0,
+        0
+      ],
+      "espacio": 0,
+      "lectivo": true,
+      "turno": "Mañana"
+    }
+  ]
+}

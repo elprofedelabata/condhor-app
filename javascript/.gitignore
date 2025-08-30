@@ -1,0 +1,16 @@
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración del editor
+.vscode/
+
+# Dependencias de Node (si alguna vez las usas)
+/node_modules
+
+# Carpetas de compilación o empaquetado
+/dist
+/build
+
+# Archivos de log
+*.log

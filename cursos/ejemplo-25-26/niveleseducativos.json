@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "nombre": "0-1 años",
+    "activo": true,
+    "categoria": "Primer ciclo de Educación Infantil"
+  },
+  {
+    "id": 2,
+    "nombre": "1-2 años",
+    "activo": true,
+    "categoria": "Primer ciclo de Educación Infantil"
+  },
+  {
+    "id": 3,
+    "nombre": "2-3 años",
+    "activo": true,
+    "categoria": "Primer ciclo de Educación Infantil"
+  },
+  {
+    "id": 4,
+    "nombre": "3 años",
+    "activo": true,
+    "categoria": "Segundo ciclo de Educación Infantil"
+  },
+  {
+    "id": 5,
+    "nombre": "4 años",
+    "activo": true,
+    "categoria": "Segundo ciclo de Educación Infantil"
+  },
+  {
+    "id": 6,
+    "nombre": "5 años",
+    "activo": true,
+    "categoria": "Segundo ciclo de Educación Infantil"
+  },
+  {
+    "id": 7,
+    "nombre": "1º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 8,
+    "nombre": "2º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 9,
+    "nombre": "3º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 10,
+    "nombre": "4º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 11,
+    "nombre": "5º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 12,
+    "nombre": "6º Educación Primaria",
+    "activo": true,
+    "categoria": "Educación Primaria"
+  },
+  {
+    "id": 13,
+    "nombre": "1º ESO",
+    "activo": true,
+    "categoria": "Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 14,
+    "nombre": "2º ESO",
+    "activo": true,
+    "categoria": "Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 15,
+    "nombre": "3º ESO",
+    "activo": true,
+    "categoria": "Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 16,
+    "nombre": "4º ESO",
+    "activo": true,
+    "categoria": "Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 17,
+    "nombre": "1º Bachillerato",
+    "activo": true,
+    "categoria": "Bachillerato"
+  },
+  {
+    "id": 18,
+    "nombre": "2º Bachillerato",
+    "activo": true,
+    "categoria": "Bachillerato"
+  },
+  {
+    "id": 19,
+    "nombre": "1º Ciclo Formativo de Grado Básico",
+    "activo": true,
+    "categoria": "Ciclos Formativo de Grado Básico"
+  },
+  {
+    "id": 20,
+    "nombre": "2º Ciclo Formativo de Grado Básico",
+    "activo": true,
+    "categoria": "Ciclos Formativo de Grado Básico"
+  },
+  {
+    "id": 21,
+    "nombre": "1º Ciclo Formativo de Grado Medio",
+    "activo": true,
+    "categoria": "Ciclos Formativos de Grado Medio"
+  },
+  {
+    "id": 22,
+    "nombre": "2º Ciclo Formativo de Grado Medio",
+    "activo": true,
+    "categoria": "Ciclos Formativos de Grado Medio"
+  },
+  {
+    "id": 23,
+    "nombre": "1º Ciclo Formativo de Grado Superior",
+    "activo": true,
+    "categoria": "Ciclos Formativos de Grado Superior"
+  },
+  {
+    "id": 24,
+    "nombre": "2º Ciclo Formativo de Grado Superior",
+    "activo": true,
+    "categoria": "Ciclos Formativos de Grado Superior"
+  },
+  {
+    "id": 25,
+    "nombre": "Curso de Acceso a Ciclos Formativos de Grado Medio",
+    "activo": true,
+    "categoria": "Curso de Acceso a Ciclos Formativos de Grado Medio"
+  },
+  {
+    "id": 26,
+    "nombre": "Curso de Especialización de Ciclos Formativos de Grado Superior",
+    "activo": true,
+    "categoria": "Curso de Especialización de Ciclos Formativos de Grado Superior"
+  }
+]

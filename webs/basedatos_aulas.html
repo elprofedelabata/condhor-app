@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ConDHor - Software de confección de horarios</title>
+  <link rel="stylesheet" href="../css/styles_general.css">
+  <link rel="stylesheet" href="../css/styles_basedatos.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div id="barra-superior"></div>
+
+  <!-- Layout: sidebar + contenido -->
+  <div id="layout">
+    <!-- Contenido principal -->
+    <div id="contenido">
+
+      <!-- 1) Toolbar: buscador + acciones -->
+      <div class="toolbar">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchAula"
+            placeholder="Buscar aula..."
+            autocomplete="off"
+          />
+          <button type="button" id="clearSearch" class="clear-btn" aria-label="Borrar búsqueda">
+            ×
+          </button>
+        </div>
+        <div class="actions">
+          <a href="#" id="btnAgregar">
+            <!-- icono + texto -->
+            Añadir
+          </a>
+          <a href="#" id="btnImportar">
+            <!-- icono + texto -->
+            Importar
+          </a>
+        </div>
+      </div>
+
+      <!-- 2) Texto de conteo -->
+      <div class="count-text">
+        Mostrando <span id="mostrados">0</span> de <span id="total">0</span> aulas
+      </div>
+
+      <!-- 3) Tabla de aulas -->
+      <div class="data-table-container">
+        <table class="data-table">
+          <colgroup>
+            <col style="width: 60px;">    <!-- ID -->
+            <col style="width: 120px;">   <!-- Referencia -->
+            <col style="width: 400px;">   <!-- Nombre -->
+            <col style="width: 200px;">   <!-- Ubicación -->
+            <col style="width: 200px;">   <!-- Ahora mismo está... -->
+            <col>                         <!-- Acciones -->
+          </colgroup>
+          <thead>
+            <tr>
+              <th><button class="thead-button" data-col="id">ID <span class="arrow"></span></button></th>
+              <th><button class="thead-button" data-col="referencia">Referencia <span class="arrow"></span></button></th>
+              <th><button class="thead-button" data-col="nombre">Nombre <span class="arrow"></span></button></th>
+              <th><button class="thead-button" data-col="ubicacion">Ubicación <span class="arrow"></span></button></th>
+              <th>Ahora mismo...</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Se rellenará desde aulas.js -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Overlay Añadir aula -->
+  <div id="add-overlay" class="modal-overlay"></div>
+
+  <!-- Modal diálogo Añadir aula -->
+  <div id="add-modal" class="modal-dialog">
+    <div class="modal-header">
+      <div>
+        <!-- icono “+” -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+             viewBox="0 -960 960 960" width="24px" fill="currentColor"
+             style="vertical-align: middle">
+          <path d="M730-530H630q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5
+                   0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h100v-100q0-12.75
+                   8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62
+                   8.5 8.63 8.5 21.38v100h100q12.75 0 21.38 8.68
+                   8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5
+                   -21.38 8.5H790v100q0 12.75-8.68 21.37-8.67 8.63
+                   -21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-100Z"/>
+        </svg>
+        <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+          Añadir aula
+        </span>
+      </div>
+      <button id="closeAddModal" class="close-btn">&times;</button>
+    </div>
+
+    <form id="addAulaForm" class="modal-form" style="height: 240px">
+      <div class="form-group">
+        <label for="addAulaId">ID</label>
+        <input type="text" id="addAulaId" disabled
+               style="border:none;background:none;padding:0;">
+      </div>
+      <div class="form-group">
+        <label for="addAulaRef">Referencia <span style="color:red">*</span></label>
+        <input type="text" id="addAulaRef" required>
+      </div>
+      <div class="form-group">
+        <label for="addAulaName">Nombre <span style="color:red">*</span></label>
+        <input type="text" id="addAulaName" required>
+      </div>
+      <div class="form-group">
+        <label for="addAulaLocation">Ubicación</label>
+        <input type="text" id="addAulaLocation">
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="cancelAdd">Cancelar</button>
+        <button type="submit" id="submitAdd">Añadir</button>
+        <button type="submit" id="submitAddContinue">Añadir y seguir</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Overlay Editar aula -->
+  <div id="edit-overlay" class="modal-overlay"></div>
+
+  <!-- Modal diálogo Editar aula -->
+  <div id="edit-modal" class="modal-dialog">
+    <div class="modal-header">
+      <div>
+        <!-- icono de editar -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+             viewBox="0 -960 960 960" width="24px" fill="currentColor"
+             style="vertical-align: middle">
+          <path d="M560-120v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9
+                   12.5 20t4.5 22q0 11-4 22.5T903-340L683-120H560Zm-400-40v-112q0-34
+                   17.5-62.5T224-378q62-31 126-46.5T480-440q37 0 73 4.5t72 14.5L480-276v116H160Z"/>
+        </svg>
+        <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+          Editar aula
+        </span>
+      </div>
+      <button id="closeEditModal" class="close-btn">&times;</button>
+    </div>
+
+    <form id="editAulaForm" class="modal-form" style="height: 240px">
+      <div class="form-group">
+        <label for="editAulaId">ID</label>
+        <input type="text" id="editAulaId" disabled
+               style="border:none;background:none;padding:0;">
+      </div>
+      <div class="form-group">
+        <label for="editAulaRef">Referencia <span style="color:red">*</span></label>
+        <input type="text" id="editAulaRef" required>
+      </div>
+      <div class="form-group">
+        <label for="editAulaName">Nombre <span style="color:red">*</span></label>
+        <input type="text" id="editAulaName" required>
+      </div>
+      <div class="form-group">
+        <label for="editAulaLocation">Ubicación</label>
+        <input type="text" id="editAulaLocation">
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="cancelEdit">Cancelar</button>
+        <button type="submit" id="submitEdit">Guardar cambios</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- Overlay Borrar aula -->
+  <div id="delete-overlay" class="modal-overlay"></div>
+
+  <!-- Modal diálogo Borrar aula -->
+  <div id="delete-modal" class="modal-dialog" style="height: 270px">
+    <div class="modal-header">
+      <div>
+        <!-- icono de “X” -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+             viewBox="0 -960 960 960" width="24px" fill="currentColor"
+             style="vertical-align: middle">
+          <path d="m696-440-56-56 83-84-83-83 56-57 84 84 83-84
+                   57 57-84 83 84 84-57 56-83-83-84 83Z"/>
+        </svg>
+        <span style="font-size:1.25rem;font-weight:bold;margin-left:.25rem">
+          Eliminar aula
+        </span>
+      </div>
+      <button id="closeDeleteModal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-form" style="padding:1rem;">
+      <p>¿Estás seguro de que deseas eliminar este aula?</p>
+      <div class="delete-info" style="
+           margin:1rem 0;
+           display:flex;
+           align-items:center;
+           gap:1rem;
+           background-color:#f0f0f0;
+           padding:0.5rem;
+           border-left:solid 5px #999;
+        ">
+        <span id="delAulaId" style="color:#666;"></span>
+        <span id="delAulaTexto" style="font-weight:500;"></span>
+      </div>
+      <div class="modal-actions" style="justify-content:flex-end">
+        <button type="button" id="cancelDelete">Cancelar</button>
+        <button type="button" id="confirmDelete">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- scripts generales y específico -->
+  <script src="../javascript/basedatos_general.js" defer></script>
+  <script src="../javascript/basedatos_aulas.js" defer></script>
+</body>
+</html>

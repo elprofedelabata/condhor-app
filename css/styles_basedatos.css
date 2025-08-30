@@ -1,0 +1,1338 @@
+
+/*** BODY ***/
+body{
+    background-color: var(--azul-mar);
+}
+
+/*** BARRA SUPERIOR ***/
+#barra-superior-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1rem;
+  height: 80px;
+  background-color: var(--azul-mar);
+  color: #fff;
+  user-select: none;
+  width: 90%;
+}
+
+.barrasuperior-logo {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  color: #ffffff99;
+}
+
+.app-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff99;
+}
+
+.bs-left {
+  display: flex;
+  flex-direction: column;  /* obligamos a que los hijos vayan en columna */
+  align-items: center;     /* centrado horizontal */
+  justify-content: center; /* centrado vertical si hace falta */
+  width: 180px;
+  height: 100%;
+}
+
+.bs-left-title {
+  display: flex;           /* logo + texto en línea */
+  align-items: center;     /* alineados en vertical */
+  margin: 0.25rem 0;
+}
+
+/* --- Estilos para el Dropdown de Pantallas --- */
+
+/* Contenedor principal del dropdown. Necesario para posicionar el menú */
+.pantalla-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del botón principal que abre el menú */
+.pantalla-label-button {
+    background-color: var(--azul-mar);
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'NationalPark', sans-serif;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y la flecha */
+    transition: background-color 0.2s;
+}
+
+.pantalla-label-button:hover {
+    background-color: var(--azul-mar-claro);
+}
+
+/* Contenedor del menú desplegable. Oculto por defecto. */
+.dropdown-content {
+    display: none; /* Oculto hasta que se añade la clase .show */
+    position: absolute;
+    background-color: var(--azul-mar-claro);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    list-style: none;
+    padding: 0;
+    margin-top: 8px; /* Espacio entre el botón y el menú */
+}
+
+/* Estilo para cada opción del menú */
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* Efecto hover sobre las opciones */
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.dropdown-content a:first-child:hover {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.dropdown-content a:last-child:hover {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+/* Estilo para los iconos dentro del menú */
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Clase que se añade con JS para mostrar el menú */
+.show {
+    display: block;
+}
+
+.bs-center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 1rem;
+  width: 1100px;
+
+}
+
+.bs-center > .info {
+  margin: 1rem 0.5rem
+}
+
+.bs-center nav {
+  /* empuja el menú al fondo */
+  margin-top: auto;
+}
+
+.bs-right {
+  height: 100%;
+  width: 200px;
+}
+
+/* Menú de la barra superior */
+.bs-menu-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  display: flex;
+  background-color: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.bs-menu-category {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.bs-menu-category-button {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.35rem 0.5rem;
+  background-color: var(--azul-mar-oscuro);
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+.bs-menu-category-button:hover {
+  background: #fff;
+  color: var(--azul-mar);
+}
+
+.bs-menu-category-button[aria-pressed="true"] {
+  background: #fff;
+  color: var(--azul-mar);
+}
+
+.bs-menu-category-button[aria-pressed="true"] span {
+  color: var(--azul-mar);
+}
+
+
+.bs-menu-category-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.bs-menu-category-button span {
+  display: block;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+.bs-menu-category:hover .bs-menu-category-button {
+  background: #fff;
+  color: var(--azul-mar);
+}
+
+.bs-menu-category:hover .bs-menu-category-button span{
+  color: var(--azul-mar);
+}
+
+.bs-menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Mostrar al hacer hover o con .open */
+.bs-menu-category:hover .bs-menu-dropdown,
+.bs-menu-category:open .bs-menu-dropdown {
+  display: block;
+}
+
+/* Cada opción */
+.bs-menu-dropdown li {
+  white-space: nowrap;
+  padding: 0.25rem;
+}
+
+.bs-menu-dropdown li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.bs-menu-dropdown li:hover {
+  background-color: var(--azul-mar);
+}
+
+.bs-menu-dropdown li:hover a {
+  color: #fff;
+}
+
+/* Separador */
+.bs-menu-dropdown .divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.bs-menu-dropdown .divider:hover {
+  background-color: #ddd;
+}
+
+
+/*** MODALES ***/
+.modal-header {
+  background: var(--azul-mar);
+}
+
+.form-estado input[type="radio"] {
+  accent-color: var(--azul-mar);
+}
+
+.modal-actions button {
+  background-color: var(--azul-mar);
+}
+
+
+
+
+/*** PANTALLAS ***/
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toolbar input {
+  flex: 1;
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.toolbar .actions a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--azul-mar);
+  font-weight: bold;
+}
+
+.toolbar .actions a:hover {
+  color: var(--rojo-melocoton);
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+#searchProf {
+  padding-right: 1.5em;
+  width:300px;
+}
+.clear-btn {
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 1.2em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--azul-mar);
+  display: none;
+}
+.clear-btn:hover {
+  color: var(--rojo-melocoton);
+}
+
+
+
+.count-text {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.data-table-container {
+  height: 540px;
+  overflow-y: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size:0.9rem;
+}
+.data-table thead {
+  background-color: none;
+  color: var(--azul-mar);
+  font-size:0.8rem;
+  border: none;
+}
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+.thead-button {
+  background: none;
+  border: none;
+  padding: none;
+  color: var(--azul-mar);
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: 'NationalPark', sans-serif;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.thead-button:hover {
+  color: var(--rojo-melocoton);
+}
+
+
+.data-table td {
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table tbody {
+  border: 1px solid #ddd;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.data-table tbody tr:hover {
+  background-color: #0081a722;
+}
+
+.data-table tbody tr td:last-child .btn-acciones {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.data-table tbody tr:hover td:last-child .btn-acciones {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.prof-id {
+  font-size:0.8rem;
+  color:#666;
+}
+
+.prof-departamento-badge {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.prof-estado-circulo {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.btn-acciones {
+  flex: 1;
+  padding: 0 0.3rem 0 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  color: var(--azul-mar);
+  cursor: pointer;
+}
+
+.btn-acciones del-btn {
+  color:#900;
+}
+
+.btn-acciones:hover {
+  color: var(--rojo-melocoton);
+}
+
+.btn-acciones del-btn:hover {
+  color: var(--rojo-melocoton);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilo básico para el colapsable */
+.units-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+.units-table th,
+.units-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+details > summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  background: var(--azul-mar-muy-claro);
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+details[open] > summary {
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+}
+
+.unidad-badge {
+  display: inline-block;
+  background-color: var(--azul-mar);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin: 0 0.25rem 0.25rem 0;
+}
+
+
+
+
+
+
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+.perfil-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.perfil-btn {
+  display: inline-block;
+  background-color: var(--azul-mar);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 140px;
+  white-space: nowrap;        /* evita el salto de línea */
+  overflow: hidden;           /* oculta el desbordamiento */
+  text-overflow: ellipsis;    /* añade “…” cuando no cabe */  
+}
+
+.perfil-btn.active {
+  /* Variante más oscura para el seleccionado */
+  background-color: var(--rojo-melocoton);
+  font-weight: bold;
+}
+
+.perfil-add-btn {
+  background: transparent;
+  color: var(--azul-mar);
+  border: 1px dashed var(--azul-mar);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 140px;
+}
+
+.perfil-add-btn:hover {
+  color: var(--rojo-melocoton);
+  border: 1px dashed var(--rojo-melocoton);
+}
+
+
+.perfil-info {
+  margin-top: 1rem;
+}
+
+.perfil-info .form-group {
+  display: flex;
+  align-items: center;
+}
+
+
+.perfil-info .form-group label {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.perfil-info .form-group input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#btnDeletePerfil {
+  background: none;
+  border: none;
+  margin-left: auto;
+  text-decoration: none;
+  color: var(--azul-mar);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#btnDeletePerfil:hover {
+  color: var(--rojo-melocoton);
+}
+
+#btnDeletePerfil:disabled {
+  color: #999;
+  cursor: default;
+}
+
+
+
+.main-panels {
+  display: flex;
+  gap: 1rem;              /* espacio entre columnas */
+  margin-top: 1.5rem;     /* separador de la zona de perfil */
+}
+
+/* izquierda */
+.panel-left {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+/* derecha */
+.panel-right {
+  flex: 1;
+}
+
+
+.tramo-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+  margin: 1rem;
+}
+
+.tramo-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* acorta un poco los time-input si quieres */
+.tramo-toolbar input[type="time"] {
+  padding: 0.25rem;
+  font-size: 0.9rem;
+}
+
+
+/* Botón añadir */
+.btn-add-tramo {
+  align-self: flex-start;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.add-tramo-wrapper {
+  margin-left: auto;
+  position: relative;
+  display: inline-block;    /* para que el ancho sea solo el del botón */
+}
+
+.add-tramo-menu {
+  position: absolute;
+  top: 100%;
+  left: -20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  margin-top: 4px;
+  padding: 0.25rem 0;
+  display: none;           /* oculto por defecto */
+  z-index: 1000;
+}
+
+/* Dale a cada <li> un layout en línea con centro de alineación */
+.add-tramo-menu li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.add-tramo-menu li:hover {
+  background: #f0f0f0;
+}
+
+/* El “cuadradito” */
+.add-tramo-menu li::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+}
+
+/* Color según tipo */
+.add-tramo-menu li[data-tipo="lectivo"]::before {
+  background-color: var(--verde-turquesa);
+}
+
+.add-tramo-menu li[data-tipo="descanso"]::before {
+  background-color: var(--rojo-melocoton);
+}
+
+
+
+
+
+/* Para que el contenedor padre sea el referente al posicionar absolute */
+.tramos-config {
+  position: relative;
+}
+
+
+
+/* Wrapper para scroll si la lista crece */
+.tramos-table-wrapper {
+  overflow: auto;
+  height: 420px;
+}
+
+/* Tabla de tramos vacía */
+.tramos-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tramos-table tr {
+  border: 1px solid #ccc;
+}
+
+.tramos-table td {
+  padding: 0.2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tramos-table thead {
+  background-color: #fff;
+  color: var(--azul-mar);
+  font-size:0.8rem;
+  border: none;
+}
+
+.tramos-table thead th {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+
+.tramos-table input {
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-time {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 50px;
+}
+
+/* Banda lateral de color según tipo de tramo */
+.tramos-table tbody tr.lectivo {
+  border-left: 4px solid var(--verde-turquesa);
+  background-color: rgba(0, 175, 185, 0.1);
+}
+
+.tramos-table tbody tr.descanso {
+  border-left: 4px solid var(--rojo-melocoton);
+  background-color: rgba(240, 113, 103, 0.1);
+}
+
+/* Para compensar el padding con la nueva banda */
+.tramos-table tbody tr td:first-child {
+  padding-left: 0.5rem;
+}
+
+#differentStartRow td {
+  position: sticky;
+  top: 1.15rem;            /* aquí pones la altura real de tu fila de encabezados */
+  background: #fafafa;    /* tu mismo fondo */
+  z-index: 1;             /* justo por debajo de los th */
+}
+
+
+#btnAddTramo {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--azul-mar);
+  font-weight: bold;
+}
+
+#btnAddTramo:hover {
+  color: var(--rojo-melocoton);
+}
+
+.ts-acciones {
+  padding: 0;
+}
+
+.btn-accion-tramo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--azul-mar);
+  transition: opacity 0.2s;
+}
+
+.btn-accion-tramo:hover {
+  color: var(--rojo-melocoton);
+}
+
+/* deshabilitado */
+.btn-accion-tramo:disabled {
+  color: #bbb;
+  cursor: not-allowed;     /* cursor de prohibido */
+}
+
+/* evitar hover en deshabilitados */
+.btn-accion-tramo:disabled:hover {
+  background: none;
+}
+
+
+
+
+
+/* Container principal */
+.schedule {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0.5rem 2rem 0 0.5rem;
+}
+
+/* Cabecera con días */
+.schedule-header {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding-right: 16px;
+  box-sizing: content-box;
+}
+
+.schedule-header .day-col {
+  text-align: center;
+  padding: 8px 4px;
+  border-left: 1px solid #ddd;
+}
+.schedule-header .day-col:first-of-type {
+  border-left: none;
+}
+.day-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Cuerpo con franjas de hora */
+.schedule-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  grid-auto-rows: 30px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  position: relative;
+}
+.schedule-body .time-label {
+  text-align: right;
+  padding: 0 0.25rem;
+  font-size: 0.8rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+.schedule-body .cell {
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.schedule-body .cell:first-of-type {
+  border-left: none;
+}
+
+.schedule-event {
+  position: absolute;
+  width: var(--event-width);
+  z-index: 1;              /* para que queden siempre por encima de la rejilla */
+  background: var(--verde-turquesa);
+  opacity: 0.9;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+
+/* Color de fondo según lectivo/descanso */
+.schedule-event.lectivo {
+  background-color: rgba(0, 175, 185, 1);
+}
+.schedule-event.descanso {
+  background-color: rgba(240, 113, 103, 1);
+}
+
+/* Tus placeholders (duración=0) */
+.schedule-event.placeholder {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+/* Estilo base para ambos elementos de estado (carpeta y fechas) */
+.validation-status {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; 
+    display: inline-block;
+    cursor: default;
+    font-size: 1.2rem; /* Tamaño del emoji */
+    line-height: 1;
+    vertical-align: middle; /* Para alinear con el texto del input */
+}
+
+/* Tooltip genérico para ambos avisos */
+.validation-status .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    max-width: 360px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: left;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    position: absolute;
+    bottom: 125%; /* encima del icono */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+/* Mostrar tooltip al pasar el ratón */
+.validation-status:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Estilos de curso.html */
+
+/* Contenedor principal para la página de curso */
+.curso-dashboard {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Apila la card superior */
+    gap: 1.5rem;
+}
+
+/* Contenedor para las dos columnas inferiores */
+.curso-main-content {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Columnas principales */
+.curso-columna-izquierda {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-columna-derecha {
+    flex: 3;
+    display: flex;
+}
+
+.curso-dashboard .card h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.curso-dashboard .card-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Contenedor para los campos en línea (Datos Generales) */
+.curso-dashboard .form-inline-container {
+    display: flex;
+    gap: 2rem; 
+    align-items: flex-end; 
+}
+
+.curso-dashboard .form-inline-container .form-group {
+    flex: 1; 
+    min-width: 0;
+}
+
+/* Grid para los formularios (Fechas) */
+.curso-dashboard .form-grid {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.curso-dashboard .sub-sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;    
+}
+
+.curso-dashboard .sub-section {
+    flex: 1;
+}
+
+.sub-section-header {
+    display: flex;
+    justify-content: space-between; /* Clave: empuja los elementos a los extremos */
+    align-items: center;          /* Alinea verticalmente el título y el botón */
+    margin-bottom: 1rem;          /* Espacio hasta la tabla */
+}
+
+.curso-dashboard .sub-section button{
+    width: auto;
+    height: 30px;
+    background-color: var(--azul-mar-claro);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'NationalPark', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.curso-dashboard .sub-section button:hover {
+    background-color: var(--rojo-melocoton);
+}
+
+/* Estilos específicos para los form-group de esta página */
+.curso-dashboard .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-dashboard .form-group label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.curso-dashboard .form-group input[type="text"],
+.curso-dashboard .form-group input[type="date"] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: 'NationalPark', sans-serif;
+}
+
+.curso-dashboard .form-group input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Estilos de tabla (probablemente no conflictivos, pero los mantenemos por consistencia) */
+.table-container {
+  height: 150px;
+  overflow-y: auto;
+}
+
+.curso-dashboard .data-table.minimal {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.curso-dashboard .data-table.minimal td {
+    text-align: center;
+    padding: 0.25rem 0.75rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.75rem;
+}
+
+
+.curso-dashboard .data-table.minimal th {
+    font-size: 0.8rem;
+    color: var(--azul-mar);
+    padding: 0;
+}
+
+.curso-dashboard .data-table.minimal .acciones {
+    text-align: right;
+}
+
+.curso-dashboard .data-table.minimal .acciones button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--azul-mar);
+}
+
+.curso-dashboard .data-table.minimal .acciones button:hover {
+    color: var(--rojo-melocoton);
+}
+
+/* --- Estilo para filas con errores de validación --- */
+.curso-dashboard .data-table.minimal tbody tr.fila-invalida {
+    background-color: #ffebee; /* Un tono rojo muy claro */
+}
+
+/* Asegura que los inputs en filas inválidas sigan siendo legibles */
+.curso-dashboard .data-table.minimal tbody tr.fila-invalida input {
+    background-color: #fff;
+}
+
+/* --- Estilos para inputs editables en tablas --- */
+.curso-dashboard .data-table.minimal tbody input {
+    background: transparent;
+    border: 1px solid #aaa;
+    width: 100%;
+    min-width: 100px;
+    padding: 0.2rem;
+    font-size: inherit; /* Hereda el tamaño de fuente del <td> */
+    font-family: inherit; /* Hereda la fuente de la página */
+    color: inherit;
+    border-radius: 4px;
+}
+
+.curso-dashboard .data-table.minimal tbody input[type="date"] {
+   text-align: center;
+}
+
+/* Muestra un borde sutil al pasar el ratón para indicar que es editable */
+.curso-dashboard .data-table.minimal tbody input:hover {
+    background: #f5f5f5;
+}
+
+/* Muestra un borde más claro al hacer clic para editar */
+.curso-dashboard .data-table.minimal tbody input:focus {
+    outline: 1px solid #a0cff7;
+    background: #ffffff;
+}
+
+/* --- Ajustes para input[type="color"] en tablas --- */
+
+/* Regla específica para anular el ancho del 100% */
+.curso-dashboard .data-table.minimal tbody input[type="color"] {
+    width: 20px;         /* Ancho fijo y más pequeño */
+    min-width: auto;     /* Anula el min-width de la regla general */
+    height: 20px;        /* Altura fija */
+    padding: 0;
+    vertical-align: middle; /* Para que se alinee bien con el resto de la fila */
+    cursor: pointer;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+}
+
+/* Opcional: Mejora visual para navegadores como Chrome/Safari */
+.curso-dashboard .data-table.minimal tbody input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.curso-dashboard .data-table.minimal tbody input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+/* --- Estilos para el Calendario Anual (Versión Compacta) --- */
+
+.calendar-wrapper {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+    padding-right: 5px; /* Pequeño espacio para que el scroll no se pegue */
+}
+
+/* Grid principal para los 12 meses (4 columnas x 3 filas) */
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+}
+
+/* Contenedor para cada mes */
+.month-container {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.4rem; /* Reducido */
+}
+
+.month-container.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Título del mes (ej. "SEPTIEMBRE") */
+.month-title {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0 0 0.3rem 0;
+    color: #333;
+}
+
+/* Grid para los días de la semana y los números (7 columnas) */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 0px; 
+    column-gap: 2px;
+}
+
+/* Estilo para las celdas de día (números y cabeceras) */
+.day-header,
+.day-number {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 0;
+}
+
+/* Cabecera de los días (L, M, X...) */
+.day-header {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.6rem;
+}
+
+/* Diferenciación para el fin de semana */
+.day-header.weekend,
+.day-number.weekend {
+    color: #e53935;
+}
+
+/* --- Estilo para días clave del calendario (inicio/fin) --- */
+.curso-dashboard .day-number.dia-clave {
+    background-color: var(--azul-mar);
+    border: solid 2px #fff;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* --- Estilo para días coloreados (vacaciones, festivos) --- */
+.curso-dashboard .day-number.dia-coloreado {
+    border: solid 2px #fff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px; /* Un ligero redondeo para los rangos */
+}
+
+/* --- Estilos para el Tooltip del Calendario (Controlado por JS) --- */
+
+.dia-con-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+/* --- Estilos para el Tooltip del Calendario (Controlado por JS) --- */
+.calendar-tooltip {
+    /* CAMBIO: position: fixed para que flote sobre toda la página */
+    position: fixed; 
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    max-width: 250px;
+    background-color: rgba(0,0,0,0.85);
+    color: #fff;
+    text-align: left;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: pre-line;
+    z-index: 1000; /* Un z-index alto para que esté por encima de todo */
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+/* --- NUEVAS CLASES DE POSICIONAMIENTO --- */
+
+/* Posición Vertical */
+.tooltip-align-top {
+    bottom: 115%; /* Aparece encima */
+}
+.tooltip-align-bottom {
+    top: 115%; /* Aparece debajo */
+}
+
+/* Posición Horizontal */
+.tooltip-align-left {
+    left: 0; /* Alineado a la izquierda del día */
+}
+.tooltip-align-right {
+    right: 0; /* Alineado a la derecha del día */
+}
+.tooltip-align-center {
+    left: 50%; /* Centrado (por defecto) */
+    transform: translateX(-50%);
+}
+
+
+/* Clase para mostrar el tooltip con JavaScript */
+.calendar-tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+}

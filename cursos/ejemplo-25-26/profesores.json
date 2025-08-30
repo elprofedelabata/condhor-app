@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "nombre": "Charles",
+    "apellido1": "Darwin",
+    "apellido2": "Pérez",
+    "id_departamento": 2,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 2,
+    "nombre": "Alan",
+    "apellido1": "Turing",
+    "apellido2": "Méndez",
+    "id_departamento": 13,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 3,
+    "nombre": "Salvador",
+    "apellido1": "Dalí",
+    "apellido2": "Vargas",
+    "id_departamento": 4,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 4,
+    "nombre": "Julio",
+    "apellido1": "César",
+    "apellido2": "González",
+    "id_departamento": 3,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 5,
+    "nombre": "Leonhard",
+    "apellido1": "Euler",
+    "apellido2": "Crespo",
+    "id_departamento": 13,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 6,
+    "nombre": "William",
+    "apellido1": "Shakespeare",
+    "apellido2": "López",
+    "id_departamento": 11,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 7,
+    "nombre": "Víctor",
+    "apellido1": "Hugo",
+    "apellido2": "García",
+    "id_departamento": 10,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 8,
+    "nombre": "Gustave",
+    "apellido1": "Eiffel",
+    "apellido2": "Real",
+    "id_departamento": 10,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 9,
+    "nombre": "Michael",
+    "apellido1": "Jordan",
+    "apellido2": "Ramos",
+    "id_departamento": 5,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 10,
+    "nombre": "Federico",
+    "apellido1": "García",
+    "apellido2": "Lorca",
+    "id_departamento": 12,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 11,
+    "nombre": "Pablo",
+    "apellido1": "Picasso",
+    "apellido2": "Domínguez",
+    "id_departamento": 4,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 12,
+    "nombre": "Freddy",
+    "apellido1": "Mercury",
+    "apellido2": "Heredia",
+    "id_departamento": 4,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 13,
+    "nombre": "Martín",
+    "apellido1": "Lutero",
+    "apellido2": "Flores",
+    "id_departamento": 17,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 14,
+    "nombre": "Carl Friedrich",
+    "apellido1": "Gauss",
+    "apellido2": "Rodríguez",
+    "id_departamento": 13,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 15,
+    "nombre": "Jane",
+    "apellido1": "Austen",
+    "apellido2": "Salvador",
+    "id_departamento": 11,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 16,
+    "nombre": "Napoleón",
+    "apellido1": "Bonaparte",
+    "apellido2": "Estévez",
+    "id_departamento": 3,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 17,
+    "nombre": "Charles",
+    "apellido1": "Dickens",
+    "apellido2": "Soria",
+    "id_departamento": 11,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 18,
+    "nombre": "Albert",
+    "apellido1": "Einstein",
+    "apellido2": "Gómez",
+    "id_departamento": 8,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 19,
+    "nombre": "Ada",
+    "apellido1": "Lovelace",
+    "apellido2": "Martínez",
+    "id_departamento": 19,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 20,
+    "nombre": "Jorge Luis",
+    "apellido1": "Borges",
+    "apellido2": "Acosta",
+    "id_departamento": 12,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 21,
+    "nombre": "María",
+    "apellido1": "Moliner",
+    "apellido2": "Bohórquez",
+    "id_departamento": 12,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 22,
+    "nombre": "Antoine",
+    "apellido1": "Lavoisier",
+    "apellido2": "Ríos",
+    "id_departamento": 8,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 23,
+    "nombre": "María",
+    "apellido1": "Montessori",
+    "apellido2": "Blanco",
+    "id_departamento": 14,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 24,
+    "nombre": "Gregor",
+    "apellido1": "Mendel",
+    "apellido2": "Díaz",
+    "id_departamento": 2,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 25,
+    "nombre": "Hedy",
+    "apellido1": "Lamarr",
+    "apellido2": "Romero",
+    "id_departamento": 19,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 26,
+    "nombre": "Karl",
+    "apellido1": "Marx",
+    "apellido2": "Hernández",
+    "id_departamento": 3,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  },
+  {
+    "id": 27,
+    "nombre": "Marie",
+    "apellido1": "Curie",
+    "apellido2": "Cruz",
+    "id_departamento": 8,
+    "correo_electronico": "",
+    "altabaja": "Alta",
+    "id_sustituto": 0
+  }
+]

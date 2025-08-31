@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#ffffff'
     ];
 
+    
     // Referencias al DOM
     const selectorProfesorBtn = document.getElementById('selectorProfesorBtn');
     const selectorDropdown = document.getElementById('selectorDropdown');
@@ -44,10 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const tramosMap = tramosData.reduce((map, tramo) => { map[tramo.id] = tramo; return map; }, {});
             const asignacionesProfesor = asignacionesData.filter(asig => asig.id_profesor === profesorActivo.id);
 
-            // Se definen aquí, fuera del bucle, para que mantengan su valor
-            const colorMap = {};
-            let colorIndex = 0;
-
             const eventosReales = asignacionesProfesor.map(asig => {
                 const tramo = tramosMap[asig.id_tramo];
                 const materia = materiasMap[asig.id_materia];
@@ -62,15 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const parseTimeToMin = t => { const [h, m] = (t || '00:00').split(':').map(Number); return h * 60 + m; };
                 const duracionMins = parseTimeToMin(tramo.hora_fin) - parseTimeToMin(tramo.hora_inicio);
 
-                // --- CORRECCIÓN ---
-                // Se han eliminado las dos líneas que reseteaban el colorMap y colorIndex.
-                // Ahora creamos la clave y asignamos el color.
-                const actividadKey = `${materia.id}-${grupos.join('-')}`;
-                if (!colorMap[actividadKey]) {
-                    colorMap[actividadKey] = PALETA_DE_COLORES[colorIndex % PALETA_DE_COLORES.length];
-                    colorIndex++;
-                }
-                
                 return {
                     dia: tramo.diasemana,
                     hora_inicio: tramo.hora_inicio,
@@ -79,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     nombreMateria: materia.nombre,
                     aula: aula,
                     grupos: grupos,
-                    color: colorMap[actividadKey] // Se usa el color asignado
+                    color: asig.color || '#cccccc'
                 };
             }).filter(Boolean);
 

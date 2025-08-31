@@ -307,7 +307,7 @@ body{
 
 .panel-leyenda {
   flex: 1; /* Ocupa 1 parte del espacio */
-  background-color: var(--morado-electrico);
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
   min-height: 60vh;
@@ -675,7 +675,7 @@ body{
 /* ============================================= */
 
 .panel-leyenda h3 {
-    color: #fff;
+    color: var(--morado-electrico);
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-weight: 600;
@@ -687,7 +687,7 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #333;
 }
 
 .leyenda-color {

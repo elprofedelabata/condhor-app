@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const panelHorario = document.querySelector('.panel-horario');
     const panelLeyenda = document.querySelector('.panel-leyenda');
     const horarioVersionSelect = document.getElementById('horarioVersionSelect');
+    const prevProfesorBtn = document.getElementById('prevProfesorBtn');
+    const nextProfesorBtn = document.getElementById('nextProfesorBtn');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
     let versionHorarioActiva = null, profesorActivo = null;
@@ -260,6 +262,37 @@ document.addEventListener('DOMContentLoaded', () => {
             versionHorarioActiva = e.target.value;
             actualizarVistaCompleta();
         });
+
+        nextProfesorBtn.addEventListener('click', () => {
+            cambiarProfesor(1);
+        });
+
+        prevProfesorBtn.addEventListener('click', () => {
+            cambiarProfesor(-1);
+        });
+    }
+
+    function cambiarProfesor(direccion) {
+        if (!profesorActivo || !todosLosProfesores || todosLosProfesores.length === 0) return;
+        
+        const currentIndex = todosLosProfesores.findIndex(p => p.id === profesorActivo.id);
+        
+        if (currentIndex === -1) {
+            if (todosLosProfesores.length > 0) {
+                seleccionarProfesor(todosLosProfesores[0]);
+            }
+            return;
+        }
+
+        let nextIndex = currentIndex + direccion;
+
+        if (nextIndex >= todosLosProfesores.length) {
+            nextIndex = 0;
+        } else if (nextIndex < 0) {
+            nextIndex = todosLosProfesores.length - 1;
+        }
+        
+        seleccionarProfesor(todosLosProfesores[nextIndex]);
     }
 
     function cargarVersionesDeHorario() {

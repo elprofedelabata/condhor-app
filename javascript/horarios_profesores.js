@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const eventosReales = asignacionesProfesor.map(asig => {
                 const tramo = tramosMap[asig.id_tramo];
                 const materia = materiasMap[asig.id_materia];
-                const aula = aulasMap[asig.id_aula] || '';
+                const aula = aulasMap[asig.id_aula] || null;
                 
                 if (!tramo || !materia) {
                     console.warn(`Datos incompletos para la asignación ID: ${asig.id}. Se saltará.`);
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const left = timeColWidth + (dayColWidth * (evento.dia - 1));
                 ev.style.cssText = `top:${top}px; height:${height}px; left:${left}px; width:${dayColWidth - 2}px; background-color:${evento.color};`;
                 const gruposTexto = evento.grupos.join(' · ');
-                ev.innerHTML = `<div class="event-top-row"><span class="event-materia">${evento.materia_ref}</span><span class="event-aula">${evento.aula}</span></div><div class="event-grupos-container">${gruposTexto}</div>`;
+                ev.innerHTML = `<div class="event-top-row"><span class="event-materia">${evento.materia_ref}</span><span class="event-aula">${evento.aula ? evento.aula.referencia : ''}</span></div><div class="event-grupos-container">${gruposTexto}</div>`;
                 scheduleBody.appendChild(ev);
             });
         });
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 map[depto.id] = { nombre: depto.nombre, abreviatura: depto.abreviatura, color: depto.color || '#cccccc' };
                 return map;
             }, {});
-            aulasMap = aulasData.reduce((map, aula) => { map[aula.id] = aula.nombre; return map; }, {});
+            aulasMap = aulasData.reduce((map, aula) => { map[aula.id] = aula; return map; }, {});
             unidadesMap = unidadesData.reduce((map, unidad) => { map[unidad.id] = unidad.nombre; return map; }, {});
 
             todosLosProfesores = profesoresData.map(profesor => {
@@ -217,14 +217,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const leyendaSet = new Set();
         const fragment = document.createDocumentFragment();
         eventos.forEach(evento => {
-            const key = `${evento.materia_ref}-${evento.aula}-${evento.grupos.join(',')}`;
+            const key = `${evento.materia_ref}-${evento.aula ? evento.aula.id : ''}-${evento.grupos.join(',')}`;
             if (!leyendaSet.has(key)) {
                 leyendaSet.add(key);
                 const nombreMateria = evento.nombreMateria || evento.materia_ref;
                 const gruposTexto = evento.grupos.join(' · ');
                 const item = document.createElement('div');
                 item.className = 'leyenda-item';
-                item.innerHTML = `<div class="leyenda-color" style="background-color: ${evento.color};"></div><div class="leyenda-info"><span class="leyenda-materia">${nombreMateria}</span><span class="leyenda-aula-grupos">${evento.aula ? `Aula: ${evento.aula}` : ''}${evento.aula && gruposTexto ? ' - ' : ''}${gruposTexto ? `Grupos: ${gruposTexto}` : ''}</span></div>`;
+                item.innerHTML = `<div class="leyenda-color" style="background-color: ${evento.color};"></div><div class="leyenda-info"><span class="leyenda-materia">${nombreMateria}</span><span class="leyenda-aula-grupos">${(evento.aula && evento.aula.nombre) ? `Aula: ${evento.aula.nombre}` : ''}${(evento.aula && evento.aula.nombre) && gruposTexto ? ' - ' : ''}${gruposTexto ? `Grupos: ${gruposTexto}` : ''}</span></div>`;
                 fragment.appendChild(item);
             }
         });

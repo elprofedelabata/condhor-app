@@ -742,3 +742,9 @@ body{
 .leyenda-linea-info svg {
     flex-shrink: 0;
 }
+
+.leyenda-items-container {
+    height: calc(60vh - 1.5rem - 1.5rem - 0.75rem - 1.5rem); /* panel-leyenda padding-top + h3 margin-bottom + h3 padding-bottom + panel-leyenda padding-bottom */
+    overflow-y: auto;
+    padding-right: 0.5rem; /* To make space for the scrollbar */
+}

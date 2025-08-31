@@ -134,8 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 scheduleBody.appendChild(divTramo);
             });
             eventos.forEach(evento => {
+                const key = `${evento.materia_ref}-${evento.aula ? evento.aula.id : ''}-${evento.grupos.map(g => g.id).join(',')}`;
                 const ev = document.createElement('div');
                 ev.className = 'schedule-event';
+                ev.dataset.key = key;
                 const eventoInicioMin = parseTimeToMin(evento.hora_inicio);
                 const top = ((eventoInicioMin - horaGridInicioMin) / 60) * rowHeight + 13;
                 const height = (evento.duracion / 60) * rowHeight;
@@ -143,6 +145,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 ev.style.cssText = `top:${top}px; height:${height}px; left:${left}px; width:${dayColWidth - 2}px; background-color:${evento.color};`;
                 const gruposTexto = evento.grupos.map(g => g.referencia).join(' · ');
                 ev.innerHTML = `<div class="event-top-row"><span class="event-materia">${evento.materia_ref}</span><span class="event-aula">${evento.aula ? evento.aula.referencia : ''}</span></div><div class="event-grupos-container">${gruposTexto}</div>`;
+                
+                ev.addEventListener('mouseover', () => {
+                    const legendItem = panelLeyenda.querySelector(`.leyenda-item[data-key="${key}"]`);
+                    if (legendItem) {
+                        legendItem.classList.add('leyenda-item-highlight');
+                    }
+                });
+
+                ev.addEventListener('mouseout', () => {
+                    const legendItem = panelLeyenda.querySelector(`.leyenda-item[data-key="${key}"]`);
+                    if (legendItem) {
+                        legendItem.classList.remove('leyenda-item-highlight');
+                    }
+                });
+
                 scheduleBody.appendChild(ev);
             });
         });
@@ -240,6 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const item = document.createElement('div');
                 item.className = 'leyenda-item';
+                item.dataset.key = key;
                 item.innerHTML = `
                     <div class="leyenda-color" style="background-color: ${evento.color};"></div>
                     <div class="leyenda-info">

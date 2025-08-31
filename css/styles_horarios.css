@@ -310,7 +310,7 @@ body{
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
-  height: 60vh;
+  height: 70vh;
   overflow-y: auto;
 }
 
@@ -689,6 +689,13 @@ body{
     align-items: flex-start;
     margin-bottom: 1rem;
     color: #333;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.leyenda-item-highlight {
+    background-color: var(--morado-electrico-muy-claro);
 }
 
 .leyenda-color {

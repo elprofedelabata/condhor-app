@@ -310,7 +310,8 @@ body{
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
-  min-height: 60vh;
+  height: 60vh;
+  overflow-y: auto;
 }
 
 
@@ -685,7 +686,7 @@ body{
 
 .leyenda-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 1rem;
     color: #333;
 }

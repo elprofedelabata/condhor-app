@@ -1,0 +1,9 @@
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración del editor
+.vscode/
+
+# Dependencias de Node (si alguna vez usas npm install)
+/node_modules/

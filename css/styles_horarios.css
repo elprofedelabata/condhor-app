@@ -706,6 +706,11 @@ body{
 .leyenda-materia {
     font-weight: 600;
     font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 250px;
 }
 
 .leyenda-aula-grupos {

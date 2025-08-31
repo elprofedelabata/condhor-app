@@ -265,6 +265,23 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${aulaHTML}
                         ${unidadesHTML}
                     </div>`;
+                
+                const leyendaColor = item.querySelector('.leyenda-color');
+
+                leyendaColor.addEventListener('mouseover', () => {
+                    const scheduleEvents = panelHorario.querySelectorAll(`.schedule-event[data-key="${key}"]`);
+                    scheduleEvents.forEach(ev => {
+                        ev.classList.add('schedule-event-highlight');
+                    });
+                });
+
+                leyendaColor.addEventListener('mouseout', () => {
+                    const scheduleEvents = panelHorario.querySelectorAll(`.schedule-event[data-key="${key}"]`);
+                    scheduleEvents.forEach(ev => {
+                        ev.classList.remove('schedule-event-highlight');
+                    });
+                });
+
                 fragment.appendChild(item);
             }
         });

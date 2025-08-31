@@ -310,7 +310,7 @@ body{
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
-  height: 70vh;
+  height: 60vh;
   overflow-y: auto;
 }
 
@@ -608,6 +608,12 @@ body{
   justify-content: space-between;
   font-size: 0.8rem;
   line-height: 1.2;
+  cursor: pointer;
+}
+
+.schedule-event-highlight {
+    border: 2px solid #000;
+    opacity: 0.8;
 }
 
 /* Fila superior (Materia + Aula) */

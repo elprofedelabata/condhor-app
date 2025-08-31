@@ -717,3 +717,14 @@ body{
     font-size: 0.8rem;
     opacity: 0.8;
 }
+
+.leyenda-linea-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.leyenda-linea-info svg {
+    flex-shrink: 0;
+}

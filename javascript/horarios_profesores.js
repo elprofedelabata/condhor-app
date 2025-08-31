@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return null;
                 }
                 
-                const grupos = (materia.id_unidades || []).map(id => unidadesMap[id]).filter(Boolean);
+                const grupos = (materia.ids_unidades || []).map(id => unidadesMap[id]).filter(Boolean);
                 const parseTimeToMin = t => { const [h, m] = (t || '00:00').split(':').map(Number); return h * 60 + m; };
                 const duracionMins = parseTimeToMin(tramo.hora_fin) - parseTimeToMin(tramo.hora_inicio);
 
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const height = (evento.duracion / 60) * rowHeight;
                 const left = timeColWidth + (dayColWidth * (evento.dia - 1));
                 ev.style.cssText = `top:${top}px; height:${height}px; left:${left}px; width:${dayColWidth - 2}px; background-color:${evento.color};`;
-                const gruposTexto = evento.grupos.join(' · ');
+                const gruposTexto = evento.grupos.map(g => g.referencia).join(' · ');
                 ev.innerHTML = `<div class="event-top-row"><span class="event-materia">${evento.materia_ref}</span><span class="event-aula">${evento.aula ? evento.aula.referencia : ''}</span></div><div class="event-grupos-container">${gruposTexto}</div>`;
                 scheduleBody.appendChild(ev);
             });
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return map;
             }, {});
             aulasMap = aulasData.reduce((map, aula) => { map[aula.id] = aula; return map; }, {});
-            unidadesMap = unidadesData.reduce((map, unidad) => { map[unidad.id] = unidad.nombre; return map; }, {});
+            unidadesMap = unidadesData.reduce((map, unidad) => { map[unidad.id] = unidad; return map; }, {});
 
             todosLosProfesores = profesoresData.map(profesor => {
                 const nombreFormateado = `${profesor.apellido1 || ''} ${profesor.apellido2 || ''}`.trim() + `, ${profesor.nombre || ''}`;
@@ -216,15 +216,37 @@ document.addEventListener('DOMContentLoaded', () => {
         panelLeyenda.innerHTML = '<h3>Leyenda</h3>';
         const leyendaSet = new Set();
         const fragment = document.createDocumentFragment();
+        const aulaIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 -960 960 960" fill="currentColor" style="vertical-align: middle; margin-right: 4px;"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm320-320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440Z"/></svg>`;
+        const unidadesIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 -960 960 960" fill="currentColor" style="vertical-align: middle; margin-right: 4px;"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></svg>`;
+
         eventos.forEach(evento => {
-            const key = `${evento.materia_ref}-${evento.aula ? evento.aula.id : ''}-${evento.grupos.join(',')}`;
+            const key = `${evento.materia_ref}-${evento.aula ? evento.aula.id : ''}-${evento.grupos.map(g => g.id).join(',')}`;
             if (!leyendaSet.has(key)) {
                 leyendaSet.add(key);
                 const nombreMateria = evento.nombreMateria || evento.materia_ref;
-                const gruposTexto = evento.grupos.join(' · ');
+                
+                const aulaHTML = (evento.aula && evento.aula.nombre) ? `
+                    <span class="leyenda-linea-info">
+                        ${aulaIcon}
+                        <span>${evento.aula.nombre}</span>
+                    </span>` : '';
+
+                const unidadesRef = evento.grupos.map(g => g.referencia).join(' · ');
+                const unidadesHTML = unidadesRef ? `
+                    <span class="leyenda-linea-info">
+                        ${unidadesIcon}
+                        <span>${unidadesRef}</span>
+                    </span>` : '';
+
                 const item = document.createElement('div');
                 item.className = 'leyenda-item';
-                item.innerHTML = `<div class="leyenda-color" style="background-color: ${evento.color};"></div><div class="leyenda-info"><span class="leyenda-materia">${nombreMateria}</span><span class="leyenda-aula-grupos">${(evento.aula && evento.aula.nombre) ? `Aula: ${evento.aula.nombre}` : ''}${(evento.aula && evento.aula.nombre) && gruposTexto ? ' - ' : ''}${gruposTexto ? `Grupos: ${gruposTexto}` : ''}</span></div>`;
+                item.innerHTML = `
+                    <div class="leyenda-color" style="background-color: ${evento.color};"></div>
+                    <div class="leyenda-info">
+                        <span class="leyenda-materia">${nombreMateria}</span>
+                        ${aulaHTML}
+                        ${unidadesHTML}
+                    </div>`;
                 fragment.appendChild(item);
             }
         });

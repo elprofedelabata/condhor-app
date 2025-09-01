@@ -294,7 +294,7 @@ body{
 .paneles-horario-container {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.25rem;
 }
 
 .panel-horario {
@@ -310,7 +310,7 @@ body{
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
-  height: 60vh;
+  height: 65vh;
   overflow-y: auto;
 }
 
@@ -693,8 +693,7 @@ body{
     margin-top: 0;
     margin-bottom: 0.25rem;
     font-weight: 600;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
 }
 
 .leyenda-item {
@@ -712,10 +711,10 @@ body{
 }
 
 .leyenda-color {
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     border-radius: 4px;
-    margin-right: 1rem;
+    margin-right: 0.75rem;
     border: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -751,9 +750,10 @@ body{
 }
 
 .leyenda-items-container {
-    height: calc(60vh - 1.5rem - 1.5rem - 0.75rem - 1.5rem); /* panel-leyenda padding-top + h3 margin-bottom + h3 padding-bottom + panel-leyenda padding-bottom */
+    height: calc(65vh - 1.5rem - 1.5rem - 0.75rem - 1.5rem); /* panel-leyenda padding-top + h3 margin-bottom + h3 padding-bottom + panel-leyenda padding-bottom */
     overflow-y: auto;
-    padding-right: 0.5rem; /* To make space for the scrollbar */
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border: solid 1px #999;
 }
 
 /* ============================================= */

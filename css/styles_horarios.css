@@ -748,3 +748,62 @@ body{
     overflow-y: auto;
     padding-right: 0.5rem; /* To make space for the scrollbar */
 }
+
+/* ============================================= */
+/* ===== MENÚ CONTEXTUAL PERSONALIZADO      ===== */
+/* ============================================= */
+
+.context-menu {
+  position: absolute;
+  z-index: 1000;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.context-menu.active {
+  display: block;
+}
+
+.context-menu-header {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.context-menu-items {
+  list-style: none;
+  padding: 0 0 0.5rem 0;
+  margin: 0;
+}
+
+.context-menu-item {
+  display: block;
+}
+
+.context-menu-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.context-menu-link:hover {
+  background-color: var(--morado-electrico);
+  color: #fff;
+}
+
+.context-menu-separator {
+  height: 1px;
+  background-color: #eee;
+  margin: 0.5rem 0;
+}

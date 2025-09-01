@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const horarioVersionSelect = document.getElementById('horarioVersionSelect');
     const prevProfesorBtn = document.getElementById('prevProfesorBtn');
     const nextProfesorBtn = document.getElementById('nextProfesorBtn');
+    const contextMenu = document.getElementById('context-menu');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
     let versionHorarioActiva = null, profesorActivo = null;
@@ -138,6 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ev = document.createElement('div');
                 ev.className = 'schedule-event';
                 ev.dataset.key = key;
+                ev.dataset.dia = evento.dia;
+                ev.dataset.horaInicio = evento.hora_inicio;
+                ev.dataset.duracion = evento.duracion;
+                ev.dataset.materiaRef = evento.materia_ref;
+                ev.dataset.color = evento.color;
                 const eventoInicioMin = parseTimeToMin(evento.hora_inicio);
                 const top = ((eventoInicioMin - horaGridInicioMin) / 60) * rowHeight + 13;
                 const height = (evento.duracion / 60) * rowHeight;
@@ -331,6 +337,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
         prevProfesorBtn.addEventListener('click', () => {
             cambiarProfesor(-1);
+        });
+
+        panelHorario.addEventListener('click', (e) => {
+            const eventElement = e.target.closest('.schedule-event');
+            
+            // Si hacemos clic fuera de un evento, pero dentro del panel, nos aseguramos de que el menú se cierre.
+            if (!eventElement) {
+                if (contextMenu.classList.contains('active')) {
+                    contextMenu.classList.remove('active');
+                }
+                return;
+            }
+
+            e.stopPropagation(); // Evita que el clic se propague al window
+
+            const { dia, horaInicio, duracion, materiaRef, color } = eventElement.dataset;
+            const diasSemana = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+            const diaStr = diasSemana[parseInt(dia, 10) - 1] || '?';
+
+            const parseTimeToMin = t => { const [h, m] = t.split(':').map(Number); return h * 60 + m; };
+            const formatMinToTime = m => {
+                const hours = String(Math.floor(m / 60)).padStart(2, '0');
+                const minutes = String(m % 60).padStart(2, '0');
+                return `${hours}:${minutes}`;
+            };
+
+            const horaFin = formatMinToTime(parseTimeToMin(horaInicio) + parseInt(duracion, 10));
+
+            const headerText = `${materiaRef} (${diaStr} - ${horaInicio} - ${horaFin})`;
+            
+            const contextMenuHeader = document.getElementById('context-menu-header');
+            contextMenuHeader.textContent = headerText;
+            contextMenuHeader.style.backgroundColor = color;
+
+            const { clientX: mouseX, clientY: mouseY } = e;
+
+            contextMenu.style.top = `${mouseY}px`;
+            contextMenu.style.left = `${mouseX}px`;
+            contextMenu.classList.add('active');
+        });
+    
+        window.addEventListener('click', (e) => {
+            // Si el menú está activo y el clic NO es dentro del menú, lo cierra
+            if (contextMenu.classList.contains('active') && !contextMenu.contains(e.target)) {
+                contextMenu.classList.remove('active');
+            }
+        });
+    
+        contextMenu.addEventListener('click', (e) => {
+            const menuItem = e.target.closest('.context-menu-item');
+            if (menuItem) {
+                e.preventDefault(); // Evita que el enlace '#' recargue la página
+                const action = menuItem.dataset.action;
+                console.log(`Acción seleccionada: ${action} en el evento:`, e.target.closest('.schedule-event'));
+                // Aquí se implementará la lógica para cada acción
+                contextMenu.classList.remove('active');
+            }
         });
     }
 

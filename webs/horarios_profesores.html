@@ -123,5 +123,25 @@
 <script src="../javascript/horarios_general.js" defer></script>
 <script src="../javascript/horarios_profesores.js" defer></script>
 
+<!-- Menú contextual personalizado -->
+<div id="context-menu" class="context-menu">
+    <div class="context-menu-header" id="context-menu-header"></div>
+    <ul class="context-menu-items">
+        <li class="context-menu-item" data-action="ver-unidad">
+            <a href="#" class="context-menu-link">Ver horario de la unidad</a>
+        </li>
+        <li class="context-menu-item" data-action="ver-aula">
+            <a href="#" class="context-menu-link">Ver horario del aula</a>
+        </li>
+        <li class="context-menu-separator"></li>
+        <li class="context-menu-item" data-action="editar">
+            <a href="#" class="context-menu-link">Editar evento</a>
+        </li>
+        <li class="context-menu-item" data-action="borrar">
+            <a href="#" class="context-menu-link">Borrar evento</a>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>

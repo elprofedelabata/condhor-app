@@ -373,9 +373,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const { clientX: mouseX, clientY: mouseY } = e;
 
-            contextMenu.style.top = `${mouseY}px`;
-            contextMenu.style.left = `${mouseX}px`;
+            // Añade la clase active para que el menú sea visible y tenga dimensiones
             contextMenu.classList.add('active');
+
+            const menuWidth = contextMenu.offsetWidth;
+            const menuHeight = contextMenu.offsetHeight;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            let top = mouseY;
+            let left = mouseX;
+
+            // Si se sale por abajo, muévelo hacia arriba del cursor
+            if (mouseY + menuHeight > windowHeight) {
+                top = mouseY - menuHeight;
+            }
+
+            // Si se sale por la derecha, muévelo a la izquierda del cursor
+            if (mouseX + menuWidth > windowWidth) {
+                left = mouseX - menuWidth;
+            }
+
+            // Asegurarse de que no se salga por arriba o por la izquierda después del ajuste
+            if (top < 0) {
+                top = 5; // Pequeño margen
+            }
+            if (left < 0) {
+                left = 5; // Pequeño margen
+            }
+
+            contextMenu.style.top = `${top}px`;
+            contextMenu.style.left = `${left}px`;
         });
     
         window.addEventListener('click', (e) => {

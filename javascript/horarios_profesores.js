@@ -361,13 +361,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- 2. Resetear y preparar el menú contextual ---
             const menuItemUnidad = contextMenu.querySelector('[data-action="ver-unidad"]');
             const menuItemAula = contextMenu.querySelector('[data-action="ver-aula"]');
-            const submenu = menuItemUnidad.querySelector('.context-submenu');
             
-            // Resetear estado
-            contextMenu.classList.remove('active'); 
+            // Limpiar estado anterior del item de unidad
             menuItemUnidad.classList.remove('has-submenu');
-            submenu.innerHTML = '';
-
+            let oldSubmenu = menuItemUnidad.querySelector('.context-submenu');
+            if (oldSubmenu) oldSubmenu.remove();
+            let oldArrow = menuItemUnidad.querySelector('.submenu-arrow');
+            if (oldArrow) oldArrow.remove();
 
             // --- 3. Lógica para la opción de AULA ---
             if (aula && aula.referencia) {
@@ -388,6 +388,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuItemUnidad.classList.add('has-submenu');
                 menuItemUnidad.querySelector('.context-menu-text').textContent = 'Ver horario de las unidades';
                 
+                // Crear y añadir flecha
+                const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                arrow.setAttribute('class', 'submenu-arrow');
+                arrow.setAttribute('height', '20px');
+                arrow.setAttribute('viewBox', '0 -960 960 960');
+                arrow.setAttribute('width', '20px');
+                arrow.setAttribute('fill', 'currentColor');
+                arrow.innerHTML = '<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>';
+                menuItemUnidad.querySelector('.context-menu-link').appendChild(arrow);
+
+                // Crear y llenar submenú
+                const submenu = document.createElement('div');
+                submenu.className = 'context-submenu';
                 grupos.forEach(grupo => {
                     const subItemLink = document.createElement('a');
                     subItemLink.href = '#';
@@ -395,12 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     subItemLink.textContent = grupo.referencia;
                     subItemLink.dataset.action = 'ver-unidad-especifica';
                     subItemLink.dataset.unidadId = grupo.id;
-                    
-                    const subItem = document.createElement('li');
-                    subItem.className = 'context-menu-item';
-                    subItem.appendChild(subItemLink);
-                    submenu.appendChild(subItem);
+                    submenu.appendChild(subItemLink);
                 });
+                menuItemUnidad.appendChild(submenu);
             }
 
             // --- 5. Rellenar cabecera del menú ---

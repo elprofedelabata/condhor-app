@@ -789,10 +789,13 @@ body{
 
 .context-menu-item {
   display: block;
+  position: relative; /* For submenu positioning */
 }
 
 .context-menu-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.75rem 1.25rem;
   color: #333;
   text-decoration: none;
@@ -809,4 +812,36 @@ body{
   height: 1px;
   background-color: #eee;
   margin: 0.5rem 0;
+}
+
+.submenu-arrow {
+  display: none; /* Hidden by default */
+  margin-left: 1rem;
+}
+
+.context-menu-item.has-submenu > .context-menu-link > .submenu-arrow {
+  display: block; /* Show arrow for items with a submenu */
+}
+
+.context-submenu {
+  display: none;
+  position: absolute;
+  top: -9px; /* Align with parent item, considering border */
+  left: 100%;
+  min-width: 180px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1001; /* Ensure it's above the parent menu */
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.context-menu-item:hover > .context-submenu {
+  display: block;
+}
+
+.context-submenu .context-menu-link {
+  padding: 0.6rem 1rem; /* Slightly smaller padding for submenu items */
 }

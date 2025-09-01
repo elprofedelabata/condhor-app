@@ -144,6 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 ev.dataset.duracion = evento.duracion;
                 ev.dataset.materiaRef = evento.materia_ref;
                 ev.dataset.color = evento.color;
+                ev.dataset.aula = JSON.stringify(evento.aula);
+                ev.dataset.grupos = JSON.stringify(evento.grupos);
                 const eventoInicioMin = parseTimeToMin(evento.hora_inicio);
                 const top = ((eventoInicioMin - horaGridInicioMin) / 60) * rowHeight + 13;
                 const height = (evento.duracion / 60) * rowHeight;
@@ -342,7 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
         panelHorario.addEventListener('click', (e) => {
             const eventElement = e.target.closest('.schedule-event');
             
-            // Si hacemos clic fuera de un evento, pero dentro del panel, nos aseguramos de que el menú se cierre.
             if (!eventElement) {
                 if (contextMenu.classList.contains('active')) {
                     contextMenu.classList.remove('active');
@@ -350,30 +351,75 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            e.stopPropagation(); // Evita que el clic se propague al window
+            e.stopPropagation();
 
-            const { dia, horaInicio, duracion, materiaRef, color } = eventElement.dataset;
+            // --- 1. Recoger datos del evento ---
+            const { dia, horaInicio, duracion, materiaRef, color, aula: aulaJSON, grupos: gruposJSON } = eventElement.dataset;
+            const aula = JSON.parse(aulaJSON || 'null');
+            const grupos = JSON.parse(gruposJSON || '[]');
+
+            // --- 2. Resetear y preparar el menú contextual ---
+            const menuItemUnidad = contextMenu.querySelector('[data-action="ver-unidad"]');
+            const menuItemAula = contextMenu.querySelector('[data-action="ver-aula"]');
+            const submenu = menuItemUnidad.querySelector('.context-submenu');
+            
+            // Resetear estado
+            contextMenu.classList.remove('active'); 
+            menuItemUnidad.classList.remove('has-submenu');
+            submenu.innerHTML = '';
+
+
+            // --- 3. Lógica para la opción de AULA ---
+            if (aula && aula.referencia) {
+                menuItemAula.style.display = 'block';
+                menuItemAula.querySelector('.context-menu-text').textContent = `Ver horario del aula ${aula.referencia}`;
+            } else {
+                menuItemAula.style.display = 'none';
+            }
+
+            // --- 4. Lógica para la opción de UNIDAD(ES) ---
+            if (grupos.length === 0) {
+                menuItemUnidad.style.display = 'none';
+            } else if (grupos.length === 1) {
+                menuItemUnidad.style.display = 'block';
+                menuItemUnidad.querySelector('.context-menu-text').textContent = `Ver horario de la unidad ${grupos[0].referencia}`;
+            } else {
+                menuItemUnidad.style.display = 'block';
+                menuItemUnidad.classList.add('has-submenu');
+                menuItemUnidad.querySelector('.context-menu-text').textContent = 'Ver horario de las unidades';
+                
+                grupos.forEach(grupo => {
+                    const subItemLink = document.createElement('a');
+                    subItemLink.href = '#';
+                    subItemLink.className = 'context-menu-link';
+                    subItemLink.textContent = grupo.referencia;
+                    subItemLink.dataset.action = 'ver-unidad-especifica';
+                    subItemLink.dataset.unidadId = grupo.id;
+                    
+                    const subItem = document.createElement('li');
+                    subItem.className = 'context-menu-item';
+                    subItem.appendChild(subItemLink);
+                    submenu.appendChild(subItem);
+                });
+            }
+
+            // --- 5. Rellenar cabecera del menú ---
             const diasSemana = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
             const diaStr = diasSemana[parseInt(dia, 10) - 1] || '?';
-
             const parseTimeToMin = t => { const [h, m] = t.split(':').map(Number); return h * 60 + m; };
             const formatMinToTime = m => {
                 const hours = String(Math.floor(m / 60)).padStart(2, '0');
                 const minutes = String(m % 60).padStart(2, '0');
                 return `${hours}:${minutes}`;
             };
-
             const horaFin = formatMinToTime(parseTimeToMin(horaInicio) + parseInt(duracion, 10));
-
             const headerText = `${materiaRef} (${diaStr} - ${horaInicio} - ${horaFin})`;
-            
             const contextMenuHeader = document.getElementById('context-menu-header');
             contextMenuHeader.textContent = headerText;
             contextMenuHeader.style.backgroundColor = color;
 
+            // --- 6. Posicionar y mostrar el menú ---
             const { clientX: mouseX, clientY: mouseY } = e;
-
-            // Añade la clase active para que el menú sea visible y tenga dimensiones
             contextMenu.classList.add('active');
 
             const menuWidth = contextMenu.offsetWidth;
@@ -384,23 +430,14 @@ document.addEventListener('DOMContentLoaded', () => {
             let top = mouseY;
             let left = mouseX;
 
-            // Si se sale por abajo, muévelo hacia arriba del cursor
             if (mouseY + menuHeight > windowHeight) {
                 top = mouseY - menuHeight;
             }
-
-            // Si se sale por la derecha, muévelo a la izquierda del cursor
             if (mouseX + menuWidth > windowWidth) {
                 left = mouseX - menuWidth;
             }
-
-            // Asegurarse de que no se salga por arriba o por la izquierda después del ajuste
-            if (top < 0) {
-                top = 5; // Pequeño margen
-            }
-            if (left < 0) {
-                left = 5; // Pequeño margen
-            }
+            if (top < 0) top = 5;
+            if (left < 0) left = 5;
 
             contextMenu.style.top = `${top}px`;
             contextMenu.style.left = `${left}px`;

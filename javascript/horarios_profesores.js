@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const simpleMateriaSelect = document.getElementById('simpleMateria');
     const simpleAulaSelect = document.getElementById('simpleAula');
     const simpleColorInput = document.getElementById('simpleColor');
+    const simpleModalForm = document.getElementById('simpleModalForm');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
     let todasLasMaterias = [], todasLasAulas = [];
@@ -67,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const duracionMins = parseTimeToMin(tramo.hora_fin) - parseTimeToMin(tramo.hora_inicio);
 
                 return {
+                    asignacionId: asig.id,
+                    materiaId: asig.id_materia,
                     dia: tramo.diasemana,
                     hora_inicio: tramo.hora_inicio,
                     duracion: duracionMins,
@@ -143,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ev = document.createElement('div');
                 ev.className = 'schedule-event';
                 ev.dataset.key = key;
+                ev.dataset.asignacionId = evento.asignacionId;
+                ev.dataset.materiaId = evento.materiaId;
                 ev.dataset.dia = evento.dia;
                 ev.dataset.horaInicio = evento.hora_inicio;
                 ev.dataset.duracion = evento.duracion;
@@ -504,13 +509,11 @@ document.addEventListener('DOMContentLoaded', () => {
         function abrirModal(eventElement) {
             if (!eventElement) return;
 
-            const { color, aula: aulaJSON, materiaRef } = eventElement.dataset;
+            const { color, aula: aulaJSON, materiaId } = eventElement.dataset;
             const aula = JSON.parse(aulaJSON || 'null');
-            const materia = todasLasMaterias.find(m => m.referencia === materiaRef);
 
-            if (materia) {
-                simpleMateriaSelect.value = materia.id;
-            }
+            simpleMateriaSelect.value = materiaId;
+
             if (aula) {
                 simpleAulaSelect.value = aula.id;
             } else {
@@ -548,6 +551,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Aquí se implementará la lógica para cada acción
                 contextMenu.classList.remove('active');
+            }
+        });
+
+        simpleModalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!eventoSeleccionado) return;
+
+            const asignacionId = eventoSeleccionado.dataset.asignacionId;
+            const nuevaMateriaId = simpleMateriaSelect.value;
+            const nuevaAulaId = simpleAulaSelect.value;
+            const nuevoColor = simpleColorInput.value;
+
+            const params = new URLSearchParams(window.location.search);
+            const cursoNombre = params.get('curso');
+            const rutaAsignaciones = path.join(process.cwd(), 'cursos', cursoNombre, versionHorarioActiva, 'asignaciones.json');
+
+            try {
+                let asignaciones = JSON.parse(fs.readFileSync(rutaAsignaciones, 'utf-8'));
+                const indiceAsignacion = asignaciones.findIndex(a => String(a.id) === asignacionId);
+
+                if (indiceAsignacion !== -1) {
+                    asignaciones[indiceAsignacion].id_materia = parseInt(nuevaMateriaId, 10);
+                    asignaciones[indiceAsignacion].id_aula = nuevaAulaId ? parseInt(nuevaAulaId, 10) : null;
+                    asignaciones[indiceAsignacion].color = nuevoColor;
+
+                    fs.writeFileSync(rutaAsignaciones, JSON.stringify(asignaciones, null, 2));
+                    cerrarModal();
+                    actualizarVistaCompleta();
+                } else {
+                    console.error('No se encontró la asignación a actualizar.');
+                }
+            } catch (error) {
+                console.error('Error al actualizar la asignación:', error);
             }
         });
     }

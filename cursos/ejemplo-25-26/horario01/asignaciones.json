@@ -1,3795 +1,3792 @@
 [
-
-    {
-        "id": 1,
-        "id_tramo": 1,
-        "id_profesor": 1,
-        "id_materia": 1,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#146707"
-    },
-    {
-        "id": 2,
-        "id_tramo": 2,
-        "id_profesor": 2,
-        "id_materia": 2,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 3,
-        "id_tramo": 2,
-        "id_profesor": 3,
-        "id_materia": 3,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 4,
-        "id_tramo": 3,
-        "id_profesor": 4,
-        "id_materia": 4,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#82451C"
-    },
-    {
-        "id": 5,
-        "id_tramo": 5,
-        "id_profesor": 5,
-        "id_materia": 5,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#165B7D"
-    },
-    {
-        "id": 6,
-        "id_tramo": 6,
-        "id_profesor": 6,
-        "id_materia": 6,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 7,
-        "id_tramo": 7,
-        "id_profesor": 7,
-        "id_materia": 7,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 8,
-        "id_tramo": 7,
-        "id_profesor": 8,
-        "id_materia": 8,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 9,
-        "id_tramo": 7,
-        "id_profesor": 10,
-        "id_materia": 9,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 10,
-        "id_tramo": 8,
-        "id_profesor": 9,
-        "id_materia": 10,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 11,
-        "id_tramo": 9,
-        "id_profesor": 10,
-        "id_materia": 11,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 12,
-        "id_tramo": 10,
-        "id_profesor": 4,
-        "id_materia": 4,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#82451C"
-    },
-    {
-        "id": 13,
-        "id_tramo": 12,
-        "id_profesor": 11,
-        "id_materia": 12,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 14,
-        "id_tramo": 13,
-        "id_profesor": 12,
-        "id_materia": 13,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 15,
-        "id_tramo": 14,
-        "id_profesor": 5,
-        "id_materia": 5,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#165B7D"
-    },
-    {
-        "id": 16,
-        "id_tramo": 15,
-        "id_profesor": 2,
-        "id_materia": 2,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 17,
-        "id_tramo": 15,
-        "id_profesor": 3,
-        "id_materia": 3,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 18,
-        "id_tramo": 16,
-        "id_profesor": 5,
-        "id_materia": 5,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#165B7D"
-    },
-    {
-        "id": 19,
-        "id_tramo": 17,
-        "id_profesor": 9,
-        "id_materia": 10,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 20,
-        "id_tramo": 19,
-        "id_profesor": 10,
-        "id_materia": 11,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 21,
-        "id_tramo": 20,
-        "id_profesor": 6,
-        "id_materia": 6,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 22,
-        "id_tramo": 21,
-        "id_profesor": 7,
-        "id_materia": 7,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 23,
-        "id_tramo": 21,
-        "id_profesor": 8,
-        "id_materia": 8,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 24,
-        "id_tramo": 21,
-        "id_profesor": 10,
-        "id_materia": 9,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 25,
-        "id_tramo": 22,
-        "id_profesor": 6,
-        "id_materia": 6,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 26,
-        "id_tramo": 23,
-        "id_profesor": 13,
-        "id_materia": 14,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 27,
-        "id_tramo": 23,
-        "id_profesor": 12,
-        "id_materia": 15,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 28,
-        "id_tramo": 24,
-        "id_profesor": 4,
-        "id_materia": 4,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#82451C"
-    },
-    {
-        "id": 29,
-        "id_tramo": 26,
-        "id_profesor": 1,
-        "id_materia": 1,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#146707"
-    },
-    {
-        "id": 30,
-        "id_tramo": 27,
-        "id_profesor": 10,
-        "id_materia": 11,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 31,
-        "id_tramo": 28,
-        "id_profesor": 8,
-        "id_materia": 16,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 32,
-        "id_tramo": 29,
-        "id_profesor": 6,
-        "id_materia": 6,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 33,
-        "id_tramo": 30,
-        "id_profesor": 9,
-        "id_materia": 10,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 34,
-        "id_tramo": 31,
-        "id_profesor": 10,
-        "id_materia": 11,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 35,
-        "id_tramo": 33,
-        "id_profesor": 12,
-        "id_materia": 13,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 36,
-        "id_tramo": 34,
-        "id_profesor": 5,
-        "id_materia": 5,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#165B7D"
-    },
-    {
-        "id": 37,
-        "id_tramo": 35,
-        "id_profesor": 1,
-        "id_materia": 1,
-        "id_aula": 8,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#146707"
-    },
-    {
-        "id": 38,
-        "id_tramo": 1,
-        "id_profesor": 14,
-        "id_materia": 17,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 39,
-        "id_tramo": 2,
-        "id_profesor": 4,
-        "id_materia": 18,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 40,
-        "id_tramo": 3,
-        "id_profesor": 10,
-        "id_materia": 19,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 41,
-        "id_tramo": 5,
-        "id_profesor": 6,
-        "id_materia": 20,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 42,
-        "id_tramo": 6,
-        "id_profesor": 11,
-        "id_materia": 22,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 43,
-        "id_tramo": 6,
-        "id_profesor": 13,
-        "id_materia": 21,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 44,
-        "id_tramo": 8,
-        "id_profesor": 11,
-        "id_materia": 23,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 45,
-        "id_tramo": 9,
-        "id_profesor": 9,
-        "id_materia": 24,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 46,
-        "id_tramo": 10,
-        "id_profesor": 1,
-        "id_materia": 25,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 47,
-        "id_tramo": 12,
-        "id_profesor": 2,
-        "id_materia": 26,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 48,
-        "id_tramo": 12,
-        "id_profesor": 3,
-        "id_materia": 27,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 49,
-        "id_tramo": 13,
-        "id_profesor": 14,
-        "id_materia": 17,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 50,
-        "id_tramo": 14,
-        "id_profesor": 4,
-        "id_materia": 18,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 51,
-        "id_tramo": 15,
-        "id_profesor": 1,
-        "id_materia": 25,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 52,
-        "id_tramo": 16,
-        "id_profesor": 6,
-        "id_materia": 20,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 53,
-        "id_tramo": 17,
-        "id_profesor": 10,
-        "id_materia": 19,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 54,
-        "id_tramo": 19,
-        "id_profesor": 12,
-        "id_materia": 28,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 55,
-        "id_tramo": 20,
-        "id_profesor": 9,
-        "id_materia": 24,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 56,
-        "id_tramo": 22,
-        "id_profesor": 14,
-        "id_materia": 17,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 57,
-        "id_tramo": 23,
-        "id_profesor": 10,
-        "id_materia": 29,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 58,
-        "id_tramo": 24,
-        "id_profesor": 6,
-        "id_materia": 20,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 59,
-        "id_tramo": 26,
-        "id_profesor": 10,
-        "id_materia": 19,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 60,
-        "id_tramo": 27,
-        "id_profesor": 4,
-        "id_materia": 18,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 61,
-        "id_tramo": 28,
-        "id_profesor": 2,
-        "id_materia": 26,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 62,
-        "id_tramo": 28,
-        "id_profesor": 3,
-        "id_materia": 27,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 63,
-        "id_tramo": 29,
-        "id_profesor": 10,
-        "id_materia": 19,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 64,
-        "id_tramo": 30,
-        "id_profesor": 6,
-        "id_materia": 20,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 65,
-        "id_tramo": 31,
-        "id_profesor": 14,
-        "id_materia": 17,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 66,
-        "id_tramo": 33,
-        "id_profesor": 1,
-        "id_materia": 25,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 67,
-        "id_tramo": 34,
-        "id_profesor": 12,
-        "id_materia": 28,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 68,
-        "id_tramo": 35,
-        "id_profesor": 9,
-        "id_materia": 24,
-        "id_aula": 9,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 69,
-        "id_tramo": 1,
-        "id_profesor": 7,
-        "id_materia": 30,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 70,
-        "id_tramo": 1,
-        "id_profesor": 2,
-        "id_materia": 31,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 71,
-        "id_tramo": 1,
-        "id_profesor": 11,
-        "id_materia": 32,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 72,
-        "id_tramo": 2,
-        "id_profesor": 9,
-        "id_materia": 33,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 73,
-        "id_tramo": 3,
-        "id_profesor": 12,
-        "id_materia": 34,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 74,
-        "id_tramo": 5,
-        "id_profesor": 15,
-        "id_materia": 35,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 75,
-        "id_tramo": 6,
-        "id_profesor": 16,
-        "id_materia": 36,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 76,
-        "id_tramo": 7,
-        "id_profesor": 5,
-        "id_materia": 37,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 77,
-        "id_tramo": 8,
-        "id_profesor": 19,
-        "id_materia": 38,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 78,
-        "id_tramo": 9,
-        "id_profesor": 20,
-        "id_materia": 39,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 79,
-        "id_tramo": 10,
-        "id_profesor": 18,
-        "id_materia": 40,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 80,
-        "id_tramo": 12,
-        "id_profesor": 15,
-        "id_materia": 35,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 81,
-        "id_tramo": 13,
-        "id_profesor": 5,
-        "id_materia": 37,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 82,
-        "id_tramo": 14,
-        "id_profesor": 16,
-        "id_materia": 36,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 83,
-        "id_tramo": 15,
-        "id_profesor": 13,
-        "id_materia": 41,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 84,
-        "id_tramo": 16,
-        "id_profesor": 15,
-        "id_materia": 35,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 85,
-        "id_tramo": 17,
-        "id_profesor": 5,
-        "id_materia": 37,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 86,
-        "id_tramo": 19,
-        "id_profesor": 19,
-        "id_materia": 38,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 87,
-        "id_tramo": 20,
-        "id_profesor": 15,
-        "id_materia": 42,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 88,
-        "id_tramo": 21,
-        "id_profesor": 20,
-        "id_materia": 39,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 89,
-        "id_tramo": 22,
-        "id_profesor": 7,
-        "id_materia": 30,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 90,
-        "id_tramo": 22,
-        "id_profesor": 2,
-        "id_materia": 31,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 91,
-        "id_tramo": 22,
-        "id_profesor": 11,
-        "id_materia": 32,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 92,
-        "id_tramo": 23,
-        "id_profesor": 18,
-        "id_materia": 40,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 93,
-        "id_tramo": 24,
-        "id_profesor": 13,
-        "id_materia": 43,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 94,
-        "id_tramo": 24,
-        "id_profesor": 11,
-        "id_materia": 44,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 95,
-        "id_tramo": 26,
-        "id_profesor": 20,
-        "id_materia": 39,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 96,
-        "id_tramo": 27,
-        "id_profesor": 9,
-        "id_materia": 33,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 97,
-        "id_tramo": 28,
-        "id_profesor": 5,
-        "id_materia": 37,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 98,
-        "id_tramo": 29,
-        "id_profesor": 18,
-        "id_materia": 40,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 99,
-        "id_tramo": 30,
-        "id_profesor": 19,
-        "id_materia": 38,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 100,
-        "id_tramo": 31,
-        "id_profesor": 12,
-        "id_materia": 34,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 101,
-        "id_tramo": 33,
-        "id_profesor": 15,
-        "id_materia": 35,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 102,
-        "id_tramo": 34,
-        "id_profesor": 16,
-        "id_materia": 36,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 103,
-        "id_tramo": 35,
-        "id_profesor": 20,
-        "id_materia": 39,
-        "id_aula": 13,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 104,
-        "id_tramo": 2,
-        "id_profesor": 12,
-        "id_materia": 45,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 105,
-        "id_tramo": 3,
-        "id_profesor": 16,
-        "id_materia": 46,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 106,
-        "id_tramo": 5,
-        "id_profesor": 16,
-        "id_materia": 47,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 107,
-        "id_tramo": 6,
-        "id_profesor": 5,
-        "id_materia": 48,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 108,
-        "id_tramo": 7,
-        "id_profesor": 15,
-        "id_materia": 49,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 109,
-        "id_tramo": 8,
-        "id_profesor": 20,
-        "id_materia": 50,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 110,
-        "id_tramo": 9,
-        "id_profesor": 15,
-        "id_materia": 49,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 111,
-        "id_tramo": 10,
-        "id_profesor": 16,
-        "id_materia": 46,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 112,
-        "id_tramo": 12,
-        "id_profesor": 18,
-        "id_materia": 51,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 113,
-        "id_tramo": 13,
-        "id_profesor": 9,
-        "id_materia": 52,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 114,
-        "id_tramo": 14,
-        "id_profesor": 19,
-        "id_materia": 53,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 115,
-        "id_tramo": 15,
-        "id_profesor": 5,
-        "id_materia": 48,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 116,
-        "id_tramo": 16,
-        "id_profesor": 18,
-        "id_materia": 51,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 117,
-        "id_tramo": 17,
-        "id_profesor": 15,
-        "id_materia": 49,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 118,
-        "id_tramo": 19,
-        "id_profesor": 20,
-        "id_materia": 50,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 119,
-        "id_tramo": 20,
-        "id_profesor": 13,
-        "id_materia": 54,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 120,
-        "id_tramo": 20,
-        "id_profesor": 14,
-        "id_materia": 55,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 121,
-        "id_tramo": 21,
-        "id_profesor": 19,
-        "id_materia": 53,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 122,
-        "id_tramo": 23,
-        "id_profesor": 9,
-        "id_materia": 52,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 123,
-        "id_tramo": 24,
-        "id_profesor": 20,
-        "id_materia": 50,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 124,
-        "id_tramo": 26,
-        "id_profesor": 16,
-        "id_materia": 46,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 125,
-        "id_tramo": 27,
-        "id_profesor": 5,
-        "id_materia": 48,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 126,
-        "id_tramo": 28,
-        "id_profesor": 13,
-        "id_materia": 56,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 127,
-        "id_tramo": 29,
-        "id_profesor": 20,
-        "id_materia": 50,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 128,
-        "id_tramo": 30,
-        "id_profesor": 12,
-        "id_materia": 45,
-        "id_aula": 1,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 129,
-        "id_tramo": 31,
-        "id_profesor": 15,
-        "id_materia": 49,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 130,
-        "id_tramo": 33,
-        "id_profesor": 18,
-        "id_materia": 51,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 131,
-        "id_tramo": 34,
-        "id_profesor": 19,
-        "id_materia": 53,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 132,
-        "id_tramo": 35,
-        "id_profesor": 5,
-        "id_materia": 48,
-        "id_aula": 14,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 133,
-        "id_tramo": 1,
-        "id_profesor": 21,
-        "id_materia": 57,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 134,
-        "id_tramo": 2,
-        "id_profesor": 6,
-        "id_materia": 58,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 135,
-        "id_tramo": 3,
-        "id_profesor": 9,
-        "id_materia": 59,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 136,
-        "id_tramo": 5,
-        "id_profesor": 4,
-        "id_materia": 60,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 137,
-        "id_tramo": 6,
-        "id_profesor": 18,
-        "id_materia": 61,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 138,
-        "id_tramo": 7,
-        "id_profesor": 3,
-        "id_materia": 62,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 139,
-        "id_tramo": 8,
-        "id_profesor": 21,
-        "id_materia": 57,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 140,
-        "id_tramo": 9,
-        "id_profesor": 6,
-        "id_materia": 58,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 141,
-        "id_tramo": 10,
-        "id_profesor": 13,
-        "id_materia": 63,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 142,
-        "id_tramo": 12,
-        "id_profesor": 14,
-        "id_materia": 64,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 143,
-        "id_tramo": 13,
-        "id_profesor": 19,
-        "id_materia": 65,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 144,
-        "id_tramo": 14,
-        "id_profesor": 7,
-        "id_materia": 66,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 145,
-        "id_tramo": 14,
-        "id_profesor": 2,
-        "id_materia": 67,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 146,
-        "id_tramo": 15,
-        "id_profesor": 4,
-        "id_materia": 60,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 147,
-        "id_tramo": 16,
-        "id_profesor": 1,
-        "id_materia": 68,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 148,
-        "id_tramo": 17,
-        "id_profesor": 14,
-        "id_materia": 64,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 149,
-        "id_tramo": 19,
-        "id_profesor": 6,
-        "id_materia": 58,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 150,
-        "id_tramo": 20,
-        "id_profesor": 18,
-        "id_materia": 61,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 151,
-        "id_tramo": 21,
-        "id_profesor": 3,
-        "id_materia": 69,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 152,
-        "id_tramo": 22,
-        "id_profesor": 19,
-        "id_materia": 65,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 153,
-        "id_tramo": 23,
-        "id_profesor": 21,
-        "id_materia": 57,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 154,
-        "id_tramo": 24,
-        "id_profesor": 14,
-        "id_materia": 64,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 155,
-        "id_tramo": 26,
-        "id_profesor": 18,
-        "id_materia": 61,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 156,
-        "id_tramo": 27,
-        "id_profesor": 3,
-        "id_materia": 62,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 157,
-        "id_tramo": 28,
-        "id_profesor": 4,
-        "id_materia": 60,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 158,
-        "id_tramo": 29,
-        "id_profesor": 21,
-        "id_materia": 57,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 159,
-        "id_tramo": 30,
-        "id_profesor": 7,
-        "id_materia": 66,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 160,
-        "id_tramo": 30,
-        "id_profesor": 2,
-        "id_materia": 67,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 161,
-        "id_tramo": 31,
-        "id_profesor": 9,
-        "id_materia": 59,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 162,
-        "id_tramo": 33,
-        "id_profesor": 6,
-        "id_materia": 58,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 163,
-        "id_tramo": 34,
-        "id_profesor": 1,
-        "id_materia": 68,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 164,
-        "id_tramo": 35,
-        "id_profesor": 14,
-        "id_materia": 64,
-        "id_aula": 7,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 165,
-        "id_tramo": 1,
-        "id_profesor": 19,
-        "id_materia": 70,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 166,
-        "id_tramo": 2,
-        "id_profesor": 14,
-        "id_materia": 71,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 167,
-        "id_tramo": 3,
-        "id_profesor": 17,
-        "id_materia": 72,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 168,
-        "id_tramo": 5,
-        "id_profesor": 2,
-        "id_materia": 73,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 169,
-        "id_tramo": 5,
-        "id_profesor": 8,
-        "id_materia": 74,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 170,
-        "id_tramo": 5,
-        "id_profesor": 19,
-        "id_materia": 75,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 171,
-        "id_tramo": 6,
-        "id_profesor": 7,
-        "id_materia": 76,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 172,
-        "id_tramo": 7,
-        "id_profesor": 21,
-        "id_materia": 77,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 173,
-        "id_tramo": 8,
-        "id_profesor": 1,
-        "id_materia": 78,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 174,
-        "id_tramo": 9,
-        "id_profesor": 21,
-        "id_materia": 77,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 175,
-        "id_tramo": 10,
-        "id_profesor": 3,
-        "id_materia": 79,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 176,
-        "id_tramo": 12,
-        "id_profesor": 9,
-        "id_materia": 80,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 177,
-        "id_tramo": 13,
-        "id_profesor": 24,
-        "id_materia": 81,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 178,
-        "id_tramo": 14,
-        "id_profesor": 14,
-        "id_materia": 71,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 179,
-        "id_tramo": 15,
-        "id_profesor": 21,
-        "id_materia": 77,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 180,
-        "id_tramo": 16,
-        "id_profesor": 13,
-        "id_materia": 82,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 181,
-        "id_tramo": 16,
-        "id_profesor": 16,
-        "id_materia": 83,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 182,
-        "id_tramo": 17,
-        "id_profesor": 3,
-        "id_materia": 79,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 183,
-        "id_tramo": 19,
-        "id_profesor": 14,
-        "id_materia": 71,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 184,
-        "id_tramo": 20,
-        "id_profesor": 7,
-        "id_materia": 76,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 185,
-        "id_tramo": 21,
-        "id_profesor": 14,
-        "id_materia": 84,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 186,
-        "id_tramo": 22,
-        "id_profesor": 21,
-        "id_materia": 77,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 187,
-        "id_tramo": 23,
-        "id_profesor": 1,
-        "id_materia": 78,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 188,
-        "id_tramo": 24,
-        "id_profesor": 19,
-        "id_materia": 70,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 189,
-        "id_tramo": 26,
-        "id_profesor": 17,
-        "id_materia": 72,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 190,
-        "id_tramo": 27,
-        "id_profesor": 24,
-        "id_materia": 81,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 191,
-        "id_tramo": 28,
-        "id_profesor": 7,
-        "id_materia": 76,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 192,
-        "id_tramo": 29,
-        "id_profesor": 17,
-        "id_materia": 72,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 193,
-        "id_tramo": 30,
-        "id_profesor": 14,
-        "id_materia": 71,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 194,
-        "id_tramo": 31,
-        "id_profesor": 7,
-        "id_materia": 76,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 195,
-        "id_tramo": 33,
-        "id_profesor": 24,
-        "id_materia": 81,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 196,
-        "id_tramo": 34,
-        "id_profesor": 9,
-        "id_materia": 80,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 197,
-        "id_tramo": 35,
-        "id_profesor": 2,
-        "id_materia": 73,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 198,
-        "id_tramo": 35,
-        "id_profesor": 8,
-        "id_materia": 74,
-        "id_aula": 10,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 199,
-        "id_tramo": 35,
-        "id_profesor": 19,
-        "id_materia": 75,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 200,
-        "id_tramo": 2,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 201,
-        "id_tramo": 3,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 202,
-        "id_tramo": 6,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 203,
-        "id_tramo": 7,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 204,
-        "id_tramo": 8,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 205,
-        "id_tramo": 9,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 206,
-        "id_tramo": 13,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 207,
-        "id_tramo": 14,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 208,
-        "id_tramo": 15,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 209,
-        "id_tramo": 19,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 210,
-        "id_tramo": 20,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 211,
-        "id_tramo": 22,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 212,
-        "id_tramo": 23,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 213,
-        "id_tramo": 26,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 214,
-        "id_tramo": 27,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 215,
-        "id_tramo": 28,
-        "id_profesor": 23,
-        "id_materia": 87,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 216,
-        "id_tramo": 29,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 217,
-        "id_tramo": 30,
-        "id_profesor": 22,
-        "id_materia": 86,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 218,
-        "id_tramo": 31,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 219,
-        "id_tramo": 33,
-        "id_profesor": 26,
-        "id_materia": 85,
-        "id_aula": 16,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 220,
-        "id_tramo": 1,
-        "id_profesor": 3,
-        "id_materia": 88,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 221,
-        "id_tramo": 2,
-        "id_profesor": 16,
-        "id_materia": 89,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 222,
-        "id_tramo": 3,
-        "id_profesor": 5,
-        "id_materia": 90,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 223,
-        "id_tramo": 6,
-        "id_profesor": 21,
-        "id_materia": 91,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 224,
-        "id_tramo": 7,
-        "id_profesor": 6,
-        "id_materia": 92,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 225,
-        "id_tramo": 8,
-        "id_profesor": 5,
-        "id_materia": 90,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 226,
-        "id_tramo": 9,
-        "id_profesor": 14,
-        "id_materia": 93,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 227,
-        "id_tramo": 10,
-        "id_profesor": 9,
-        "id_materia": 94,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 228,
-        "id_tramo": 12,
-        "id_profesor": 1,
-        "id_materia": 95,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 229,
-        "id_tramo": 13,
-        "id_profesor": 21,
-        "id_materia": 91,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 230,
-        "id_tramo": 14,
-        "id_profesor": 1,
-        "id_materia": 96,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 231,
-        "id_tramo": 15,
-        "id_profesor": 6,
-        "id_materia": 92,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 232,
-        "id_tramo": 16,
-        "id_profesor": 3,
-        "id_materia": 88,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 233,
-        "id_tramo": 17,
-        "id_profesor": 13,
-        "id_materia": 97,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 234,
-        "id_tramo": 17,
-        "id_profesor": 16,
-        "id_materia": 98,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 235,
-        "id_tramo": 19,
-        "id_profesor": 16,
-        "id_materia": 89,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 236,
-        "id_tramo": 20,
-        "id_profesor": 5,
-        "id_materia": 90,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 237,
-        "id_tramo": 21,
-        "id_profesor": 27,
-        "id_materia": 99,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 238,
-        "id_tramo": 22,
-        "id_profesor": 1,
-        "id_materia": 96,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 239,
-        "id_tramo": 23,
-        "id_profesor": 6,
-        "id_materia": 92,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 240,
-        "id_tramo": 24,
-        "id_profesor": 9,
-        "id_materia": 94,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 241,
-        "id_tramo": 26,
-        "id_profesor": 21,
-        "id_materia": 91,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 242,
-        "id_tramo": 27,
-        "id_profesor": 16,
-        "id_materia": 89,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 243,
-        "id_tramo": 28,
-        "id_profesor": 14,
-        "id_materia": 93,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 244,
-        "id_tramo": 29,
-        "id_profesor": 5,
-        "id_materia": 90,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 245,
-        "id_tramo": 30,
-        "id_profesor": 21,
-        "id_materia": 91,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 246,
-        "id_tramo": 31,
-        "id_profesor": 6,
-        "id_materia": 92,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 247,
-        "id_tramo": 33,
-        "id_profesor": 14,
-        "id_materia": 93,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 248,
-        "id_tramo": 34,
-        "id_profesor": 27,
-        "id_materia": 99,
-        "id_aula": 11,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 249,
-        "id_tramo": 1,
-        "id_profesor": 24,
-        "id_materia": 100,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 250,
-        "id_tramo": 2,
-        "id_profesor": 7,
-        "id_materia": 101,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 251,
-        "id_tramo": 2,
-        "id_profesor": 8,
-        "id_materia": 102,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 252,
-        "id_tramo": 2,
-        "id_profesor": 19,
-        "id_materia": 103,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 253,
-        "id_tramo": 2,
-        "id_profesor": 25,
-        "id_materia": 104,
-        "id_aula": 5,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 254,
-        "id_tramo": 3,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 18,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 255,
-        "id_tramo": 3,
-        "id_profesor": 11,
-        "id_materia": 106,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 256,
-        "id_tramo": 3,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 257,
-        "id_tramo": 3,
-        "id_profesor": 3,
-        "id_materia": 108,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 258,
-        "id_tramo": 3,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 259,
-        "id_tramo": 5,
-        "id_profesor": 26,
-        "id_materia": 110,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 260,
-        "id_tramo": 6,
-        "id_profesor": 25,
-        "id_materia": 111,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 261,
-        "id_tramo": 7,
-        "id_profesor": 13,
-        "id_materia": 112,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 262,
-        "id_tramo": 8,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 263,
-        "id_tramo": 8,
-        "id_profesor": 25,
-        "id_materia": 113,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 264,
-        "id_tramo": 8,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 18,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 265,
-        "id_tramo": 8,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 266,
-        "id_tramo": 8,
-        "id_profesor": 2,
-        "id_materia": 114,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 267,
-        "id_tramo": 9,
-        "id_profesor": 11,
-        "id_materia": 115,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 268,
-        "id_tramo": 9,
-        "id_profesor": 16,
-        "id_materia": 116,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 269,
-        "id_tramo": 9,
-        "id_profesor": 24,
-        "id_materia": 117,
-        "id_aula": 5,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 270,
-        "id_tramo": 9,
-        "id_profesor": 25,
-        "id_materia": 118,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 271,
-        "id_tramo": 9,
-        "id_profesor": 23,
-        "id_materia": 119,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 272,
-        "id_tramo": 9,
-        "id_profesor": 1,
-        "id_materia": 120,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 273,
-        "id_tramo": 10,
-        "id_profesor": 25,
-        "id_materia": 111,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 274,
-        "id_tramo": 12,
-        "id_profesor": 7,
-        "id_materia": 101,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 275,
-        "id_tramo": 12,
-        "id_profesor": 8,
-        "id_materia": 102,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 276,
-        "id_tramo": 12,
-        "id_profesor": 19,
-        "id_materia": 103,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 277,
-        "id_tramo": 12,
-        "id_profesor": 25,
-        "id_materia": 104,
-        "id_aula": 5,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 278,
-        "id_tramo": 13,
-        "id_profesor": 20,
-        "id_materia": 121,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 279,
-        "id_tramo": 14,
-        "id_profesor": 17,
-        "id_materia": 122,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 280,
-        "id_tramo": 15,
-        "id_profesor": 17,
-        "id_materia": 123,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D50000"
-    },
-    {
-        "id": 281,
-        "id_tramo": 16,
-        "id_profesor": 20,
-        "id_materia": 121,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 282,
-        "id_tramo": 17,
-        "id_profesor": 25,
-        "id_materia": 111,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 283,
-        "id_tramo": 19,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 18,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 284,
-        "id_tramo": 19,
-        "id_profesor": 11,
-        "id_materia": 106,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 285,
-        "id_tramo": 19,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 286,
-        "id_tramo": 19,
-        "id_profesor": 3,
-        "id_materia": 108,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 287,
-        "id_tramo": 19,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 288,
-        "id_tramo": 20,
-        "id_profesor": 17,
-        "id_materia": 122,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 289,
-        "id_tramo": 21,
-        "id_profesor": 26,
-        "id_materia": 110,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 290,
-        "id_tramo": 22,
-        "id_profesor": 24,
-        "id_materia": 100,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 291,
-        "id_tramo": 23,
-        "id_profesor": 20,
-        "id_materia": 121,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 292,
-        "id_tramo": 24,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 293,
-        "id_tramo": 24,
-        "id_profesor": 25,
-        "id_materia": 113,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 294,
-        "id_tramo": 24,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 18,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 295,
-        "id_tramo": 24,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 296,
-        "id_tramo": 24,
-        "id_profesor": 2,
-        "id_materia": 114,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 297,
-        "id_tramo": 26,
-        "id_profesor": 7,
-        "id_materia": 101,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 298,
-        "id_tramo": 26,
-        "id_profesor": 8,
-        "id_materia": 102,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 299,
-        "id_tramo": 26,
-        "id_profesor": 19,
-        "id_materia": 103,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 300,
-        "id_tramo": 26,
-        "id_profesor": 25,
-        "id_materia": 104,
-        "id_aula": 5,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 301,
-        "id_tramo": 27,
-        "id_profesor": 17,
-        "id_materia": 122,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 302,
-        "id_tramo": 28,
-        "id_profesor": 26,
-        "id_materia": 110,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 303,
-        "id_tramo": 29,
-        "id_profesor": 11,
-        "id_materia": 115,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5E35B1"
-    },
-    {
-        "id": 304,
-        "id_tramo": 29,
-        "id_profesor": 16,
-        "id_materia": 116,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#AD1457"
-    },
-    {
-        "id": 305,
-        "id_tramo": 29,
-        "id_profesor": 24,
-        "id_materia": 117,
-        "id_aula": 5,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00796B"
-    },
-    {
-        "id": 306,
-        "id_tramo": 29,
-        "id_profesor": 25,
-        "id_materia": 118,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#303F9F"
-    },
-    {
-        "id": 307,
-        "id_tramo": 29,
-        "id_profesor": 23,
-        "id_materia": 119,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#F4511E"
-    },
-    {
-        "id": 308,
-        "id_tramo": 29,
-        "id_profesor": 1,
-        "id_materia": 120,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C2185B"
-    },
-    {
-        "id": 309,
-        "id_tramo": 30,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 18,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 310,
-        "id_tramo": 30,
-        "id_profesor": 11,
-        "id_materia": 106,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 311,
-        "id_tramo": 30,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 312,
-        "id_tramo": 30,
-        "id_profesor": 3,
-        "id_materia": 108,
-        "id_aula": 6,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 313,
-        "id_tramo": 30,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 314,
-        "id_tramo": 31,
-        "id_profesor": 25,
-        "id_materia": 111,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 315,
-        "id_tramo": 33,
-        "id_profesor": 20,
-        "id_materia": 121,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#5D4037"
-    },
-    {
-        "id": 316,
-        "id_tramo": 34,
-        "id_profesor": 24,
-        "id_materia": 107,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 317,
-        "id_tramo": 34,
-        "id_profesor": 25,
-        "id_materia": 113,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#4A148C"
-    },
-    {
-        "id": 318,
-        "id_tramo": 34,
-        "id_profesor": 18,
-        "id_materia": 105,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 319,
-        "id_tramo": 34,
-        "id_profesor": 23,
-        "id_materia": 109,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 320,
-        "id_tramo": 34,
-        "id_profesor": 2,
-        "id_materia": 114,
-        "id_aula": 12,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8E24AA"
-    },
-    {
-        "id": 321,
-        "id_tramo": 35,
-        "id_profesor": 17,
-        "id_materia": 122,
-        "id_aula": 15,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0277BD"
-    },
-    {
-        "id": 322,
-        "id_tramo": 1,
-        "id_profesor": 25,
-        "id_materia": 124,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 323,
-        "id_tramo": 1,
-        "id_profesor": 27,
-        "id_materia": 125,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 324,
-        "id_tramo": 5,
-        "id_profesor": 24,
-        "id_materia": 126,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 325,
-        "id_tramo": 6,
-        "id_profesor": 12,
-        "id_materia": 127,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 326,
-        "id_tramo": 7,
-        "id_profesor": 4,
-        "id_materia": 128,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 327,
-        "id_tramo": 10,
-        "id_profesor": 17,
-        "id_materia": 129,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 328,
-        "id_tramo": 13,
-        "id_profesor": 25,
-        "id_materia": 124,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 329,
-        "id_tramo": 13,
-        "id_profesor": 27,
-        "id_materia": 125,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 330,
-        "id_tramo": 14,
-        "id_profesor": 13,
-        "id_materia": 130,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#E65100"
-    },
-    {
-        "id": 331,
-        "id_tramo": 14,
-        "id_profesor": 25,
-        "id_materia": 131,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#BF360C"
-    },
-    {
-        "id": 332,
-        "id_tramo": 15,
-        "id_profesor": 24,
-        "id_materia": 126,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#C00000"
-    },
-    {
-        "id": 333,
-        "id_tramo": 16,
-        "id_profesor": 25,
-        "id_materia": 124,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 334,
-        "id_tramo": 16,
-        "id_profesor": 27,
-        "id_materia": 125,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 335,
-        "id_tramo": 17,
-        "id_profesor": 17,
-        "id_materia": 129,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 336,
-        "id_tramo": 20,
-        "id_profesor": 12,
-        "id_materia": 127,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 337,
-        "id_tramo": 21,
-        "id_profesor": 4,
-        "id_materia": 128,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 338,
-        "id_tramo": 22,
-        "id_profesor": 4,
-        "id_materia": 128,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#880E4F"
-    },
-    {
-        "id": 339,
-        "id_tramo": 23,
-        "id_profesor": 17,
-        "id_materia": 129,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 340,
-        "id_tramo": 27,
-        "id_profesor": 12,
-        "id_materia": 127,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 341,
-        "id_tramo": 28,
-        "id_profesor": 17,
-        "id_materia": 132,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#8D6E63"
-    },
-    {
-        "id": 342,
-        "id_tramo": 31,
-        "id_profesor": 17,
-        "id_materia": 129,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#B71C1C"
-    },
-    {
-        "id": 343,
-        "id_tramo": 33,
-        "id_profesor": 25,
-        "id_materia": 124,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#283593"
-    },
-    {
-        "id": 344,
-        "id_tramo": 33,
-        "id_profesor": 27,
-        "id_materia": 125,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#7B1FA2"
-    },
-    {
-        "id": 345,
-        "id_tramo": 35,
-        "id_profesor": 12,
-        "id_materia": 127,
-        "id_aula": 3,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#D81B60"
-    },
-    {
-        "id": 346,
-        "id_tramo": 1,
-        "id_profesor": 23,
-        "id_materia": 133,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6D4C41"
-    },
-    {
-        "id": 347,
-        "id_tramo": 2,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 348,
-        "id_tramo": 6,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 349,
-        "id_tramo": 7,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 350,
-        "id_tramo": 10,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 351,
-        "id_tramo": 12,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 352,
-        "id_tramo": 13,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 353,
-        "id_tramo": 16,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 354,
-        "id_tramo": 17,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 355,
-        "id_tramo": 20,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 356,
-        "id_tramo": 21,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 357,
-        "id_tramo": 22,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 358,
-        "id_tramo": 23,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 359,
-        "id_tramo": 26,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 360,
-        "id_tramo": 27,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 361,
-        "id_tramo": 31,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 362,
-        "id_tramo": 33,
-        "id_profesor": 23,
-        "id_materia": 135,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1B5E20"
-    },
-    {
-        "id": 363,
-        "id_tramo": 35,
-        "id_profesor": 22,
-        "id_materia": 134,
-        "id_aula": 17,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#2E7D32"
-    },
-    {
-        "id": 364,
-        "id_tramo": 5,
-        "id_profesor": 13,
-        "id_materia": 136,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#00695C"
-    },
-    {
-        "id": 365,
-        "id_tramo": 5,
-        "id_profesor": 10,
-        "id_materia": 137,
-        "id_aula": 2,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#004D40"
-    },
-    {
-        "id": 366,
-        "id_tramo": 6,
-        "id_profesor": 4,
-        "id_materia": 138,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 367,
-        "id_tramo": 7,
-        "id_profesor": 20,
-        "id_materia": 139,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 368,
-        "id_tramo": 10,
-        "id_profesor": 15,
-        "id_materia": 140,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 369,
-        "id_tramo": 14,
-        "id_profesor": 24,
-        "id_materia": 141,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 370,
-        "id_tramo": 15,
-        "id_profesor": 20,
-        "id_materia": 142,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#6A1B9A"
-    },
-    {
-        "id": 371,
-        "id_tramo": 17,
-        "id_profesor": 20,
-        "id_materia": 139,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 372,
-        "id_tramo": 20,
-        "id_profesor": 4,
-        "id_materia": 138,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 373,
-        "id_tramo": 21,
-        "id_profesor": 15,
-        "id_materia": 140,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 374,
-        "id_tramo": 22,
-        "id_profesor": 20,
-        "id_materia": 139,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 375,
-        "id_tramo": 23,
-        "id_profesor": 4,
-        "id_materia": 138,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#1565C0"
-    },
-    {
-        "id": 376,
-        "id_tramo": 27,
-        "id_profesor": 15,
-        "id_materia": 140,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    },
-    {
-        "id": 377,
-        "id_tramo": 28,
-        "id_profesor": 24,
-        "id_materia": 141,
-        "id_aula": 19,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#263238"
-    },
-    {
-        "id": 378,
-        "id_tramo": 31,
-        "id_profesor": 20,
-        "id_materia": 139,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#0D47A1"
-    },
-    {
-        "id": 379,
-        "id_tramo": 35,
-        "id_profesor": 15,
-        "id_materia": 140,
-        "id_aula": 4,
-        "id_no_docencia": 0,
-        "duracion": 1,
-        "color": "#455A64"
-    }
-
-    
+  {
+    "id": 1,
+    "id_tramo": 1,
+    "id_profesor": 1,
+    "id_materia": 1,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#146707"
+  },
+  {
+    "id": 2,
+    "id_tramo": 2,
+    "id_profesor": 2,
+    "id_materia": 2,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 3,
+    "id_tramo": 2,
+    "id_profesor": 3,
+    "id_materia": 3,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 4,
+    "id_tramo": 3,
+    "id_profesor": 4,
+    "id_materia": 4,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#82451C"
+  },
+  {
+    "id": 5,
+    "id_tramo": 5,
+    "id_profesor": 5,
+    "id_materia": 5,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#165B7D"
+  },
+  {
+    "id": 6,
+    "id_tramo": 6,
+    "id_profesor": 6,
+    "id_materia": 6,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 7,
+    "id_tramo": 7,
+    "id_profesor": 7,
+    "id_materia": 7,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 8,
+    "id_tramo": 7,
+    "id_profesor": 8,
+    "id_materia": 8,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 9,
+    "id_tramo": 7,
+    "id_profesor": 10,
+    "id_materia": 9,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 10,
+    "id_tramo": 8,
+    "id_profesor": 9,
+    "id_materia": 10,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 11,
+    "id_tramo": 9,
+    "id_profesor": 10,
+    "id_materia": 11,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 12,
+    "id_tramo": 10,
+    "id_profesor": 4,
+    "id_materia": 4,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#82451C"
+  },
+  {
+    "id": 13,
+    "id_tramo": 12,
+    "id_profesor": 11,
+    "id_materia": 12,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 14,
+    "id_tramo": 13,
+    "id_profesor": 12,
+    "id_materia": 13,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 15,
+    "id_tramo": 14,
+    "id_profesor": 5,
+    "id_materia": 5,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#165B7D"
+  },
+  {
+    "id": 16,
+    "id_tramo": 15,
+    "id_profesor": 2,
+    "id_materia": 2,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 17,
+    "id_tramo": 15,
+    "id_profesor": 3,
+    "id_materia": 3,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 18,
+    "id_tramo": 16,
+    "id_profesor": 5,
+    "id_materia": 5,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#165B7D"
+  },
+  {
+    "id": 19,
+    "id_tramo": 17,
+    "id_profesor": 9,
+    "id_materia": 10,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 20,
+    "id_tramo": 19,
+    "id_profesor": 10,
+    "id_materia": 11,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 21,
+    "id_tramo": 20,
+    "id_profesor": 6,
+    "id_materia": 6,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 22,
+    "id_tramo": 21,
+    "id_profesor": 7,
+    "id_materia": 7,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 23,
+    "id_tramo": 21,
+    "id_profesor": 8,
+    "id_materia": 8,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 24,
+    "id_tramo": 21,
+    "id_profesor": 10,
+    "id_materia": 9,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 25,
+    "id_tramo": 22,
+    "id_profesor": 6,
+    "id_materia": 6,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 26,
+    "id_tramo": 23,
+    "id_profesor": 13,
+    "id_materia": 14,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 27,
+    "id_tramo": 23,
+    "id_profesor": 12,
+    "id_materia": 15,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 28,
+    "id_tramo": 24,
+    "id_profesor": 4,
+    "id_materia": 4,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#82451C"
+  },
+  {
+    "id": 29,
+    "id_tramo": 26,
+    "id_profesor": 1,
+    "id_materia": 1,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#146707"
+  },
+  {
+    "id": 30,
+    "id_tramo": 27,
+    "id_profesor": 10,
+    "id_materia": 11,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 31,
+    "id_tramo": 28,
+    "id_profesor": 8,
+    "id_materia": 16,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 32,
+    "id_tramo": 29,
+    "id_profesor": 6,
+    "id_materia": 6,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 33,
+    "id_tramo": 30,
+    "id_profesor": 9,
+    "id_materia": 10,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 34,
+    "id_tramo": 31,
+    "id_profesor": 10,
+    "id_materia": 11,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 35,
+    "id_tramo": 33,
+    "id_profesor": 12,
+    "id_materia": 13,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 36,
+    "id_tramo": 34,
+    "id_profesor": 5,
+    "id_materia": 5,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#165B7D"
+  },
+  {
+    "id": 37,
+    "id_tramo": 35,
+    "id_profesor": 1,
+    "id_materia": 1,
+    "id_aula": 8,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#146707"
+  },
+  {
+    "id": 38,
+    "id_tramo": 1,
+    "id_profesor": 14,
+    "id_materia": 17,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 39,
+    "id_tramo": 2,
+    "id_profesor": 4,
+    "id_materia": 18,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 40,
+    "id_tramo": 3,
+    "id_profesor": 10,
+    "id_materia": 19,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 41,
+    "id_tramo": 5,
+    "id_profesor": 6,
+    "id_materia": 20,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 42,
+    "id_tramo": 6,
+    "id_profesor": 11,
+    "id_materia": 22,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 43,
+    "id_tramo": 6,
+    "id_profesor": 13,
+    "id_materia": 21,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 44,
+    "id_tramo": 8,
+    "id_profesor": 11,
+    "id_materia": 23,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 45,
+    "id_tramo": 9,
+    "id_profesor": 9,
+    "id_materia": 24,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 46,
+    "id_tramo": 10,
+    "id_profesor": 1,
+    "id_materia": 25,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 47,
+    "id_tramo": 12,
+    "id_profesor": 2,
+    "id_materia": 26,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 48,
+    "id_tramo": 12,
+    "id_profesor": 3,
+    "id_materia": 27,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 49,
+    "id_tramo": 13,
+    "id_profesor": 14,
+    "id_materia": 17,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 50,
+    "id_tramo": 14,
+    "id_profesor": 4,
+    "id_materia": 18,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 51,
+    "id_tramo": 15,
+    "id_profesor": 1,
+    "id_materia": 25,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 52,
+    "id_tramo": 16,
+    "id_profesor": 6,
+    "id_materia": 20,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 53,
+    "id_tramo": 17,
+    "id_profesor": 10,
+    "id_materia": 19,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 54,
+    "id_tramo": 19,
+    "id_profesor": 12,
+    "id_materia": 28,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 55,
+    "id_tramo": 20,
+    "id_profesor": 9,
+    "id_materia": 24,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 56,
+    "id_tramo": 22,
+    "id_profesor": 14,
+    "id_materia": 17,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 57,
+    "id_tramo": 23,
+    "id_profesor": 10,
+    "id_materia": 29,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 58,
+    "id_tramo": 24,
+    "id_profesor": 6,
+    "id_materia": 20,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 59,
+    "id_tramo": 26,
+    "id_profesor": 10,
+    "id_materia": 19,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 60,
+    "id_tramo": 27,
+    "id_profesor": 4,
+    "id_materia": 18,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 61,
+    "id_tramo": 28,
+    "id_profesor": 2,
+    "id_materia": 26,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 62,
+    "id_tramo": 28,
+    "id_profesor": 3,
+    "id_materia": 27,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 63,
+    "id_tramo": 29,
+    "id_profesor": 10,
+    "id_materia": 19,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 64,
+    "id_tramo": 30,
+    "id_profesor": 6,
+    "id_materia": 20,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 65,
+    "id_tramo": 31,
+    "id_profesor": 14,
+    "id_materia": 17,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 66,
+    "id_tramo": 33,
+    "id_profesor": 1,
+    "id_materia": 25,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 67,
+    "id_tramo": 34,
+    "id_profesor": 12,
+    "id_materia": 28,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 68,
+    "id_tramo": 35,
+    "id_profesor": 9,
+    "id_materia": 24,
+    "id_aula": 9,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 69,
+    "id_tramo": 1,
+    "id_profesor": 7,
+    "id_materia": 30,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 70,
+    "id_tramo": 1,
+    "id_profesor": 2,
+    "id_materia": 31,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 71,
+    "id_tramo": 1,
+    "id_profesor": 11,
+    "id_materia": 32,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 72,
+    "id_tramo": 2,
+    "id_profesor": 9,
+    "id_materia": 33,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 73,
+    "id_tramo": 3,
+    "id_profesor": 12,
+    "id_materia": 34,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 74,
+    "id_tramo": 5,
+    "id_profesor": 15,
+    "id_materia": 35,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#de1616"
+  },
+  {
+    "id": 75,
+    "id_tramo": 6,
+    "id_profesor": 16,
+    "id_materia": 36,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 76,
+    "id_tramo": 7,
+    "id_profesor": 5,
+    "id_materia": 37,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 77,
+    "id_tramo": 8,
+    "id_profesor": 19,
+    "id_materia": 38,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 78,
+    "id_tramo": 9,
+    "id_profesor": 20,
+    "id_materia": 39,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 79,
+    "id_tramo": 10,
+    "id_profesor": 18,
+    "id_materia": 40,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 80,
+    "id_tramo": 12,
+    "id_profesor": 15,
+    "id_materia": 35,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#de1616"
+  },
+  {
+    "id": 81,
+    "id_tramo": 13,
+    "id_profesor": 5,
+    "id_materia": 37,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 82,
+    "id_tramo": 14,
+    "id_profesor": 16,
+    "id_materia": 36,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 83,
+    "id_tramo": 15,
+    "id_profesor": 13,
+    "id_materia": 41,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 84,
+    "id_tramo": 16,
+    "id_profesor": 15,
+    "id_materia": 35,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#de1616"
+  },
+  {
+    "id": 85,
+    "id_tramo": 17,
+    "id_profesor": 5,
+    "id_materia": 37,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 86,
+    "id_tramo": 19,
+    "id_profesor": 19,
+    "id_materia": 38,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 87,
+    "id_tramo": 20,
+    "id_profesor": 15,
+    "id_materia": 42,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 88,
+    "id_tramo": 21,
+    "id_profesor": 20,
+    "id_materia": 39,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 89,
+    "id_tramo": 22,
+    "id_profesor": 7,
+    "id_materia": 30,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 90,
+    "id_tramo": 22,
+    "id_profesor": 2,
+    "id_materia": 31,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 91,
+    "id_tramo": 22,
+    "id_profesor": 11,
+    "id_materia": 32,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 92,
+    "id_tramo": 23,
+    "id_profesor": 18,
+    "id_materia": 40,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 93,
+    "id_tramo": 24,
+    "id_profesor": 13,
+    "id_materia": 43,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 94,
+    "id_tramo": 24,
+    "id_profesor": 11,
+    "id_materia": 44,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 95,
+    "id_tramo": 26,
+    "id_profesor": 20,
+    "id_materia": 39,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 96,
+    "id_tramo": 27,
+    "id_profesor": 9,
+    "id_materia": 33,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 97,
+    "id_tramo": 28,
+    "id_profesor": 5,
+    "id_materia": 37,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 98,
+    "id_tramo": 29,
+    "id_profesor": 18,
+    "id_materia": 40,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 99,
+    "id_tramo": 30,
+    "id_profesor": 19,
+    "id_materia": 38,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 100,
+    "id_tramo": 31,
+    "id_profesor": 12,
+    "id_materia": 34,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 101,
+    "id_tramo": 33,
+    "id_profesor": 15,
+    "id_materia": 35,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#de1616"
+  },
+  {
+    "id": 102,
+    "id_tramo": 34,
+    "id_profesor": 16,
+    "id_materia": 36,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 103,
+    "id_tramo": 35,
+    "id_profesor": 20,
+    "id_materia": 39,
+    "id_aula": 13,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 104,
+    "id_tramo": 2,
+    "id_profesor": 12,
+    "id_materia": 45,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 105,
+    "id_tramo": 3,
+    "id_profesor": 16,
+    "id_materia": 46,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 106,
+    "id_tramo": 5,
+    "id_profesor": 16,
+    "id_materia": 47,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 107,
+    "id_tramo": 6,
+    "id_profesor": 5,
+    "id_materia": 48,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 108,
+    "id_tramo": 7,
+    "id_profesor": 15,
+    "id_materia": 49,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 109,
+    "id_tramo": 8,
+    "id_profesor": 20,
+    "id_materia": 50,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 110,
+    "id_tramo": 9,
+    "id_profesor": 15,
+    "id_materia": 49,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 111,
+    "id_tramo": 10,
+    "id_profesor": 16,
+    "id_materia": 46,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 112,
+    "id_tramo": 12,
+    "id_profesor": 18,
+    "id_materia": 51,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 113,
+    "id_tramo": 13,
+    "id_profesor": 9,
+    "id_materia": 52,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 114,
+    "id_tramo": 14,
+    "id_profesor": 19,
+    "id_materia": 53,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 115,
+    "id_tramo": 15,
+    "id_profesor": 5,
+    "id_materia": 48,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 116,
+    "id_tramo": 16,
+    "id_profesor": 18,
+    "id_materia": 51,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 117,
+    "id_tramo": 17,
+    "id_profesor": 15,
+    "id_materia": 49,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 118,
+    "id_tramo": 19,
+    "id_profesor": 20,
+    "id_materia": 50,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 119,
+    "id_tramo": 20,
+    "id_profesor": 13,
+    "id_materia": 54,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 120,
+    "id_tramo": 20,
+    "id_profesor": 14,
+    "id_materia": 55,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 121,
+    "id_tramo": 21,
+    "id_profesor": 19,
+    "id_materia": 53,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 122,
+    "id_tramo": 23,
+    "id_profesor": 9,
+    "id_materia": 52,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 123,
+    "id_tramo": 24,
+    "id_profesor": 20,
+    "id_materia": 50,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 124,
+    "id_tramo": 26,
+    "id_profesor": 16,
+    "id_materia": 46,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 125,
+    "id_tramo": 27,
+    "id_profesor": 5,
+    "id_materia": 48,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 126,
+    "id_tramo": 28,
+    "id_profesor": 13,
+    "id_materia": 56,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 127,
+    "id_tramo": 29,
+    "id_profesor": 20,
+    "id_materia": 50,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 128,
+    "id_tramo": 30,
+    "id_profesor": 12,
+    "id_materia": 45,
+    "id_aula": 1,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 129,
+    "id_tramo": 31,
+    "id_profesor": 15,
+    "id_materia": 49,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 130,
+    "id_tramo": 33,
+    "id_profesor": 18,
+    "id_materia": 51,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 131,
+    "id_tramo": 34,
+    "id_profesor": 19,
+    "id_materia": 53,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 132,
+    "id_tramo": 35,
+    "id_profesor": 5,
+    "id_materia": 48,
+    "id_aula": 14,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 133,
+    "id_tramo": 1,
+    "id_profesor": 21,
+    "id_materia": 57,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 134,
+    "id_tramo": 2,
+    "id_profesor": 6,
+    "id_materia": 58,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 135,
+    "id_tramo": 3,
+    "id_profesor": 9,
+    "id_materia": 59,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 136,
+    "id_tramo": 5,
+    "id_profesor": 4,
+    "id_materia": 60,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 137,
+    "id_tramo": 6,
+    "id_profesor": 18,
+    "id_materia": 61,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 138,
+    "id_tramo": 7,
+    "id_profesor": 3,
+    "id_materia": 62,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 139,
+    "id_tramo": 8,
+    "id_profesor": 21,
+    "id_materia": 57,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 140,
+    "id_tramo": 9,
+    "id_profesor": 6,
+    "id_materia": 58,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 141,
+    "id_tramo": 10,
+    "id_profesor": 13,
+    "id_materia": 63,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 142,
+    "id_tramo": 12,
+    "id_profesor": 14,
+    "id_materia": 64,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 143,
+    "id_tramo": 13,
+    "id_profesor": 19,
+    "id_materia": 65,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 144,
+    "id_tramo": 14,
+    "id_profesor": 7,
+    "id_materia": 66,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 145,
+    "id_tramo": 14,
+    "id_profesor": 2,
+    "id_materia": 67,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 146,
+    "id_tramo": 15,
+    "id_profesor": 4,
+    "id_materia": 60,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 147,
+    "id_tramo": 16,
+    "id_profesor": 1,
+    "id_materia": 68,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 148,
+    "id_tramo": 17,
+    "id_profesor": 14,
+    "id_materia": 64,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 149,
+    "id_tramo": 19,
+    "id_profesor": 6,
+    "id_materia": 58,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 150,
+    "id_tramo": 20,
+    "id_profesor": 18,
+    "id_materia": 61,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 151,
+    "id_tramo": 21,
+    "id_profesor": 3,
+    "id_materia": 69,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 152,
+    "id_tramo": 22,
+    "id_profesor": 19,
+    "id_materia": 65,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 153,
+    "id_tramo": 23,
+    "id_profesor": 21,
+    "id_materia": 57,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 154,
+    "id_tramo": 24,
+    "id_profesor": 14,
+    "id_materia": 64,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 155,
+    "id_tramo": 26,
+    "id_profesor": 18,
+    "id_materia": 61,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 156,
+    "id_tramo": 27,
+    "id_profesor": 3,
+    "id_materia": 62,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 157,
+    "id_tramo": 28,
+    "id_profesor": 4,
+    "id_materia": 60,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 158,
+    "id_tramo": 29,
+    "id_profesor": 21,
+    "id_materia": 57,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 159,
+    "id_tramo": 30,
+    "id_profesor": 7,
+    "id_materia": 66,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 160,
+    "id_tramo": 30,
+    "id_profesor": 2,
+    "id_materia": 67,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 161,
+    "id_tramo": 31,
+    "id_profesor": 9,
+    "id_materia": 59,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 162,
+    "id_tramo": 33,
+    "id_profesor": 6,
+    "id_materia": 58,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 163,
+    "id_tramo": 34,
+    "id_profesor": 1,
+    "id_materia": 68,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 164,
+    "id_tramo": 35,
+    "id_profesor": 14,
+    "id_materia": 64,
+    "id_aula": 7,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 165,
+    "id_tramo": 1,
+    "id_profesor": 19,
+    "id_materia": 70,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 166,
+    "id_tramo": 2,
+    "id_profesor": 14,
+    "id_materia": 71,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 167,
+    "id_tramo": 3,
+    "id_profesor": 17,
+    "id_materia": 72,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 168,
+    "id_tramo": 5,
+    "id_profesor": 2,
+    "id_materia": 73,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 169,
+    "id_tramo": 5,
+    "id_profesor": 8,
+    "id_materia": 74,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 170,
+    "id_tramo": 5,
+    "id_profesor": 19,
+    "id_materia": 75,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 171,
+    "id_tramo": 6,
+    "id_profesor": 7,
+    "id_materia": 76,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 172,
+    "id_tramo": 7,
+    "id_profesor": 21,
+    "id_materia": 77,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 173,
+    "id_tramo": 8,
+    "id_profesor": 1,
+    "id_materia": 78,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 174,
+    "id_tramo": 9,
+    "id_profesor": 21,
+    "id_materia": 77,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 175,
+    "id_tramo": 10,
+    "id_profesor": 3,
+    "id_materia": 79,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 176,
+    "id_tramo": 12,
+    "id_profesor": 9,
+    "id_materia": 80,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 177,
+    "id_tramo": 13,
+    "id_profesor": 24,
+    "id_materia": 81,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 178,
+    "id_tramo": 14,
+    "id_profesor": 14,
+    "id_materia": 71,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 179,
+    "id_tramo": 15,
+    "id_profesor": 21,
+    "id_materia": 77,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 180,
+    "id_tramo": 16,
+    "id_profesor": 13,
+    "id_materia": 82,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 181,
+    "id_tramo": 16,
+    "id_profesor": 16,
+    "id_materia": 83,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 182,
+    "id_tramo": 17,
+    "id_profesor": 3,
+    "id_materia": 79,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 183,
+    "id_tramo": 19,
+    "id_profesor": 14,
+    "id_materia": 71,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 184,
+    "id_tramo": 20,
+    "id_profesor": 7,
+    "id_materia": 76,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 185,
+    "id_tramo": 21,
+    "id_profesor": 14,
+    "id_materia": 84,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 186,
+    "id_tramo": 22,
+    "id_profesor": 21,
+    "id_materia": 77,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 187,
+    "id_tramo": 23,
+    "id_profesor": 1,
+    "id_materia": 78,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 188,
+    "id_tramo": 24,
+    "id_profesor": 19,
+    "id_materia": 70,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 189,
+    "id_tramo": 26,
+    "id_profesor": 17,
+    "id_materia": 72,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 190,
+    "id_tramo": 27,
+    "id_profesor": 24,
+    "id_materia": 81,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 191,
+    "id_tramo": 28,
+    "id_profesor": 7,
+    "id_materia": 76,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 192,
+    "id_tramo": 29,
+    "id_profesor": 17,
+    "id_materia": 72,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 193,
+    "id_tramo": 30,
+    "id_profesor": 14,
+    "id_materia": 71,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 194,
+    "id_tramo": 31,
+    "id_profesor": 7,
+    "id_materia": 76,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 195,
+    "id_tramo": 33,
+    "id_profesor": 24,
+    "id_materia": 81,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 196,
+    "id_tramo": 34,
+    "id_profesor": 9,
+    "id_materia": 80,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 197,
+    "id_tramo": 35,
+    "id_profesor": 2,
+    "id_materia": 73,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 198,
+    "id_tramo": 35,
+    "id_profesor": 8,
+    "id_materia": 74,
+    "id_aula": 10,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 199,
+    "id_tramo": 35,
+    "id_profesor": 19,
+    "id_materia": 75,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 200,
+    "id_tramo": 2,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 201,
+    "id_tramo": 3,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 202,
+    "id_tramo": 6,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 203,
+    "id_tramo": 7,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 204,
+    "id_tramo": 8,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 205,
+    "id_tramo": 9,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 206,
+    "id_tramo": 13,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 207,
+    "id_tramo": 14,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 208,
+    "id_tramo": 15,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 209,
+    "id_tramo": 19,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 210,
+    "id_tramo": 20,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 211,
+    "id_tramo": 22,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 212,
+    "id_tramo": 23,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 213,
+    "id_tramo": 26,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 214,
+    "id_tramo": 27,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 215,
+    "id_tramo": 28,
+    "id_profesor": 23,
+    "id_materia": 87,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 216,
+    "id_tramo": 29,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 217,
+    "id_tramo": 30,
+    "id_profesor": 22,
+    "id_materia": 86,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 218,
+    "id_tramo": 31,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 219,
+    "id_tramo": 33,
+    "id_profesor": 26,
+    "id_materia": 85,
+    "id_aula": 16,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 220,
+    "id_tramo": 1,
+    "id_profesor": 3,
+    "id_materia": 88,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 221,
+    "id_tramo": 2,
+    "id_profesor": 16,
+    "id_materia": 89,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 222,
+    "id_tramo": 3,
+    "id_profesor": 5,
+    "id_materia": 90,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 223,
+    "id_tramo": 6,
+    "id_profesor": 21,
+    "id_materia": 91,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 224,
+    "id_tramo": 7,
+    "id_profesor": 6,
+    "id_materia": 92,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 225,
+    "id_tramo": 8,
+    "id_profesor": 5,
+    "id_materia": 90,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 226,
+    "id_tramo": 9,
+    "id_profesor": 14,
+    "id_materia": 93,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 227,
+    "id_tramo": 10,
+    "id_profesor": 9,
+    "id_materia": 94,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 228,
+    "id_tramo": 12,
+    "id_profesor": 1,
+    "id_materia": 95,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 229,
+    "id_tramo": 13,
+    "id_profesor": 21,
+    "id_materia": 91,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 230,
+    "id_tramo": 14,
+    "id_profesor": 1,
+    "id_materia": 96,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 231,
+    "id_tramo": 15,
+    "id_profesor": 6,
+    "id_materia": 92,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 232,
+    "id_tramo": 16,
+    "id_profesor": 3,
+    "id_materia": 88,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 233,
+    "id_tramo": 17,
+    "id_profesor": 13,
+    "id_materia": 97,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 234,
+    "id_tramo": 17,
+    "id_profesor": 16,
+    "id_materia": 98,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 235,
+    "id_tramo": 19,
+    "id_profesor": 16,
+    "id_materia": 89,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 236,
+    "id_tramo": 20,
+    "id_profesor": 5,
+    "id_materia": 90,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 237,
+    "id_tramo": 21,
+    "id_profesor": 27,
+    "id_materia": 99,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 238,
+    "id_tramo": 22,
+    "id_profesor": 1,
+    "id_materia": 96,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 239,
+    "id_tramo": 23,
+    "id_profesor": 6,
+    "id_materia": 92,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 240,
+    "id_tramo": 24,
+    "id_profesor": 9,
+    "id_materia": 94,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 241,
+    "id_tramo": 26,
+    "id_profesor": 21,
+    "id_materia": 91,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 242,
+    "id_tramo": 27,
+    "id_profesor": 16,
+    "id_materia": 89,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 243,
+    "id_tramo": 28,
+    "id_profesor": 14,
+    "id_materia": 93,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 244,
+    "id_tramo": 29,
+    "id_profesor": 5,
+    "id_materia": 90,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 245,
+    "id_tramo": 30,
+    "id_profesor": 21,
+    "id_materia": 91,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 246,
+    "id_tramo": 31,
+    "id_profesor": 6,
+    "id_materia": 92,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 247,
+    "id_tramo": 33,
+    "id_profesor": 14,
+    "id_materia": 93,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 248,
+    "id_tramo": 34,
+    "id_profesor": 27,
+    "id_materia": 99,
+    "id_aula": 11,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 249,
+    "id_tramo": 1,
+    "id_profesor": 24,
+    "id_materia": 100,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 250,
+    "id_tramo": 2,
+    "id_profesor": 7,
+    "id_materia": 101,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 251,
+    "id_tramo": 2,
+    "id_profesor": 8,
+    "id_materia": 102,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 252,
+    "id_tramo": 2,
+    "id_profesor": 19,
+    "id_materia": 103,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 253,
+    "id_tramo": 2,
+    "id_profesor": 25,
+    "id_materia": 104,
+    "id_aula": 5,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 254,
+    "id_tramo": 3,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 18,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 255,
+    "id_tramo": 3,
+    "id_profesor": 11,
+    "id_materia": 106,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 256,
+    "id_tramo": 3,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 257,
+    "id_tramo": 3,
+    "id_profesor": 3,
+    "id_materia": 108,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 258,
+    "id_tramo": 3,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 259,
+    "id_tramo": 5,
+    "id_profesor": 26,
+    "id_materia": 110,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 260,
+    "id_tramo": 6,
+    "id_profesor": 25,
+    "id_materia": 111,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 261,
+    "id_tramo": 7,
+    "id_profesor": 13,
+    "id_materia": 112,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 262,
+    "id_tramo": 8,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 263,
+    "id_tramo": 8,
+    "id_profesor": 25,
+    "id_materia": 113,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 264,
+    "id_tramo": 8,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 18,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 265,
+    "id_tramo": 8,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 266,
+    "id_tramo": 8,
+    "id_profesor": 2,
+    "id_materia": 114,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 267,
+    "id_tramo": 9,
+    "id_profesor": 11,
+    "id_materia": 115,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 268,
+    "id_tramo": 9,
+    "id_profesor": 16,
+    "id_materia": 116,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 269,
+    "id_tramo": 9,
+    "id_profesor": 24,
+    "id_materia": 117,
+    "id_aula": 5,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 270,
+    "id_tramo": 9,
+    "id_profesor": 25,
+    "id_materia": 118,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 271,
+    "id_tramo": 9,
+    "id_profesor": 23,
+    "id_materia": 119,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 272,
+    "id_tramo": 9,
+    "id_profesor": 1,
+    "id_materia": 120,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 273,
+    "id_tramo": 10,
+    "id_profesor": 25,
+    "id_materia": 111,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 274,
+    "id_tramo": 12,
+    "id_profesor": 7,
+    "id_materia": 101,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 275,
+    "id_tramo": 12,
+    "id_profesor": 8,
+    "id_materia": 102,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 276,
+    "id_tramo": 12,
+    "id_profesor": 19,
+    "id_materia": 103,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 277,
+    "id_tramo": 12,
+    "id_profesor": 25,
+    "id_materia": 104,
+    "id_aula": 5,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 278,
+    "id_tramo": 13,
+    "id_profesor": 20,
+    "id_materia": 121,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 279,
+    "id_tramo": 14,
+    "id_profesor": 17,
+    "id_materia": 122,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 280,
+    "id_tramo": 15,
+    "id_profesor": 17,
+    "id_materia": 123,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D50000"
+  },
+  {
+    "id": 281,
+    "id_tramo": 16,
+    "id_profesor": 20,
+    "id_materia": 121,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 282,
+    "id_tramo": 17,
+    "id_profesor": 25,
+    "id_materia": 111,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 283,
+    "id_tramo": 19,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 18,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 284,
+    "id_tramo": 19,
+    "id_profesor": 11,
+    "id_materia": 106,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 285,
+    "id_tramo": 19,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 286,
+    "id_tramo": 19,
+    "id_profesor": 3,
+    "id_materia": 108,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 287,
+    "id_tramo": 19,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 288,
+    "id_tramo": 20,
+    "id_profesor": 17,
+    "id_materia": 122,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 289,
+    "id_tramo": 21,
+    "id_profesor": 26,
+    "id_materia": 110,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 290,
+    "id_tramo": 22,
+    "id_profesor": 24,
+    "id_materia": 100,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 291,
+    "id_tramo": 23,
+    "id_profesor": 20,
+    "id_materia": 121,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 292,
+    "id_tramo": 24,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 293,
+    "id_tramo": 24,
+    "id_profesor": 25,
+    "id_materia": 113,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 294,
+    "id_tramo": 24,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 18,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 295,
+    "id_tramo": 24,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 296,
+    "id_tramo": 24,
+    "id_profesor": 2,
+    "id_materia": 114,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 297,
+    "id_tramo": 26,
+    "id_profesor": 7,
+    "id_materia": 101,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 298,
+    "id_tramo": 26,
+    "id_profesor": 8,
+    "id_materia": 102,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 299,
+    "id_tramo": 26,
+    "id_profesor": 19,
+    "id_materia": 103,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 300,
+    "id_tramo": 26,
+    "id_profesor": 25,
+    "id_materia": 104,
+    "id_aula": 5,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 301,
+    "id_tramo": 27,
+    "id_profesor": 17,
+    "id_materia": 122,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 302,
+    "id_tramo": 28,
+    "id_profesor": 26,
+    "id_materia": 110,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 303,
+    "id_tramo": 29,
+    "id_profesor": 11,
+    "id_materia": 115,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5E35B1"
+  },
+  {
+    "id": 304,
+    "id_tramo": 29,
+    "id_profesor": 16,
+    "id_materia": 116,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#AD1457"
+  },
+  {
+    "id": 305,
+    "id_tramo": 29,
+    "id_profesor": 24,
+    "id_materia": 117,
+    "id_aula": 5,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00796B"
+  },
+  {
+    "id": 306,
+    "id_tramo": 29,
+    "id_profesor": 25,
+    "id_materia": 118,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#303F9F"
+  },
+  {
+    "id": 307,
+    "id_tramo": 29,
+    "id_profesor": 23,
+    "id_materia": 119,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#F4511E"
+  },
+  {
+    "id": 308,
+    "id_tramo": 29,
+    "id_profesor": 1,
+    "id_materia": 120,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C2185B"
+  },
+  {
+    "id": 309,
+    "id_tramo": 30,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 18,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 310,
+    "id_tramo": 30,
+    "id_profesor": 11,
+    "id_materia": 106,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 311,
+    "id_tramo": 30,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 312,
+    "id_tramo": 30,
+    "id_profesor": 3,
+    "id_materia": 108,
+    "id_aula": 6,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 313,
+    "id_tramo": 30,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 314,
+    "id_tramo": 31,
+    "id_profesor": 25,
+    "id_materia": 111,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 315,
+    "id_tramo": 33,
+    "id_profesor": 20,
+    "id_materia": 121,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#5D4037"
+  },
+  {
+    "id": 316,
+    "id_tramo": 34,
+    "id_profesor": 24,
+    "id_materia": 107,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 317,
+    "id_tramo": 34,
+    "id_profesor": 25,
+    "id_materia": 113,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#4A148C"
+  },
+  {
+    "id": 318,
+    "id_tramo": 34,
+    "id_profesor": 18,
+    "id_materia": 105,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 319,
+    "id_tramo": 34,
+    "id_profesor": 23,
+    "id_materia": 109,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 320,
+    "id_tramo": 34,
+    "id_profesor": 2,
+    "id_materia": 114,
+    "id_aula": 12,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8E24AA"
+  },
+  {
+    "id": 321,
+    "id_tramo": 35,
+    "id_profesor": 17,
+    "id_materia": 122,
+    "id_aula": 15,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0277BD"
+  },
+  {
+    "id": 322,
+    "id_tramo": 1,
+    "id_profesor": 25,
+    "id_materia": 124,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 323,
+    "id_tramo": 1,
+    "id_profesor": 27,
+    "id_materia": 125,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 324,
+    "id_tramo": 5,
+    "id_profesor": 24,
+    "id_materia": 126,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 325,
+    "id_tramo": 6,
+    "id_profesor": 12,
+    "id_materia": 127,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 326,
+    "id_tramo": 7,
+    "id_profesor": 4,
+    "id_materia": 128,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 327,
+    "id_tramo": 10,
+    "id_profesor": 17,
+    "id_materia": 129,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 328,
+    "id_tramo": 13,
+    "id_profesor": 25,
+    "id_materia": 124,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 329,
+    "id_tramo": 13,
+    "id_profesor": 27,
+    "id_materia": 125,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 330,
+    "id_tramo": 14,
+    "id_profesor": 13,
+    "id_materia": 130,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#E65100"
+  },
+  {
+    "id": 331,
+    "id_tramo": 14,
+    "id_profesor": 25,
+    "id_materia": 131,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#BF360C"
+  },
+  {
+    "id": 332,
+    "id_tramo": 15,
+    "id_profesor": 24,
+    "id_materia": 126,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#C00000"
+  },
+  {
+    "id": 333,
+    "id_tramo": 16,
+    "id_profesor": 25,
+    "id_materia": 124,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 334,
+    "id_tramo": 16,
+    "id_profesor": 27,
+    "id_materia": 125,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 335,
+    "id_tramo": 17,
+    "id_profesor": 17,
+    "id_materia": 129,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 336,
+    "id_tramo": 20,
+    "id_profesor": 12,
+    "id_materia": 127,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 337,
+    "id_tramo": 21,
+    "id_profesor": 4,
+    "id_materia": 128,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 338,
+    "id_tramo": 22,
+    "id_profesor": 4,
+    "id_materia": 128,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#880E4F"
+  },
+  {
+    "id": 339,
+    "id_tramo": 23,
+    "id_profesor": 17,
+    "id_materia": 129,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 340,
+    "id_tramo": 27,
+    "id_profesor": 12,
+    "id_materia": 127,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 341,
+    "id_tramo": 28,
+    "id_profesor": 17,
+    "id_materia": 132,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#8D6E63"
+  },
+  {
+    "id": 342,
+    "id_tramo": 31,
+    "id_profesor": 17,
+    "id_materia": 129,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#B71C1C"
+  },
+  {
+    "id": 343,
+    "id_tramo": 33,
+    "id_profesor": 25,
+    "id_materia": 124,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#283593"
+  },
+  {
+    "id": 344,
+    "id_tramo": 33,
+    "id_profesor": 27,
+    "id_materia": 125,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#7B1FA2"
+  },
+  {
+    "id": 345,
+    "id_tramo": 35,
+    "id_profesor": 12,
+    "id_materia": 127,
+    "id_aula": 3,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#D81B60"
+  },
+  {
+    "id": 346,
+    "id_tramo": 1,
+    "id_profesor": 23,
+    "id_materia": 133,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6D4C41"
+  },
+  {
+    "id": 347,
+    "id_tramo": 2,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 348,
+    "id_tramo": 6,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 349,
+    "id_tramo": 7,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 350,
+    "id_tramo": 10,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 351,
+    "id_tramo": 12,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 352,
+    "id_tramo": 13,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 353,
+    "id_tramo": 16,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 354,
+    "id_tramo": 17,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 355,
+    "id_tramo": 20,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 356,
+    "id_tramo": 21,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 357,
+    "id_tramo": 22,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 358,
+    "id_tramo": 23,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 359,
+    "id_tramo": 26,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 360,
+    "id_tramo": 27,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 361,
+    "id_tramo": 31,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 362,
+    "id_tramo": 33,
+    "id_profesor": 23,
+    "id_materia": 135,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1B5E20"
+  },
+  {
+    "id": 363,
+    "id_tramo": 35,
+    "id_profesor": 22,
+    "id_materia": 134,
+    "id_aula": 17,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#2E7D32"
+  },
+  {
+    "id": 364,
+    "id_tramo": 5,
+    "id_profesor": 13,
+    "id_materia": 136,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#00695C"
+  },
+  {
+    "id": 365,
+    "id_tramo": 5,
+    "id_profesor": 10,
+    "id_materia": 137,
+    "id_aula": 2,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#004D40"
+  },
+  {
+    "id": 366,
+    "id_tramo": 6,
+    "id_profesor": 4,
+    "id_materia": 138,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 367,
+    "id_tramo": 7,
+    "id_profesor": 20,
+    "id_materia": 139,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 368,
+    "id_tramo": 10,
+    "id_profesor": 15,
+    "id_materia": 140,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 369,
+    "id_tramo": 14,
+    "id_profesor": 24,
+    "id_materia": 141,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 370,
+    "id_tramo": 15,
+    "id_profesor": 20,
+    "id_materia": 142,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#6A1B9A"
+  },
+  {
+    "id": 371,
+    "id_tramo": 17,
+    "id_profesor": 20,
+    "id_materia": 139,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 372,
+    "id_tramo": 20,
+    "id_profesor": 4,
+    "id_materia": 138,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 373,
+    "id_tramo": 21,
+    "id_profesor": 15,
+    "id_materia": 140,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 374,
+    "id_tramo": 22,
+    "id_profesor": 20,
+    "id_materia": 139,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 375,
+    "id_tramo": 23,
+    "id_profesor": 4,
+    "id_materia": 138,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#1565C0"
+  },
+  {
+    "id": 376,
+    "id_tramo": 27,
+    "id_profesor": 15,
+    "id_materia": 140,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  },
+  {
+    "id": 377,
+    "id_tramo": 28,
+    "id_profesor": 24,
+    "id_materia": 141,
+    "id_aula": 19,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#263238"
+  },
+  {
+    "id": 378,
+    "id_tramo": 31,
+    "id_profesor": 20,
+    "id_materia": 139,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#0D47A1"
+  },
+  {
+    "id": 379,
+    "id_tramo": 35,
+    "id_profesor": 15,
+    "id_materia": 140,
+    "id_aula": 4,
+    "id_no_docencia": 0,
+    "duracion": 1,
+    "color": "#455A64"
+  }
 ]

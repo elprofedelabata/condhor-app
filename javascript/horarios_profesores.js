@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const simpleAulaSelect = document.getElementById('simpleAula');
     const simpleColorInput = document.getElementById('simpleColor');
     const simpleModalForm = document.getElementById('simpleModalForm');
+    const simpleApplyToAllCheckbox = document.getElementById('simpleApplyToAll');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
     let todasLasMaterias = [], todasLasAulas = [];
@@ -558,7 +559,9 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             if (!eventoSeleccionado) return;
 
-            const asignacionId = eventoSeleccionado.dataset.asignacionId;
+            const applyToAll = simpleApplyToAllCheckbox.checked;
+            const originalMateriaId = eventoSeleccionado.dataset.materiaId;
+
             const nuevaMateriaId = simpleMateriaSelect.value;
             const nuevaAulaId = simpleAulaSelect.value;
             const nuevoColor = simpleColorInput.value;
@@ -569,19 +572,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 let asignaciones = JSON.parse(fs.readFileSync(rutaAsignaciones, 'utf-8'));
-                const indiceAsignacion = asignaciones.findIndex(a => String(a.id) === asignacionId);
 
-                if (indiceAsignacion !== -1) {
-                    asignaciones[indiceAsignacion].id_materia = parseInt(nuevaMateriaId, 10);
-                    asignaciones[indiceAsignacion].id_aula = nuevaAulaId ? parseInt(nuevaAulaId, 10) : null;
-                    asignaciones[indiceAsignacion].color = nuevoColor;
-
-                    fs.writeFileSync(rutaAsignaciones, JSON.stringify(asignaciones, null, 2));
-                    cerrarModal();
-                    actualizarVistaCompleta();
+                if (applyToAll) {
+                    const idProfesorActual = profesorActivo.id;
+                    asignaciones.forEach(asig => {
+                        if (asig.id_profesor === idProfesorActual && String(asig.id_materia) === originalMateriaId) {
+                            asig.id_materia = parseInt(nuevaMateriaId, 10);
+                            asig.id_aula = nuevaAulaId ? parseInt(nuevaAulaId, 10) : null;
+                            asig.color = nuevoColor;
+                        }
+                    });
                 } else {
-                    console.error('No se encontró la asignación a actualizar.');
+                    const asignacionId = eventoSeleccionado.dataset.asignacionId;
+                    const indiceAsignacion = asignaciones.findIndex(a => String(a.id) === asignacionId);
+                    if (indiceAsignacion !== -1) {
+                        asignaciones[indiceAsignacion].id_materia = parseInt(nuevaMateriaId, 10);
+                        asignaciones[indiceAsignacion].id_aula = nuevaAulaId ? parseInt(nuevaAulaId, 10) : null;
+                        asignaciones[indiceAsignacion].color = nuevoColor;
+                    } else {
+                        console.error('No se encontró la asignación a actualizar.');
+                        return;
+                    }
                 }
+
+                fs.writeFileSync(rutaAsignaciones, JSON.stringify(asignaciones, null, 2));
+                cerrarModal();
+                actualizarVistaCompleta();
+
             } catch (error) {
                 console.error('Error al actualizar la asignación:', error);
             }

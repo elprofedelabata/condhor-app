@@ -3677,7 +3677,7 @@
     "id_aula": 4,
     "id_no_docencia": 0,
     "duracion": 1,
-    "color": "#455A64"
+    "color": "#843206"
   },
   {
     "id": 369,
@@ -3727,7 +3727,7 @@
     "id_aula": 4,
     "id_no_docencia": 0,
     "duracion": 1,
-    "color": "#455A64"
+    "color": "#843206"
   },
   {
     "id": 374,
@@ -3757,7 +3757,7 @@
     "id_aula": 4,
     "id_no_docencia": 0,
     "duracion": 1,
-    "color": "#455A64"
+    "color": "#843206"
   },
   {
     "id": 377,
@@ -3787,6 +3787,6 @@
     "id_aula": 4,
     "id_no_docencia": 0,
     "duracion": 1,
-    "color": "#455A64"
+    "color": "#843206"
   }
 ]

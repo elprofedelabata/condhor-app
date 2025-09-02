@@ -28,10 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const contextMenu = document.getElementById('context-menu');
     const simpleMateriaSelect = document.getElementById('simpleMateria');
     const simpleAulaSelect = document.getElementById('simpleAula');
+    const simpleColorInput = document.getElementById('simpleColor');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
     let todasLasMaterias = [], todasLasAulas = [];
-    let versionHorarioActiva = null, profesorActivo = null;
+    let versionHorarioActiva = null, profesorActivo = null, eventoSeleccionado = null;
 
     // 2. --- FUNCIONES PRINCIPALES DE CARGA Y RENDERIZADO ---
 
@@ -379,6 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            eventoSeleccionado = eventElement;
             e.stopPropagation();
 
             // --- 1. Recoger datos del evento ---
@@ -499,7 +501,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (modalDialog) modalDialog.style.display = 'none';
         }
 
-        function abrirModal() {
+        function abrirModal(eventElement) {
+            if (!eventElement) return;
+
+            const { color, aula: aulaJSON, materiaRef } = eventElement.dataset;
+            const aula = JSON.parse(aulaJSON || 'null');
+            const materia = todasLasMaterias.find(m => m.referencia === materiaRef);
+
+            if (materia) {
+                simpleMateriaSelect.value = materia.id;
+            }
+            if (aula) {
+                simpleAulaSelect.value = aula.id;
+            } else {
+                simpleAulaSelect.value = "";
+            }
+            simpleColorInput.value = color;
+
             if (modalOverlay) modalOverlay.style.display = 'block';
             if (modalDialog) modalDialog.style.display = 'flex';
         }
@@ -525,7 +543,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const action = menuItem.dataset.action;
                 
                 if (action === 'editar') {
-                    abrirModal();
+                    abrirModal(eventoSeleccionado);
                 }
 
                 // Aquí se implementará la lógica para cada acción

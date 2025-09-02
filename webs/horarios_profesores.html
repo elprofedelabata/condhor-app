@@ -150,17 +150,17 @@
 </div>
 
 <!-- Modal overlay -->
-<div id="simple-modal-overlay" class="modal-overlay"></div>
+<div id="simple-modal-overlay" class="modal-overlay" style="display: block"></div>
 
 <!-- Modal diálogo -->
-<div id="simple-modal" class="modal-dialog">
-  <div class="modal-header" style="background-color: var(--morado-electrico);">
+<div id="simple-modal" class="modal-dialog" style="display:flex; width: 700px">
+  <div class="modal-header" style="background-color: var(--morado-electrico); width: 700px">
     <div>
       <span style="font-size: 1.25rem; font-weight: bold;margin-left:0.25rem">Editar Evento</span>
     </div>
     <button id="closeSimpleModal" class="close-btn">&times;</button>
   </div>
-  <form id="simpleModalForm" class="modal-form">
+  <form id="simpleModalForm" class="modal-form" style="width: 700px">
     <div class="form-group">
       <label for="simpleMateria">Materia</label>
       <select id="simpleMateria">
@@ -173,9 +173,9 @@
         <option value="">-- elige una --</option>
       </select>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="background-color:blue; margin-right:385px">
       <label for="simpleColor">Color</label>
-      <input type="color" id="simpleColor" value="#ff00ff">
+      <input type="color" id="simpleColor" value="#ff00ff" style="width: 90px; height: 40px; padding: 0.25rem; border-radius: 6px;">
     </div>
     <div class="modal-actions">
       <button type="button" id="cancelSimpleModal">Cancelar</button>

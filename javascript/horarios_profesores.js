@@ -459,17 +459,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 contextMenu.classList.remove('active');
             }
         });
-    
-        contextMenu.addEventListener('click', (e) => {
-            const menuItem = e.target.closest('.context-menu-item');
-            if (menuItem) {
-                e.preventDefault(); // Evita que el enlace '#' recargue la página
-                const action = menuItem.dataset.action;
-                console.log(`Acción seleccionada: ${action} en el evento:`, e.target.closest('.schedule-event'));
-                // Aquí se implementará la lógica para cada acción
-                contextMenu.classList.remove('active');
-            }
-        });
 
         // --- Listeners para el modal de edición ---
         const modalOverlay = document.getElementById('simple-modal-overlay');
@@ -480,6 +469,11 @@ document.addEventListener('DOMContentLoaded', () => {
         function cerrarModal() {
             if (modalOverlay) modalOverlay.style.display = 'none';
             if (modalDialog) modalDialog.style.display = 'none';
+        }
+
+        function abrirModal() {
+            if (modalOverlay) modalOverlay.style.display = 'block';
+            if (modalDialog) modalDialog.style.display = 'flex';
         }
 
         if (closeSimpleModal) {
@@ -495,6 +489,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modalDialog) {
             modalDialog.addEventListener('click', (e) => e.stopPropagation());
         }
+    
+        contextMenu.addEventListener('click', (e) => {
+            const menuItem = e.target.closest('.context-menu-item');
+            if (menuItem) {
+                e.preventDefault(); // Evita que el enlace '#' recargue la página
+                const action = menuItem.dataset.action;
+                
+                if (action === 'editar') {
+                    abrirModal();
+                }
+
+                // Aquí se implementará la lógica para cada acción
+                contextMenu.classList.remove('active');
+            }
+        });
     }
 
     function cambiarProfesor(direccion) {

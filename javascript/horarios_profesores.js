@@ -26,8 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevProfesorBtn = document.getElementById('prevProfesorBtn');
     const nextProfesorBtn = document.getElementById('nextProfesorBtn');
     const contextMenu = document.getElementById('context-menu');
+    const simpleMateriaSelect = document.getElementById('simpleMateria');
+    const simpleAulaSelect = document.getElementById('simpleAula');
 
     let todosLosProfesores = [], departamentosMap = {}, materiasMap = {}, aulasMap = {}, unidadesMap = {};
+    let todasLasMaterias = [], todasLasAulas = [];
     let versionHorarioActiva = null, profesorActivo = null;
 
     // 2. --- FUNCIONES PRINCIPALES DE CARGA Y RENDERIZADO ---
@@ -174,6 +177,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. --- FUNCIONES AUXILIARES Y DE CARGA INICIAL ---
+
+    function poblarSelect(selectElement, data, placeholder) {
+        if (!selectElement) return;
+        selectElement.innerHTML = '';
+    
+        if (placeholder) {
+            const placeholderOption = document.createElement('option');
+            placeholderOption.value = "";
+            placeholderOption.textContent = placeholder;
+            selectElement.appendChild(placeholderOption);
+        }
+    
+        const sortedData = [...data].sort((a, b) => a.nombre.localeCompare(b.nombre));
+    
+        sortedData.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.id;
+            option.textContent = item.nombre;
+            selectElement.appendChild(option);
+        });
+    }
     
     function cargarYRenderizarDatos() {
         const params = new URLSearchParams(window.location.search);
@@ -184,7 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const profesoresData = JSON.parse(fs.readFileSync(path.join(rutaBase, 'profesores.json'), 'utf-8'));
             const departamentosData = JSON.parse(fs.readFileSync(path.join(rutaBase, 'departamentos.json'), 'utf-8'));
             const materiasData = JSON.parse(fs.readFileSync(path.join(rutaBase, 'materias.json'), 'utf-8'));
+            todasLasMaterias = materiasData;
             const aulasData = JSON.parse(fs.readFileSync(path.join(rutaBase, 'aulas.json'), 'utf-8'));
+            todasLasAulas = aulasData;
             const unidadesData = JSON.parse(fs.readFileSync(path.join(rutaBase, 'unidades.json'), 'utf-8'));
 
             materiasMap = materiasData.reduce((map, mat) => { map[mat.id] = mat; return map; }, {});
@@ -203,6 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }).sort((a, b) => a.nombreCompleto.localeCompare(b.nombreCompleto));
             
             renderProfesorList(todosLosProfesores);
+            poblarSelect(simpleMateriaSelect, todasLasMaterias, '-- Elige una materia --');
+            poblarSelect(simpleAulaSelect, todasLasAulas, '-- Elige un aula --');
 
             if (todosLosProfesores.length > 0) {
                 seleccionarProfesor(todosLosProfesores[0]);

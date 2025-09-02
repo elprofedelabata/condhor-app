@@ -470,6 +470,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 contextMenu.classList.remove('active');
             }
         });
+
+        // --- Listeners para el modal de edición ---
+        const modalOverlay = document.getElementById('simple-modal-overlay');
+        const modalDialog = document.getElementById('simple-modal');
+        const closeSimpleModal = document.getElementById('closeSimpleModal');
+        const cancelSimpleModal = document.getElementById('cancelSimpleModal');
+
+        function cerrarModal() {
+            if (modalOverlay) modalOverlay.style.display = 'none';
+            if (modalDialog) modalDialog.style.display = 'none';
+        }
+
+        if (closeSimpleModal) {
+            closeSimpleModal.addEventListener('click', cerrarModal);
+        }
+        if (cancelSimpleModal) {
+            cancelSimpleModal.addEventListener('click', cerrarModal);
+        }
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', cerrarModal);
+        }
+        // Evitar que el clic dentro del modal lo cierre
+        if (modalDialog) {
+            modalDialog.addEventListener('click', (e) => e.stopPropagation());
+        }
     }
 
     function cambiarProfesor(direccion) {

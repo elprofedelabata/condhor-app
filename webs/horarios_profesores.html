@@ -160,7 +160,7 @@
     </div>
     <button id="closeSimpleModal" class="close-btn">&times;</button>
   </div>
-  <form id="simpleModalForm" class="modal-form" style="width: 700px">
+  <form id="simpleModalForm" class="modal-form" style="width: 700px; height:300px">
     <div class="form-group">
       <label for="simpleMateria">Materia</label>
       <select id="simpleMateria">
@@ -173,10 +173,15 @@
         <option value="">-- elige una --</option>
       </select>
     </div>
-    <div class="form-group" style="background-color:blue; margin-right:385px">
+    <div class="form-group" style="margin-right:385px">
       <label for="simpleColor">Color</label>
       <input type="color" id="simpleColor" value="#ff00ff" style="width: 90px; height: 40px; padding: 0.25rem; border-radius: 6px;">
     </div>
+    <div class="form-group" style="width:350px; margin: 30px 0 0 180px">
+      <input type="checkbox" id="simpleApplyToAll" checked style="max-width:20px; text-align:right; margin:0">
+      <label for="simpleApplyToAll" style="width:100%">Aplicar cambios al resto de eventos similares</label>
+    </div>
+
     <div class="modal-actions">
       <button type="button" id="cancelSimpleModal">Cancelar</button>
       <button type="submit" id="confirmSimpleModal">Aceptar</button>

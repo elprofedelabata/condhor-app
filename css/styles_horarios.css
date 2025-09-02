@@ -852,3 +852,18 @@ body{
 .context-submenu .context-menu-link {
   padding: 0.6rem 1rem; /* Slightly smaller padding for submenu items */
 }
+
+
+/*** MODALES ***/
+.modal-header {
+  background: var(--morado-electrico);
+}
+
+.form-estado input[type="radio"] {
+  accent-color: var(--morado-electrico);
+}
+
+.modal-actions button {
+  background: var(--morado-electrico);
+}
+
